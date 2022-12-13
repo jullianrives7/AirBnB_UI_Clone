@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="App">
       <AiOutlineCheckSquare />
-      Hello World! (DEV BRANCH)
+      Hello World! (FEATURE-NAVBAR BRANCH)
     </div>
   );
 }
