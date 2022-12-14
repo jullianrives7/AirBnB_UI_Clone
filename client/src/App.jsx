@@ -1,12 +1,7 @@
 import React, { useEffect, useState } from "react";
-import NavBar from "./componets/NavBar";
+import NavBar from "./components/NavBar";
 
 function App() {
-
-
-
-
-
   return (
     <appContext.Provider value={{}}>
       <div>

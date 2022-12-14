@@ -8,7 +8,6 @@ import { BsPerson } from "react-icons/all";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
-import nav from "./NavBar.css"
 
 function NavBar() {
   return (
@@ -19,10 +18,8 @@ function NavBar() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <InputGroup id='input' className="mb-3">
-              <Form.Control
-                placeholder="Start Your search"
-              />
+            <InputGroup id="input" className="mb-3">
+              <Form.Control placeholder="Start Your search" />
               <Button variant="outline-secondary" id="button-addon2">
                 Button
               </Button>
