@@ -13,6 +13,7 @@ const cors = require("cors");
 const config = require("./config")[process.env.NODE_ENV || "production"];
 const PORT = config.port;
 const app = express();
+let ApiUrl = "https://fec-api-server.onrender.com/";
 
 app.use(express.json());
 app.use(cors());
@@ -21,7 +22,7 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-app.get("/host", (req, res) => {
+app.get(`${ApiUrl}/host`, (req, res) => {
   async function getHost() {
     try {
       const result = await pool.query("SELECT * FROM host");
