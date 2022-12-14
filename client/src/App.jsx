@@ -1,14 +1,20 @@
-import { AiOutlineCheckSquare } from "react-icons/all";
-import NavBar from "./NavBar";
+import React, { useEffect, useState } from "react";
+import NavBar from "./componets/NavBar";
 
 function App() {
+
+
+
+
+
   return (
-    <div className="App">
-      <NavBar />
-      <AiOutlineCheckSquare />
-      Hello World! (DEV BRANCH)
-    </div>
+    <appContext.Provider value={{}}>
+      <div>
+        <NavBar />
+      </div>
+    </appContext.Provider>
   );
 }
 
+export const appContext = React.createContext();
 export default App;
