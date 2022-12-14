@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <NavBar />
       <AiOutlineCheckSquare />
-      Hello World! (DEV BRANCH)
+      Hello World! (API-SERVER BRANCH)
     </div>
   );
 }
