@@ -1,8 +1,11 @@
+/* ----------- TITLE MODULE ----------- */
+
 .titleInfoContainer {
     height: 75px;
     width: 300px;
     border: solid black 1px;
 }
+
 .titleContainerRows {
     gap: 5px;
     display: flex;
@@ -20,3 +23,5 @@
 .InputGroup{
     margin: auto;
 }
+
+/* ----------- X MODULE ----------- */

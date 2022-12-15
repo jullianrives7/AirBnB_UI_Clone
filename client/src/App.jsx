@@ -1,7 +1,6 @@
-import { AiOutlineCheckSquare } from "react-icons/all";
-import Title from "./title";
 import React, { useEffect, useState } from "react";
-import NavBar from "./components/NavBar";
+import NavBar from "./components/navbar-module/NavBar";
+import Title from "./components/title-module/Title";
 
 function App() {
   const ApiUrl = "https://fec-api-server.onrender.com/";
