@@ -1,17 +1,26 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import NavBar from "./components/navbar-module/NavBar";
 import Title from "./components/title-module/Title";
+import PhotosModal from "./components/photos-module/PhotoModal";
+import Photos from "./components/photos-module/Photos";
 
 function App() {
+  const [showPhotoModal, setShowPhotoModal] = useState(false);
   const ApiUrl = "https://fec-api-server.onrender.com/";
+
   const contextData = {
+    showPhotoModal,
+    setShowPhotoModal,
     ApiUrl,
   };
+
   return (
     <appContext.Provider value={{ ...contextData }}>
-      <div>
+      <div className="App">
         <NavBar />
         <Title />
+        <Photos />
+        <PhotosModal />
       </div>
     </appContext.Provider>
   );
