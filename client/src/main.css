@@ -72,4 +72,19 @@
     background: whitesmoke;
 }
 
-/* ---------------- X MODULE ---------------- */
+/* ---------------- Information MODULE ---------------- */
+
+.informationSummary{
+    gap: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.titleContainerTitle{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid slategray;
+
+    
+    
+}

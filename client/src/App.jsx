@@ -3,6 +3,7 @@ import NavBar from "./components/navbar-module/NavBar";
 import Title from "./components/title-module/Title";
 import PhotosModal from "./components/photos-module/PhotoModal";
 import Photos from "./components/photos-module/Photos";
+import InformationModule from "./components/information-module/informationModule";
 
 function App() {
   const [showPhotoModal, setShowPhotoModal] = useState(false);
@@ -17,10 +18,11 @@ function App() {
   return (
     <appContext.Provider value={{ ...contextData }}>
       <div className="App">
-        <NavBar />
+        {/* <NavBar />
         <Title />
         <Photos />
-        <PhotosModal />
+        <PhotosModal /> */}
+        <InformationModule />
       </div>
     </appContext.Provider>
   );
