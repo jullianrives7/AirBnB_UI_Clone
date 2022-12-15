@@ -14,16 +14,22 @@ function App() {
     setShowPhotoModal,
     ApiUrl,
   };
+    let getRentalDataFromApi = async () => {
+    fetch(`${ApiUrl}api/rental/2`)
+    .then(response => response.json())
+    .then((data) => setRentalData(data))
+  }
+ 
+
+  useEffect(()=> {
+    getRentalDataFromApi();
+  }, []);
 
   
 
   return (
     <appContext.Provider value={{ ...contextData }}>
       <div className="App">
-        {/* <NavBar />
-        <Title />
-        <Photos />
-        <PhotosModal /> */}
         <InformationModule />
       </div>
     </appContext.Provider>
