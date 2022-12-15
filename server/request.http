@@ -1,0 +1,25 @@
+### testing if express works 
+GET http://localhost:3000
+
+###  getting host
+GET http://localhost:3000/api/all_hosts
+
+###  getting rental
+GET http://localhost:3000/api/all_rentals
+
+###  getting review
+GET http://localhost:3000/api/all_reviews
+
+###  getting host by id
+GET http://localhost:3000/api/host/1
+
+
+###  getting rental by id
+GET http://localhost:3000/api/rental/1
+
+###  getting review by id
+GET http://localhost:3000/api/review/1
+
+
+
+

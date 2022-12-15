@@ -1,8 +1,8 @@
-import TitleStars from "./titleStars";
-import TitleReviews from "./titleReviews";
-import TitleLocation from "./titleLocation";
-import ShareButton from "./shareButton";
-import SaveButton from "./saveButton";
+import TitleStars from "./TitleStars";
+import TitleReviews from "./TitleReviews";
+import TitleLocation from "./TitleLocation";
+import ShareButton from "./ShareButton";
+import SaveButton from "./SaveButton";
 import Modal from "react-bootstrap/Modal";
 
 const Title = () => {
