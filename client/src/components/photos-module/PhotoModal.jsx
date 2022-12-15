@@ -12,10 +12,21 @@ function PhotosModal() {
   };
 
   return (
-    <Modal show={showPhotoModal} fullscreen={true} onHide={handleHide}>
+    <Modal
+      show={showPhotoModal}
+      fullscreen={true}
+      onHide={handleHide}
+      scrollable
+    >
       <Modal.Body>
         <div id="photo-modal-header">
-          <FaChevronLeft style={{ marginTop: "10px" }} onClick={handleHide} />
+          <div id="arrow-left-wrapper">
+            <FaChevronLeft
+              id="arrow-left"
+              style={{ marginTop: "10px" }}
+              onClick={handleHide}
+            />
+          </div>
           <div style={{ float: "right" }}>
             <ShareButton />
             <SaveButton />

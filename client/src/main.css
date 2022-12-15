@@ -1,4 +1,5 @@
-/* ----------- TITLE MODULE ----------- */
+/* ---------------- TITLE MODULE ---------------- */
+
 .titleInfoContainer {
     height: 75px;
     width: 300px;
@@ -19,7 +20,7 @@
     margin: auto;
 }
 
-/* ----------- PHOTOS MODULE ----------- */
+/* ---------------- PHOTOS MODULE ---------------- */
 
 #photos-wrapper{
     display: flex;
@@ -38,6 +39,10 @@
 #small-photo-4{
     border-bottom-right-radius: 15px; 
 }
+#big-photo:hover, #small-photo-1:hover, #small-photo-2:hover, #small-photo-3:hover, #small-photo-4:hover {
+    cursor: pointer;
+    -webkit-filter: brightness(85%);
+}
 #photo-column{
     display: inherit;
     flex-direction: column;
@@ -51,7 +56,20 @@
     cursor: pointer;
     border-radius: 5px; 
 }
-#arrow-left{
-    border-radius: 50%;
-    border: 1px solid ;
+#arrow-left {
+    margin: auto !important;
+    transform: translate(35%, 5%) !important;
 }
+#arrow-left-wrapper{
+    position: relative;
+    float: left;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px transparent ;
+}
+#arrow-left-wrapper:hover{
+    background: whitesmoke;
+}
+
+/* ---------------- X MODULE ---------------- */
