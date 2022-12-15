@@ -4,14 +4,19 @@ import TitleLocation from "./TitleLocation";
 import ShareButton from "./ShareButton";
 import SaveButton from "./SaveButton";
 import Modal from "react-bootstrap/Modal";
+import React, { useContext } from "react";
+import { appContext } from "../../App";
 
 const Title = () => {
+  const { ApiUrl,setRentalData,rentalData } = useContext(appContext);
+
+
   return (
     <div>
       <Modal.Dialog>
         <Modal.Body>
           <div className="titleContainerTitle">
-            <h2>2 Bed house in quiet neighborhood </h2>
+            <h2>{rentalData.title}</h2>
           </div>
           <div className="titleContainerRows">
             <TitleStars />
