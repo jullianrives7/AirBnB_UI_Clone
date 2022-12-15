@@ -1,26 +1,30 @@
-import { AiOutlineCheckSquare } from "react-icons/all";
-import {useState} from 'react'
-import NavBar from "./NavBar";
-import Photo from "./Photo";
-import PhotoModal from "./PhotoModal";
+import React, { useState, useEffect } from "react";
+import NavBar from "./components/navbar-module/NavBar";
+import Title from "./components/title-module/Title";
+import PhotosModal from "./components/photos-module/PhotoModal";
+import Photos from "./components/photos-module/Photos";
+
 function App() {
   const [showPhotoModal, setShowPhotoModal] = useState(false);
-  const appProps={
-    showPhotoModal,
-    setShowPhotoModal
-  }
-  return (
-    <>
-    <div className="App">
-      <NavBar />
-      <AiOutlineCheckSquare />
-      Hello World! (DEV BRANCH)
-    </div>
-    <PhotoModal {...appProps}/>
-    <Photo {...appProps}/>
-    </>
+  const ApiUrl = "https://fec-api-server.onrender.com/";
 
+  const contextData = {
+    showPhotoModal,
+    setShowPhotoModal,
+    ApiUrl,
+  };
+
+  return (
+    <appContext.Provider value={{ ...contextData }}>
+      <div className="App">
+        <NavBar />
+        <Title />
+        <Photos />
+        <PhotosModal />
+      </div>
+    </appContext.Provider>
   );
 }
 
+export const appContext = React.createContext();
 export default App;
