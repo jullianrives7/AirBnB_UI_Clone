@@ -1,117 +1,90 @@
 const express = require("express");
 const cors = require("cors");
+const { Client } = require("pg");
 
-// const port = 3000;
-// const { Pool } = require("pg");
-// const pool = new Pool({
-//     user: "postgres",
-//     host: "127.0.0.1",
-//     database: "airbnb",
-//     password: "docker",
-//     port: 5432,
-// });
 const config = require("./config")[process.env.NODE_ENV || "production"];
 const PORT = config.port;
-const app = express();
-let ApiUrl = "https://fec-api-server.onrender.com/";
 
-app.use(express.json());
+const client = new Client({
+  connectionString: config.connectionString,
+});
+
+client.connect();
+
+const app = express();
 app.use(cors());
+app.use(express.json());
 
 app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-app.get(`${ApiUrl}/host`, (req, res) => {
-  async function getHost() {
-    try {
-      const result = await pool.query("SELECT * FROM host");
-      res.status(200).send(result.rows);
-    } catch (e) {
-      console.error(e.stack);
-    }
-  }
-  getHost();
+app.get("/api/all_hosts", (req, res) => {
+  client
+    .query("SELECT * FROM host")
+    .then((result) => {
+      res.send(result.rows);
+    })
+    .catch((e) => console.error(e.stack));
 });
 
-app.get("/host/:id", (req, res) => {
-  async function getByIdHost() {
-    try {
-      const result = await pool.query(
-        `SELECT * FROM host WHERE host_id = ${req.params.id}`
-      );
+app.get("/api/host/:id", (req, res) => {
+  client
+    .query(`SELECT * FROM host WHERE host_id = ${req.params.id}`)
+    .then((result) => {
       if (result.rows.length == 0) {
         res.sendStatus(404);
       } else {
         res.status(200).send(result.rows[0]);
       }
-    } catch (e) {
-      console.error(e.stack);
-    }
-  }
-  getByIdHost();
+    })
+    .catch((e) => console.error(e.stack));
 });
 
-app.get("/rental", (req, res) => {
-  async function getRental() {
-    try {
-      const result = await pool.query("SELECT * FROM rental");
-      res.status(200).send(result.rows);
-    } catch (e) {
-      console.error(e.stack);
-    }
-  }
-  getRental();
+app.get("/api/all_rentals", (req, res) => {
+  client
+    .query("SELECT * FROM rental")
+    .then((result) => {
+      res.send(result.rows);
+    })
+    .catch((e) => console.error(e.stack));
 });
 
-app.get("/rental/:id", (req, res) => {
-  async function getByIdRental() {
-    try {
-      const result = await pool.query(
-        `SELECT * FROM rental WHERE rental_id = ${req.params.id}`
-      );
+app.get("/api/rental/:id", (req, res) => {
+  client
+    .query(`SELECT * FROM rental WHERE rental_id = ${req.params.id}`)
+    .then((result) => {
       if (result.rows.length == 0) {
         res.sendStatus(404);
       } else {
         res.status(200).send(result.rows[0]);
       }
-    } catch (e) {
-      console.error(e.stack);
-    }
-  }
-  getByIdRental();
+    })
+    .catch((e) => console.error(e.stack));
 });
 
-app.get("/review", (req, res) => {
-  async function getReview() {
-    try {
-      const result = await pool.query("SELECT * FROM review");
+app.get("/api/all_reviews", (req, res) => {
+  client
+    .query("SELECT * FROM review")
+    .then((result) => {
       res.status(200).send(result.rows);
-    } catch (e) {
-      console.error(e.stack);
-    }
-  }
-  getReview();
+    })
+    .catch((e) => console.error(e.stack));
 });
 
-app.get("/review/:id", (req, res) => {
-  async function getByIdReview() {
-    try {
-      const result = await pool.query(
-        `SELECT * FROM review WHERE review_id = ${req.params.id}`
-      );
+app.get("/api/review/:id", (req, res) => {
+  client
+    .query(`SELECT * FROM review WHERE review_id = ${req.params.id}`)
+    .then((result) => {
       if (result.rows.length == 0) {
         res.sendStatus(404);
       } else {
         res.status(200).send(result.rows[0]);
       }
-    } catch (e) {
-      console.error(e.stack);
-    }
-  }
-  getByIdReview();
+    })
+    .catch((e) => console.error(e.stack));
 });
 
 app.listen(PORT, () => {
-  console.log(`listening on port ${PORT}`);
+  console.log(`Our app is running on port: ${PORT}`);
 });
