@@ -80,11 +80,26 @@
     flex-direction: row;
 }
 
-.titleContainerTitle{
+.informationContainerSummary{
     padding-top: 32px;
     padding-bottom: 32px;
     border-bottom: 1px solid slategray;
+}
 
-    
-    
+.informationContainerDesc{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid slategray;
+}
+
+.informationContainerAmen{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid slategray;
+}
+
+.informationContainerAbout{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid slategray;
 }
