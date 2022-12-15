@@ -1,0 +1,41 @@
+#mainPhoto{
+    margin-left: 500px;
+    width:  2545px;
+    height: 585px; 
+    align-items: stretch;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    line-height: 20px;
+    padding: 0px 80px;
+}
+#photos{
+    height: 570px;
+    display: flex;
+     line-height: 10px;
+    border-radius: 50px !important
+     
+}
+#photocl{
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+    padding: 0px 0px 0px 8px;
+}
+#photo{
+    line-height: 20px;
+    text-align: left;
+    padding: 8px 0px 0px;
+}
+#show-all-photo{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(280%,170%);
+  -ms-transform: translate(-50%, -50%);
+  font-size: 14px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
