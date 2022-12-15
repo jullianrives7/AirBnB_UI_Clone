@@ -6,7 +6,7 @@ import Photos from "./components/photos-module/Photos";
 
 function App() {
   const [showPhotoModal, setShowPhotoModal] = useState(false);
-  const ApiUrl = "https://fec-api-server.onrender.com/";
+  const ApiUrl = "https://fec-api-server-lpsg.onrender.com/";
 
   const contextData = {
     showPhotoModal,
