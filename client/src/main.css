@@ -1,0 +1,75 @@
+/* ---------------- TITLE MODULE ---------------- */
+
+.titleInfoContainer {
+    height: 75px;
+    width: 300px;
+    border: solid black 1px;
+}
+.titleContainerRows {
+    gap: 5px;
+    display: flex;
+    flex-direction: row;
+}
+.titleContainerButtons {
+    gap: 5px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 600px;
+}
+.InputGroup{
+    margin: auto;
+}
+
+/* ---------------- PHOTOS MODULE ---------------- */
+
+#photos-wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    border-radius: 50%;
+    justify-content: center;
+}
+#big-photo{
+    border-top-left-radius: 15px; 
+    border-bottom-left-radius: 15px; 
+}
+#small-photo-3{
+    border-top-right-radius: 15px; 
+}
+#small-photo-4{
+    border-bottom-right-radius: 15px; 
+}
+#big-photo:hover, #small-photo-1:hover, #small-photo-2:hover, #small-photo-3:hover, #small-photo-4:hover {
+    cursor: pointer;
+    -webkit-filter: brightness(85%);
+}
+#photo-column{
+    display: inherit;
+    flex-direction: column;
+    gap: 7px;
+}
+#show-all-photos-btn{
+    position:relative;
+    transform: translate(62%, -190%);
+    font-size: 14px;
+    width: 150px;
+    cursor: pointer;
+    border-radius: 5px; 
+}
+#arrow-left {
+    margin: auto !important;
+    transform: translate(35%, 5%) !important;
+}
+#arrow-left-wrapper{
+    position: relative;
+    float: left;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px transparent ;
+}
+#arrow-left-wrapper:hover{
+    background: whitesmoke;
+}
+
+/* ---------------- X MODULE ---------------- */
