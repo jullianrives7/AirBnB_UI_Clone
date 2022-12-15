@@ -1,3 +1,22 @@
+.titleInfoContainer {
+    height: 75px;
+    width: 300px;
+    border: solid black 1px;
+}
+.titleContainerRows {
+    gap: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.titleContainerButtons {
+    gap: 5px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 600px;
+ 
+}
+
 .InputGroup{
     margin: auto;
 }

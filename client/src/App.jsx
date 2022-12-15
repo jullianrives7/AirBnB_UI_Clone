@@ -1,3 +1,5 @@
+import { AiOutlineCheckSquare } from "react-icons/all";
+import Title from "./title";
 import React, { useEffect, useState } from "react";
 import NavBar from "./components/NavBar";
 
@@ -10,6 +12,7 @@ function App() {
     <appContext.Provider value={{ ...contextData }}>
       <div>
         <NavBar />
+        <Title />
       </div>
     </appContext.Provider>
   );
