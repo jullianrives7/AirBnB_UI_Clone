@@ -307,6 +307,22 @@
 .airCoverButton{
     padding-top: 1em;
 }
+
+.helpCenter{
+    padding-top: 1em;
+}
+
+.safetyLine{
+    padding-top: 1em;
+}
+
+.getGuarantee{
+    padding-top: 1em;
+}
+
+.checkInGuarantee{
+    padding-top: 1em;
+}
 /* ---------------- RESERVATION MODULE ---------------- */
 
 #reservation-module-container{
