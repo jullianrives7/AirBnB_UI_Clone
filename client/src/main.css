@@ -1,20 +1,245 @@
+/* ---------------- FONT COLOR, ALL ---------------- */
+
+* {
+    color:#222222;
+}
+
+/* ---------------- MAIN CONTENT WRAPPER ---------------- */
+
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 1100px;
+}
+
+/* ---------------- NAVBAR MODULE ---------------- */
+
+#navbar-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    height: 60px;
+    width: 1100px;
+}
+#border-bottom {
+    border-bottom: 2px solid whitesmoke;
+}
+#airbnb-logo{
+    height: 110px;
+    width: 110px;
+}
+#search{
+    display: inherit;
+    padding-left: 25px;
+    align-items: center;
+    border: 1px solid #dddddd;
+    border-radius: 30px;
+    width: 320px;
+    height: 50px;
+    box-shadow: 0px 1px 1px 0px #dddddd;
+    position:relative;
+    transform: translate(80%, 0%);
+}
+#search:hover, #login-dropdown:hover{
+    box-shadow: 0px 2px 2px 0px #dddddd;
+}
+#mag-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background: #ff385c;
+    transform: translate(500%, 0%);
+}
+#airbnb-your-home{
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    transform: translate(270%, 0%);
+    width: 140px;
+    height: 40px;
+    border-radius: 30px;
+}
+#globe-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(850%, 0%);
+    width: 45px;
+    height: 40px;
+    border-radius: 50%;
+}
+#airbnb-your-home:hover, #globe-icon:hover {
+    background: whitesmoke
+}
+#login-dropdown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #dddddd;
+    border-radius: 30px;
+    width: 80px;
+    height: 40px;
+    transform: translate(490%, 0%);
+}
+#person-svg-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #717171;
+    border-radius: 50%;
+    background: #717171;
+    width: 28px;
+    height: 28px;
+    overflow: hidden;
+    transform: translate(20%, 0%);
+}
+#person-svg{
+    transform: translate(0%, 7%);
+}
+#airbnb-logo, #search, #airbnb-your-home, #globe-icon, #login-dropdown {
+    cursor: pointer;
+}
+ /* #nav-bar{
+   color: white;
+}
+#link{
+    position: relative;
+    right: 135px;
+    color: white;
+    font-size: 15px;
+ }
+#brand{
+    font-family: "Lobster";
+    position: relative;
+    left: 145px;
+    color: white;
+    font-size: 22spx;
+ }
+#display{
+    height: 80px;
+ }
+#search{
+    padding-right: 250px;
+}
+#button{
+    position: relative;
+    right: 30px;
+    width: 300px;
+    height: 40px;
+    text-align: left;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+} */
+ /* #drop-down-bg{
+    position: relative;
+    right: 130px;
+    width: 70px;
+    height: 40px;
+    background-color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px
+    
+} 
+#search-icon{
+    position: relative;
+    top: 4px;
+    left: 13px;
+    justify-content: center;
+}
+#house-icon{
+    position: relative;
+    left: 140px;
+    height: 32px;
+    width: 45px;
+}
+#world-icon{
+    position: relative;
+    left: 10px;
+    height: 20px;
+    width: 45px;
+}
+#person-icon{
+    position: relative;
+    right: 4px;
+    height: 25px;
+    width: 48px;
+    
+}
+#icon-background{
+    background-color: black;
+    width: 40px;
+    height: 35px;
+    position: relative;
+    left: 242px;
+    bottom: 28px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+ }
+ #person-icon-background{
+    background-color: black;
+    width: 40px;
+    height: 35px;
+    position: relative;
+    bottom: 37px;
+    left: 26px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+ }  */
+
 /* ---------------- TITLE MODULE ---------------- */
 
-.titleInfoContainer {
-    height: 75px;
-    width: 300px;
-    border: solid black 1px;
+#title-module-container {
+    margin-top: 16px;
+    height: 92px;
 }
-.titleContainerRows {
-    gap: 5px;
+#title-title{
+    font-size: 26px;
+    line-height: 40px;
+}
+#row-formatter {
     display: flex;
     flex-direction: row;
 }
-.titleContainerButtons {
-    gap: 5px;
+#title-details {
     display: flex;
     flex-direction: row;
-    margin-left: 600px;
+    width:50%;
+    gap: 10px;
+    align-items: center;
+}
+#title-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    width: 50%;
+    justify-content: right;
+}
+#share-button, #save-button {
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    width: 75px;
+    height: 30px;
+}
+#share-button:hover, #save-button:hover {
+    background: whitesmoke
 }
 .InputGroup{
     margin: auto;
@@ -23,14 +248,16 @@
 /* ---------------- PHOTOS MODULE ---------------- */
 
 #photos-wrapper{
-    margin-top: 50px;
+    /* margin-top: 50px; */
     display: flex;
     flex-direction: row;
     gap: 7px;
     border-radius: 50%;
     justify-content: center;
+    /* border: 1px solid black; */
 }
 #big-photo{
+    /* overflow: hidden; */
     border-top-left-radius: 15px; 
     border-bottom-left-radius: 15px; 
 }
@@ -50,18 +277,27 @@
     gap: 7px;
 }
 #show-all-photos-btn{
+    display: flex;
+    gap: 6px;
+    justify-content: center;
     position:relative;
-    transform: translate(62%, -190%);
+    transform: translate(57%, -190%);
     font-size: 14px;
-    width: 150px;
+    width: 155px !important;
     cursor: pointer;
-    border-radius: 5px; 
+    border-radius: 8px; 
+    border: 1px solid #000000;
+    width: 170px;
+    line-height: 18px;
+    padding: 7px 15px;
 }
 #arrow-left {
     margin: auto !important;
-    transform: translate(35%, 5%) !important;
 }
 #arrow-left-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     float: left;
     width: 30px;
@@ -71,6 +307,9 @@
 }
 #arrow-left-wrapper:hover{
     background: whitesmoke;
+}
+#photo-modal-buttons {
+    display: flex;
 }
 
 #all-photos{
@@ -103,4 +342,12 @@
     line-height:20px;
 }
 
-/* ---------------- X MODULE ---------------- */
+/* ---------------- INFORMATION MODULE ---------------- */
+
+#information-module-container {
+    display: flex;
+    flex-direction: row;
+    width:50%;
+    height: 2000px;
+    border: 1px solid black;
+}
