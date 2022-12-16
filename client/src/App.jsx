@@ -9,6 +9,7 @@ import axios from "axios";
 import Reservation from "./components/reservation-module/Reservation";
 import InformationModule from "./components/information-module/informationModule";
 
+
 function App() {
   const [showPhotoModal, setShowPhotoModal] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
@@ -43,7 +44,7 @@ function App() {
           <Title />
           <Photos />
           <div id="flex-row">
-            <Information />
+            <InformationModule />
             <Reservation />
           </div>
           <Calendar />

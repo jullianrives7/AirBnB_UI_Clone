@@ -1,6 +1,6 @@
 import Modal from "react-bootstrap/Modal";
-import Button from "react-bootstrap/Button";
-
+import Card from "react-bootstrap/Card";
+import { BiBed } from "react-icons/all";
 
 const InformationAbout = () => {
   return (
@@ -9,6 +9,13 @@ const InformationAbout = () => {
         <Modal.Body>
           <div>
             <h2>Where you'll sleep</h2>
+            <Card style={{ width: '18rem' }}>
+              <Card.Body>
+                <BiBed />
+                <div><b>Bedroom</b></div>
+                <div>1 queen bed</div>
+              </Card.Body>
+            </Card>
           </div>
         </Modal.Body>
       </Modal.Dialog>

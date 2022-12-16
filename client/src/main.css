@@ -265,7 +265,48 @@
     height: 2000px;
     border: 1px solid black;
 }
+.informationSummary{
+    gap: 5px;
+    display: flex;
+    flex-direction: row;
+}
 
+.informationContainerSummary{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid slategray;
+}
+
+.informationContainerDesc{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid slategray;
+}
+
+.informationContainerAmen{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid slategray;
+}
+
+.informationContainerAbout{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid slategray;
+}
+
+.airCoverImg{
+    height: 1.7em;
+    width: 10em;
+}
+
+.airCoverDescription {
+    padding-top: 1.8em;
+}
+
+.airCoverButton{
+    padding-top: 1em;
+}
 /* ---------------- RESERVATION MODULE ---------------- */
 
 #reservation-module-container{
