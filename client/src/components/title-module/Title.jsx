@@ -14,9 +14,7 @@ const Title = () => {
     <div id="title-module-container">
       <Modal.Dialog>
         <Modal.Body>
-          <div className="title-title">
-            <h2>{rentalData.title}</h2>
-          </div>
+          <div id="title-title">{rentalData.title}</div>
           <div id="row-formatter">
             <div id="title-details">
               <TitleStars />

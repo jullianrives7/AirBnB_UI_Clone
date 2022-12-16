@@ -1,4 +1,11 @@
+/* ---------------- FONT COLOR, ALL ---------------- */
+
+* {
+    color:#222222;
+}
+
 /* ---------------- MAIN CONTENT WRAPPER ---------------- */
+
 #main {
     display: flex;
     flex-direction: column;
@@ -7,11 +14,160 @@
     width: 1100px;
 }
 
+/* ---------------- NAVBAR MODULE ---------------- */
+
+#navbar-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    height: 60px;
+    width: 1100px;
+}
+#border-bottom {
+    border-bottom: 2px solid whitesmoke;
+}
+#airbnb-logo{
+    height: 110px;
+    width: 110px;
+}
+#search{
+    display: inherit;
+    /* justify-content: center; */
+    /* text-align: left; */
+    padding-left: 25px;
+    align-items: center;
+    border: 2px solid whitesmoke;
+    border-radius: 30px;
+    width: 320px;
+    height: 50px;
+    box-shadow: 0px 0px 5px 0px whitesmoke;
+    position:relative;
+    transform: translate(80%, 0%);
+}
+#search:hover{
+    box-shadow: 5px 5px 5px 0px whitesmoke;
+}
+#mag-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background: tomato;
+    transform: translate(500%, 0%);
+}
+#airbnb-your-home{
+    transform: translate(320%, 0%);
+}
+#globe-icon{
+    transform: translate(1980%, 0%);
+}
+/* #nav-bar{
+   color: white;
+}
+#link{
+    position: relative;
+    right: 135px;
+    color: white;
+    font-size: 15px;
+ }
+#brand{
+    font-family: "Lobster";
+    position: relative;
+    left: 145px;
+    color: white;
+    font-size: 22spx;
+ }
+#display{
+    height: 80px;
+ }
+#search{
+    padding-right: 250px;
+}
+#button{
+    position: relative;
+    right: 30px;
+    width: 300px;
+    height: 40px;
+    text-align: left;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+#drop-down-bg{
+    position: relative;
+    right: 130px;
+    width: 70px;
+    height: 40px;
+    background-color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px
+    
+}
+#search-icon{
+    position: relative;
+    top: 4px;
+    left: 13px;
+    justify-content: center;
+}
+#house-icon{
+    position: relative;
+    left: 140px;
+    height: 32px;
+    width: 45px;
+}
+#world-icon{
+    position: relative;
+    left: 10px;
+    height: 20px;
+    width: 45px;
+}
+#person-icon{
+    position: relative;
+    right: 4px;
+    height: 25px;
+    width: 48px;
+    
+}
+#icon-background{
+    background-color: black;
+    width: 40px;
+    height: 35px;
+    position: relative;
+    left: 242px;
+    bottom: 28px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+ }
+ #person-icon-background{
+    background-color: black;
+    width: 40px;
+    height: 35px;
+    position: relative;
+    bottom: 37px;
+    left: 26px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+ } */
+
 /* ---------------- TITLE MODULE ---------------- */
 
 #title-module-container {
-    margin-top: 2%;
-    height: 98px;
+    margin-top: 16px;
+    height: 92px;
+}
+#title-title{
+    font-size: 26px;
+    line-height: 40px;
 }
 #row-formatter {
     display: flex;
@@ -104,102 +260,6 @@
 #photo-modal-buttons {
     display: flex;
 }
-
-/* ---------------- Navbar MODULE ---------------- */
-
-#nav-bar{
-   color: white;
-}
-#link{
-    position: relative;
-    right: 135px;
-    color: white;
-    font-size: 15px;
- }
-#brand{
-    position: relative;
-    left: 145px;
-    color: white;
-    font-size: 22spx;
- }
-#display{
-    height: 80px;
- }
-#search{
-    padding-right: 250px;
-}
-#button{
-    position: relative;
-    right: 30px;
-    width: 300px;
-    height: 40px;
-    text-align: left;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-}
-#drop-down-bg{
-    position: relative;
-    right: 130px;
-    width: 70px;
-    height: 40px;
-    background-color: white;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px
-    
-}
-#search-icon{
-    position: relative;
-    top: 4px;
-    left: 13px;
-    justify-content: center;
-}
-#house-icon{
-    position: relative;
-    left: 140px;
-    height: 600px;
-    width: 45px;
-}
-#world-icon{
-    position: relative;
-    left: 10px;
-    height: 20px;
-    width: 45px;
-}
-#person-icon{
-    position: relative;
-    right: 4px;
-    height: 25px;
-    width: 48px;
-    
-}
-#icon-background{
-    background-color: black;
-    width: 40px;
-    height: 35px;
-    position: relative;
-    left: 242px;
-    bottom: 28px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
- }
- #person-icon-background{
-    background-color: black;
-    width: 40px;
-    height: 35px;
-    position: relative;
-    bottom: 37px;
-    left: 26px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
- }
 
 /* ---------------- INFORMATION MODULE ---------------- */
 
