@@ -9,7 +9,8 @@ import React, { useContext } from "react";
 import { appContext } from "../../App";
 
 const InformationModule = () => {
-  const { ApiUrl,setRentalData,rentalData } = useContext(appContext);
+  const { setAirCoverModal, ApiUrl,setRentalData,rentalData } = useContext(appContext);
+  
   console.log(rentalData)
   return (
     <div>
