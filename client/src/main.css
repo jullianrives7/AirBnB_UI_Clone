@@ -143,7 +143,6 @@
     border-radius: 8px;
     width: 75px;
     height: 30px;
-    /* z-index: -1; */
 }
 #share-button:hover, #save-button:hover {
     background: whitesmoke;
@@ -151,7 +150,12 @@
 .InputGroup{
     margin: auto;
 }
-
+#superhost{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px
+}
 /* ---------------- PHOTOS MODULE ---------------- */
 
 #photos-wrapper{

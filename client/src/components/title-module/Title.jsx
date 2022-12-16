@@ -1,5 +1,6 @@
 import TitleStars from "./TitleStars";
 import TitleReviews from "./TitleReviews";
+import TitleSuperhost from "./TitleSuperhost";
 import TitleLocation from "./TitleLocation";
 import ShareButton from "./ShareButton";
 import SaveButton from "./SaveButton";
@@ -19,6 +20,7 @@ const Title = () => {
             <div id="title-details">
               <TitleStars />
               <TitleReviews />
+              <TitleSuperhost />
               <TitleLocation />
             </div>
             <div id="title-buttons">
