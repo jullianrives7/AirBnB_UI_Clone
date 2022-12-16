@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from "react";
 import NavBar from "./components/navbar-module/NavBar";
-import Container from "react-bootstrap/esm/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import Title from "./components/title-module/Title";
 import Photos from "./components/photos-module/Photos";
 import Calendar from "./components/calendar-module/Calendar";
@@ -12,14 +9,15 @@ import axios from "axios";
 
 function App() {
   const [showPhotoModal, setShowPhotoModal] = useState(false);
+  const [showDropdown, setShowDropdown] = useState(false);
   const [rentalData, setRentalData] = useState({});
   const ApiUrl = "https://fec-api-server-lpsg.onrender.com";
 
   const contextData = {
-    rentalData,
-    setRentalData,
     showPhotoModal,
     setShowPhotoModal,
+    showDropdown,
+    setShowDropdown,
     rentalData,
     setRentalData,
     ApiUrl,
@@ -46,19 +44,6 @@ function App() {
           <Information />
           <Calendar />
         </div>
-        {/* <Container>
-          <Col>
-            <Row>
-              <Photos />
-            </Row>
-            <Row>
-              <Col>
-                <Calendar />
-              </Col>
-              <Col></Col>
-            </Row>
-          </Col>
-        </Container> */}
         <PhotosModal />
       </div>
     </appContext.Provider>
