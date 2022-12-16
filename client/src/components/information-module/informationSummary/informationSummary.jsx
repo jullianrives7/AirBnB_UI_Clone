@@ -2,7 +2,9 @@ import Modal from "react-bootstrap/Modal";
 import InformationGuest from "./informationGuest";
 import InformationBeds from "./informationBedrooms";
 
+
 const InformationSummary = () => {
+
   return (
     <div>
       <Modal.Dialog>

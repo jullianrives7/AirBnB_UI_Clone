@@ -7,12 +7,15 @@ import InformationModule from "./components/information-module/informationModule
 
 function App() {
   const [showPhotoModal, setShowPhotoModal] = useState(false);
+  const [rentalData, setRentalData] = useState({});
   const ApiUrl = "https://fec-api-server-lpsg.onrender.com/";
 
   const contextData = {
     showPhotoModal,
     setShowPhotoModal,
     ApiUrl,
+    rentalData,
+    setRentalData
   };
     let getRentalDataFromApi = async () => {
     fetch(`${ApiUrl}api/rental/2`)
@@ -24,12 +27,14 @@ function App() {
   useEffect(()=> {
     getRentalDataFromApi();
   }, []);
+  console.log(rentalData)
 
   
 
   return (
     <appContext.Provider value={{ ...contextData }}>
       <div className="App">
+
         <InformationModule />
       </div>
     </appContext.Provider>

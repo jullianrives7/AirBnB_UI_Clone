@@ -3,8 +3,12 @@ import InformationDesc from "./informationDescription/informationDesc";
 import InformationSummary from "./informationSummary/informationSummary";
 import InformationAmen from "./informationAmmen/informationAmmen";
 import InformationAbout from "./informationAbout/informationAbout";
+import React, { useContext } from "react";
+import { appContext } from "../../App";
 
 const InformationModule = () => {
+  const { ApiUrl,setRentalData,rentalData } = useContext(appContext);
+  console.log(rentalData)
   return (
     <div>
       
