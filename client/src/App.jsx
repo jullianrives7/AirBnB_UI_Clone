@@ -6,13 +6,27 @@ import Photos from "./components/photos-module/Photos";
 
 function App() {
   const [showPhotoModal, setShowPhotoModal] = useState(false);
-  const ApiUrl = "https://fec-api-server-lpsg.onrender.com/";
-
+  const [rentalData,setRentalData]=useState({});
+  const ApiUrl = "https://fec-api-server-lpsg.onrender.com";
+  
   const contextData = {
+    rentalData,
+    setRentalData,
     showPhotoModal,
     setShowPhotoModal,
-    ApiUrl,
-  };
+    ApiUrl
+  };  
+
+
+  useEffect(()=>{
+    fetch(`${ApiUrl}/api/rental/2`)
+        .then(response => response.json())
+        .then(data => {
+          setRentalData(data);
+        })
+       
+},[]);
+console.log(rentalData.photo)
 
   return (
     <appContext.Provider value={{ ...contextData }}>

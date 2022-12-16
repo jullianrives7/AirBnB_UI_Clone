@@ -23,6 +23,7 @@
 /* ---------------- PHOTOS MODULE ---------------- */
 
 #photos-wrapper{
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
     gap: 7px;
@@ -70,6 +71,36 @@
 }
 #arrow-left-wrapper:hover{
     background: whitesmoke;
+}
+
+#all-photos{
+    margin-top: 80px;
+    display: grid;
+    grid-area: 1/1/auto/auto;
+    flex-direction: column;
+    gap: 7px;
+    border-radius: 50%;
+    justify-content: center;
+}
+#style1-photo{
+    display:grid;
+    font-size:14px;
+    gap:8px;
+    grid-auto-columns:1fr;
+    grid-auto-rows:1fr;
+    grid-template-columns:366.656px 366.672px;
+    grid-template-rows:245.656px 245.656px;
+    line-height:20.02px;
+}
+#style2-photo{
+    display:grid;
+    font-size:14px;
+    gap:8px;
+    grid-auto-columns:1fr;
+    grid-auto-rows:1fr;
+    grid-template-columns:366px 366px;
+    grid-template-rows:245px;
+    line-height:20px;
 }
 
 /* ---------------- X MODULE ---------------- */
