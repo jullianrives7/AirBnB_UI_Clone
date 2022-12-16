@@ -27,7 +27,7 @@ function PhotosModal() {
               onClick={handleHide}
             />
           </div>
-          <div style={{ float: "right" }}>
+          <div id="photo-modal-buttons" style={{ float: "right" }}>
             <ShareButton />
             <SaveButton />
           </div>

@@ -7,17 +7,19 @@ import Modal from "react-bootstrap/Modal";
 
 const Title = () => {
   return (
-    <div>
+    <div id="title-module-container">
       <Modal.Dialog>
         <Modal.Body>
-          <div className="titleContainerTitle">
-            <h2>2 Bed house in quiet neighborhood </h2>
+          <div id="title-title">
+            <h2>Naturalist Boudoir </h2>
           </div>
-          <div className="titleContainerRows">
-            <TitleStars />
-            <TitleReviews />
-            <TitleLocation />
-            <div className="titleContainerButtons">
+          <div id="row-formatter">
+            <div id="title-details">
+              <TitleStars />
+              <TitleReviews />
+              <TitleLocation />
+            </div>
+            <div id="title-buttons">
               <ShareButton />
               <SaveButton />
             </div>
