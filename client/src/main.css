@@ -33,20 +33,18 @@
 }
 #search{
     display: inherit;
-    /* justify-content: center; */
-    /* text-align: left; */
     padding-left: 25px;
     align-items: center;
-    border: 2px solid whitesmoke;
+    border: 1px solid #dddddd;
     border-radius: 30px;
     width: 320px;
     height: 50px;
-    box-shadow: 0px 0px 5px 0px whitesmoke;
+    box-shadow: 0px 1px 1px 0px #dddddd;
     position:relative;
     transform: translate(80%, 0%);
 }
-#search:hover{
-    box-shadow: 5px 5px 5px 0px whitesmoke;
+#search:hover, #login-dropdown:hover{
+    box-shadow: 0px 2px 2px 0px #dddddd;
 }
 #mag-btn {
     display: flex;
@@ -55,16 +53,60 @@
     border-radius: 50%;
     width: 30px;
     height: 30px;
-    background: tomato;
+    background: #ff385c;
     transform: translate(500%, 0%);
 }
 #airbnb-your-home{
-    transform: translate(320%, 0%);
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    transform: translate(270%, 0%);
+    width: 140px;
+    height: 40px;
+    border-radius: 30px;
 }
 #globe-icon{
-    transform: translate(1980%, 0%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(850%, 0%);
+    width: 45px;
+    height: 40px;
+    border-radius: 50%;
 }
-/* #nav-bar{
+#airbnb-your-home:hover, #globe-icon:hover {
+    background: whitesmoke
+}
+#login-dropdown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #dddddd;
+    border-radius: 30px;
+    width: 80px;
+    height: 40px;
+    transform: translate(490%, 0%);
+}
+#person-svg-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #717171;
+    border-radius: 50%;
+    background: #717171;
+    width: 28px;
+    height: 28px;
+    overflow: hidden;
+    transform: translate(20%, 0%);
+}
+#person-svg{
+    transform: translate(0%, 7%);
+}
+#airbnb-logo, #search, #airbnb-your-home, #globe-icon, #login-dropdown {
+    cursor: pointer;
+}
+ /* #nav-bar{
    color: white;
 }
 #link{
@@ -96,8 +138,8 @@
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
-}
-#drop-down-bg{
+} */
+ /* #drop-down-bg{
     position: relative;
     right: 130px;
     width: 70px;
@@ -108,7 +150,7 @@
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px
     
-}
+} 
 #search-icon{
     position: relative;
     top: 4px;
@@ -157,7 +199,7 @@
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
- } */
+ }  */
 
 /* ---------------- TITLE MODULE ---------------- */
 
@@ -214,6 +256,7 @@
     /* border: 1px solid black; */
 }
 #big-photo{
+    /* overflow: hidden; */
     border-top-left-radius: 15px; 
     border-bottom-left-radius: 15px; 
 }
@@ -233,12 +276,19 @@
     gap: 7px;
 }
 #show-all-photos-btn{
+    display: flex;
+    gap: 6px;
+    justify-content: center;
     position:relative;
-    transform: translate(62%, -190%);
+    transform: translate(57%, -190%);
     font-size: 14px;
-    width: 150px;
+    width: 155px !important;
     cursor: pointer;
-    border-radius: 5px; 
+    border-radius: 8px; 
+    border: 1px solid #000000;
+    width: 170px;
+    line-height: 18px;
+    padding: 7px 15px;
 }
 #arrow-left {
     margin: auto !important;

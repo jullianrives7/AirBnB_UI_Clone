@@ -10,6 +10,7 @@ import { BsHouseDoorFill } from "react-icons/all";
 import { BiGlobe } from "react-icons/all";
 import { BsPerson } from "react-icons/all";
 import { BiSearchAlt2 } from "react-icons/all";
+import { GiHamburgerMenu } from "react-icons/all";
 
 function NavBar() {
   return (
@@ -74,7 +75,7 @@ function NavBar() {
       <Navbar bg="white">
         <div id="navbar-container">
           <Navbar.Brand>
-            <Image id="airbnb-logo" src="./airbnb.svg" color="danger"></Image>
+            <Image id="airbnb-logo" src="./airbnb.svg"></Image>
           </Navbar.Brand>
           <div id="search">
             {"Start your seach"}
@@ -87,26 +88,29 @@ function NavBar() {
           </div>
           <div id="airbnb-your-home">Airbnb your home</div>
           <div id="globe-icon">
-            <BiGlobe style={{ width: "19px", height: "19px" }} />
+            <BiGlobe
+              style={{
+                width: "19px",
+                height: "19px",
+              }}
+            />
           </div>
-
-          {/* <div id="drop-down-bg">
-            <NavDropdown id="offcanvasNavbarDropdown">
-              <NavDropdown.Item href="#action3">sign up</NavDropdown.Item>
-              <NavDropdown.Item href="#action3">Log in</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">
-                Lairbnb your home
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action5">
-                Host your experience
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action5">Help</NavDropdown.Item>
-            </NavDropdown>
-            <div id="person-icon-background">
-              <BsPerson id="person-icon" fill="white" stroke="white" />
+          <div id="login-dropdown">
+            <GiHamburgerMenu
+              style={{
+                height: "16px",
+                width: "16px",
+                fill: "#222222",
+              }}
+            />
+            <div id="person-svg-wrapper">
+              <Image
+                id="person-svg"
+                src="./person.svg"
+                style={{ height: "27px", width: "27px" }}
+              ></Image>
             </div>
-          </div> */}
+          </div>
         </div>
       </Navbar>
       <div id="border-bottom"></div>
