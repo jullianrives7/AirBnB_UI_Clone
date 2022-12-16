@@ -21,8 +21,6 @@ function App() {
     rentalData,
     setRentalData,
     ApiUrl,
-    rentalData,
-    setRentalData,
   };
 
   let getRentalDataFromApi = async () => {
