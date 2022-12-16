@@ -1,20 +1,47 @@
+/* ---------------- MAIN CONTENT WRAPPER ---------------- */
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 1100px;
+}
+
 /* ---------------- TITLE MODULE ---------------- */
 
-.titleInfoContainer {
-    height: 75px;
-    width: 300px;
-    border: solid black 1px;
+#title-module-container {
+    margin-top: 2%;
+    height: 98px;
 }
-.titleContainerRows {
-    gap: 5px;
+#row-formatter {
     display: flex;
     flex-direction: row;
 }
-.titleContainerButtons {
-    gap: 5px;
+#title-details {
     display: flex;
     flex-direction: row;
-    margin-left: 600px;
+    width:50%;
+    gap: 10px;
+    align-items: center;
+}
+#title-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    width: 50%;
+    justify-content: right;
+}
+#share-button, #save-button {
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    width: 75px;
+    height: 30px;
+}
+#share-button:hover, #save-button:hover {
+    background: whitesmoke
 }
 .InputGroup{
     margin: auto;
@@ -28,6 +55,7 @@
     gap: 7px;
     border-radius: 50%;
     justify-content: center;
+    /* border: 1px solid black; */
 }
 #big-photo{
     border-top-left-radius: 15px; 
@@ -58,9 +86,11 @@
 }
 #arrow-left {
     margin: auto !important;
-    transform: translate(35%, 5%) !important;
 }
 #arrow-left-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     float: left;
     width: 30px;
@@ -71,34 +101,30 @@
 #arrow-left-wrapper:hover{
     background: whitesmoke;
 }
+#photo-modal-buttons {
+    display: flex;
+}
+
 /* ---------------- Navbar MODULE ---------------- */
-
-
 
 #nav-bar{
    color: white;
 }
-
 #link{
     position: relative;
     right: 135px;
     color: white;
     font-size: 15px;
  }
- 
-
 #brand{
     position: relative;
     left: 145px;
     color: white;
     font-size: 22spx;
  }
- 
-
 #display{
     height: 80px;
  }
- 
 #search{
     padding-right: 250px;
 }
@@ -113,7 +139,6 @@
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
 }
-
 #drop-down-bg{
     position: relative;
     right: 130px;
@@ -126,30 +151,24 @@
     border-bottom-left-radius: 15px
     
 }
-
-
-
 #search-icon{
     position: relative;
     top: 4px;
     left: 13px;
     justify-content: center;
 }
-
 #house-icon{
     position: relative;
     left: 140px;
     height: 600px;
     width: 45px;
 }
-
 #world-icon{
     position: relative;
     left: 10px;
     height: 20px;
     width: 45px;
 }
-
 #person-icon{
     position: relative;
     right: 4px;
@@ -157,8 +176,6 @@
     width: 48px;
     
 }
-
-
 #icon-background{
     background-color: black;
     width: 40px;
@@ -171,7 +188,6 @@
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
  }
-
  #person-icon-background{
     background-color: black;
     width: 40px;
@@ -185,5 +201,12 @@
     border-bottom-left-radius: 15px;
  }
 
+/* ---------------- INFORMATION MODULE ---------------- */
 
-/* ---------------- X MODULE ---------------- */
+#information-module-container {
+    display: flex;
+    flex-direction: row;
+    width:50%;
+    height: 2000px;
+    border: 1px solid black;
+}
