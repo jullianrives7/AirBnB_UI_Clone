@@ -7,6 +7,7 @@ import Information from "./components/information-module/Information";
 import PhotosModal from "./components/photos-module/PhotoModal";
 import axios from "axios";
 import Reservation from "./components/reservation-module/Reservation";
+import InformationModule from "./components/information-module/informationModule";
 
 function App() {
   const [showPhotoModal, setShowPhotoModal] = useState(false);
@@ -32,6 +33,7 @@ function App() {
   useEffect(() => {
     getRentalDataFromApi();
   }, []);
+  console.log(rentalData)
 
   return (
     <appContext.Provider value={{ ...contextData }}>
