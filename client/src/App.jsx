@@ -6,6 +6,7 @@ import Calendar from "./components/calendar-module/Calendar";
 import Information from "./components/information-module/Information";
 import PhotosModal from "./components/photos-module/PhotoModal";
 import axios from "axios";
+import Reservation from "./components/reservation-module/Reservation";
 
 function App() {
   const [showPhotoModal, setShowPhotoModal] = useState(false);
@@ -39,7 +40,10 @@ function App() {
         <div id="main">
           <Title />
           <Photos />
-          <Information />
+          <div id="flex-row">
+            <Information />
+            <Reservation />
+          </div>
           <Calendar />
         </div>
         <PhotosModal />
