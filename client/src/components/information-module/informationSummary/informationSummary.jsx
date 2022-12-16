@@ -1,7 +1,8 @@
 import Modal from "react-bootstrap/Modal";
 import InformationGuest from "./informationGuest";
-import InformationBeds from "./informationBedrooms";
-
+import InformationBedrooms from "./informationBedrooms";
+import InformationBeds from "./informationBeds";
+import InformationBath from "./informationBath";
 
 const InformationSummary = () => {
 
@@ -13,7 +14,9 @@ const InformationSummary = () => {
             <h2>Entire home hosted by Mike</h2>
             <div className="informationSummary">
             <InformationGuest />
+            <InformationBedrooms />
             <InformationBeds />
+            <InformationBath />
             </div>
 
           </div>

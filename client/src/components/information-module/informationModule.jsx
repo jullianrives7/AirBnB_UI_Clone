@@ -3,6 +3,7 @@ import InformationDesc from "./informationDescription/informationDesc";
 import InformationSummary from "./informationSummary/informationSummary";
 import InformationAmen from "./informationAmmen/informationAmmen";
 import InformationAbout from "./informationAbout/informationAbout";
+import InformationAirCover from "./informationAirCover/informationAirCover";
 import React, { useContext } from "react";
 import { appContext } from "../../App";
 
@@ -16,6 +17,11 @@ const InformationModule = () => {
         <Modal.Body>
           <div className="informationContainerSummary">
               <InformationSummary />
+          </div>
+        </Modal.Body>
+        <Modal.Body>
+          <div className="informationContainerDesc">
+            <InformationAirCover />
           </div>
         </Modal.Body>
         <Modal.Body>
