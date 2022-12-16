@@ -7,7 +7,7 @@ const TitleReviews = () => {
 
     return (
       <div className="title_module_TitleReviews"> 
-        <BsDot /> <b><u>{rentalData.review_count}</u></b>
+        <BsDot /> <b><u>{rentalData.review_count} Reviews</u></b>
       </div>
   
     );
