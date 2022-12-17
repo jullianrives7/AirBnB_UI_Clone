@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import NavBar from "./components/navbar-module/NavBar";
 import Title from "./components/title-module/Title";
 import Photos from "./components/photos-module/Photos";
-import Calendar from "./components/calendar-module/Calendar";
+import Calendar from "./components/reservation-module/MiniCalendar";
 import Information from "./components/information-module/Information";
 import PhotosModal from "./components/photos-module/PhotoModal";
 import axios from "axios";
