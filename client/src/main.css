@@ -323,6 +323,12 @@
 .checkInGuarantee{
     padding-top: 1em;
 }
+
+.airbnb-pfp{
+    height: 5em;
+    margin-left: 50%;
+    transform: translate(0%, -65%);
+}
 /* ---------------- RESERVATION MODULE ---------------- */
 
 #reservation-module-container{

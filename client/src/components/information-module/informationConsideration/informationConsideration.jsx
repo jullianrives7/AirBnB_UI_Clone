@@ -10,12 +10,12 @@ const InformationConsideration = () => {
         <Modal.Body>
           <div className="superhost">
             <CiMedal />
-            <div>Mike is a superhost</div>
+            <div><b>Mike is a superhost</b></div>
             <div>Superhosts are experienced, highly rated hosts who are committed to providing great stays for guests.</div>
           </div>
           <div className="greatHost">
             <IoLocationOutline />
-            <div>Great location</div>
+            <div><b>Great location</b></div>
             <div>100% of recent guests gave the location a 5-star rating.</div>
           </div>
           <div className="Cancellation">
