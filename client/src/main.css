@@ -255,6 +255,26 @@
     grid-template-rows:245px;
     line-height:20px;
 }
+#main-slide{
+    margin-top: 50px;
+    
+}
+#slide{
+    margin-top: 100px;
+    display: contents;
+    background-position:50% 50%;
+    color:#222222;
+    font-size:14px;
+    line-height:20.02px;
+}
+
+.carousel-control-prev{
+    margin-top: 100px;
+}
+.carousel-control-next{
+    margin-top: 100px;
+}
+
 
 /* ---------------- INFORMATION MODULE ---------------- */
 
