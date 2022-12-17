@@ -285,9 +285,9 @@
     color:#222222;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     line-height: 20px;  
-    padding: 0px 80px;
+    padding-left: 200px;
 
 }
 
@@ -296,12 +296,13 @@
     border-top-width: 1px;
     border-top-style: solid;
     border-top-color: rgb(221, 221, 221);
-    width: 1120px;
+    width: 100%;
     height: 50px;
     color: #222222;
     line-height: 20px;
     padding-top: 48px;
     padding-bottom: 29px;
+    margin-left: 280px;
 }
 
 
@@ -312,7 +313,7 @@
     font-family: Cirular;
     font-size: 25px;
     font-weight: 600;
-    padding-left: 80px;
+    padding-left: 0px;
 }
 
 #house-rules-card{
@@ -321,10 +322,9 @@
     color:#222222;
     line-height: 20px;  
     margin-top: 0px;
-    margin-right: 0px;
-    margin-left: 65px;
+    margin-left: 100px;
     float: left;
-    
+    padding-left: 85px;
 }
 
 #two-card{
@@ -334,6 +334,7 @@
     line-height: 20px;  
     margin-top: 0px;
     float: left;
+    padding-left: 95px;
 }
 
 #three-card{
@@ -342,8 +343,8 @@
     color:#222222;
     line-height: 20px;  
     margin-top: 0px;
-    margin-right: 20px;
     float: left;
+    padding-left: 130px;
 }
 
 .things-title{
@@ -485,3 +486,5 @@
     font-size: 17px;
     margin: 0px 0px 70px;
  }
+
+ /* ---------------- FOOTER MODULE ---------------- */

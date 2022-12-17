@@ -68,7 +68,6 @@ export default function Things() {
           </Card>
         </div>
       </div>
-      <div id="sep"></div>
     </div>
   );
 }
