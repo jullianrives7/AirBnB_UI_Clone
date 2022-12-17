@@ -8,19 +8,30 @@ const InformationConsideration = () => {
     <div>
       <Modal.Dialog>
         <Modal.Body>
-          <div className="superhost">
-            <CiMedal />
-            <div><b>Mike is a superhost</b></div>
-            <div>Superhosts are experienced, highly rated hosts who are committed to providing great stays for guests.</div>
+          <div className="superHost">
+            <CiMedal size={35} />
+            <span className="isSuperHost" style={{ paddingLeft: "20px" }}>
+              <b>Mike is a superhost</b>
+              <div className="superHostDesc">
+                Superhosts are experienced, highly rated hosts who are committed
+                to providing great stays for guests.
+              </div>
+            </span>
           </div>
           <div className="greatHost">
-            <IoLocationOutline />
-            <div><b>Great location</b></div>
-            <div>100% of recent guests gave the location a 5-star rating.</div>
+            <IoLocationOutline size={35} />
+            <span style={{ paddingLeft: "20px" }}>
+              <b>Great location</b>
+              <div>
+                100% of recent guests gave the location a 5-star rating.
+              </div>
+            </span>
           </div>
           <div className="Cancellation">
-            <AiOutlineCalendar />
-            <div><b>Free cancellation for 48 hours.</b></div>
+            <AiOutlineCalendar size={35} />
+            <span style={{ paddingLeft: "20px" }}>
+              <b>Free cancellation for 48 hours.</b>
+            </span>
           </div>
         </Modal.Body>
       </Modal.Dialog>

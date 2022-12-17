@@ -8,11 +8,11 @@ const InformationAbout = () => {
       <Modal.Dialog>
         <Modal.Body>
           <div>
-            <h2>Where you'll sleep</h2>
+            <div classname="sleepTitle"><b>Where you'll sleep</b></div>
             <Card style={{ width: '18rem' }}>
               <Card.Body>
-                <BiBed />
-                <div><b>Bedroom</b></div>
+                <BiBed size={32}/>
+                <div className="bedroom"><b>Bedroom</b></div>
                 <div>1 queen bed</div>
               </Card.Body>
             </Card>

@@ -43,7 +43,7 @@ const InformationModule = () => {
         </Modal.Body>
         <Modal.Body>
           <div className="informationContainerAbout">
-            <InformationAmen />
+            {/* <InformationAmen /> */}
           </div>
         </Modal.Body>
       </Modal.Dialog>

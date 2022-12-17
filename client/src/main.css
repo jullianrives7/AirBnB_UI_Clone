@@ -272,8 +272,6 @@
 }
 
 .informationContainerSummary{
-    padding-top: 32px;
-    padding-bottom: 32px;
     border-bottom: 1px solid slategray;
 }
 
@@ -306,6 +304,7 @@
 
 .airCoverButton{
     padding-top: 1em;
+    cursor: pointer;
 }
 
 .helpCenter{
@@ -329,6 +328,38 @@
     margin-left: 50%;
     transform: translate(0%, -65%);
 }
+
+.informationShowMoreButton{
+    padding-top: 1em;
+    cursor: pointer;
+}
+
+.bedroom{
+    padding-bottom: 0.5em;
+    padding-top: 1em;
+}
+
+.bedIcon{
+    height: 1em;
+}
+
+.superHost{
+    display: flex; 
+    align-items: center; 
+}
+
+.greatHost{
+    display: flex; 
+    align-items: center;
+    padding-top: 1em;
+}
+
+.Cancellation{
+    display: flex; 
+    align-items: center; 
+    padding-top: 1em;
+}
+
 /* ---------------- RESERVATION MODULE ---------------- */
 
 #reservation-module-container{
