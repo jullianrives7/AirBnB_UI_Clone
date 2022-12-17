@@ -7,6 +7,7 @@ import Information from "./components/information-module/Information";
 import PhotosModal from "./components/photos-module/PhotoModal";
 import axios from "axios";
 import Reservation from "./components/reservation-module/Reservation";
+import Things from "./components/things-to-know-module/Things";
 
 function App() {
   const [showPhotoModal, setShowPhotoModal] = useState(false);
@@ -47,6 +48,9 @@ function App() {
           <Calendar />
         </div>
         <PhotosModal />
+      </div>
+      <div id="bottom">
+        <Things />
       </div>
     </appContext.Provider>
   );

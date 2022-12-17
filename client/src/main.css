@@ -276,3 +276,212 @@
     border: 1px solid black;
 }
 
+/* ---------------- THINGS TO KNOW MODULE ---------------- */
+
+#things-to-know{
+    width: 1440px;
+    height: 320px;
+    align-items:stretch;
+    color:#222222;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    line-height: 20px;  
+    padding: 0px 80px;
+
+}
+
+
+#border{
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: rgb(221, 221, 221);
+    width: 1120px;
+    height: 50px;
+    color: #222222;
+    line-height: 20px;
+    padding-top: 48px;
+    padding-bottom: 29px;
+}
+
+
+#things-header{
+    width: 1120px;
+    height: 26px;
+    color: #222222;
+    font-family: Cirular;
+    font-size: 25px;
+    font-weight: 600;
+    padding-left: 80px;
+}
+
+#house-rules-card{
+    width: 379px;
+    height: 173px;
+    color:#222222;
+    line-height: 20px;  
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 65px;
+    float: left;
+    
+}
+
+#two-card{
+    width: 379px;
+    height: 173px;
+    color:#222222;
+    line-height: 20px;  
+    margin-top: 0px;
+    float: left;
+}
+
+#three-card{
+    width: 379px;
+    height: 173px;
+    color:#222222;
+    line-height: 20px;  
+    margin-top: 0px;
+    margin-right: 20px;
+    float: left;
+}
+
+.things-title{
+   width: 331px;
+   height: 20px;
+   color: #222222;
+   font-family: Circular;
+   font-weight: 600;
+   line-height: 20px;
+   margin-right: 10px;
+   font-size: 18px;
+   margin: 0px 0px 15px;
+}
+
+#check-in{
+    width: 331px;
+    height: 20px;
+    color: #222222;
+    display: flex;
+    line-height: 20px;
+    font-size: 17px;
+    font-size: 17px;
+    margin: 0px 0px 15px;
+ }
+
+ #check-out{
+    width: 331px;
+    height: 25px;
+    align-items: baseline;
+    color: #222222;
+    display: flex;
+    line-height: 20px;
+    font-size: 17px;
+    margin: 0px 0px 13px;
+ }
+
+ #guest{
+    width: 331px;
+    height: 20px;
+    align-items: baseline;
+    color: #222222;
+    display: flex;
+    line-height: 20px;
+    font-size: 17px;
+    margin: 0px 0px 30px;
+ }
+
+
+ .show{
+    width: 331px;
+    height: 21px;
+    color: #222222;
+    line-height: 20px;
+    margin-top: 20px;
+    font-size: 16px;
+ }
+
+ .guest-text{
+    width: 138px;
+    height: 20px;
+    color: #222222;
+    line-height: 20px;
+ }
+
+ .show-text{
+    width: 84px;
+    height: 21px;
+    font-weight: 600;
+    text-align: center;
+    color: #222222;
+ }
+
+
+ .arrow-icon{
+    width: 12px;
+    height: 12px;
+    font-weight: 600;
+    text-align: center;
+    color: #222222;
+ }
+
+ #dis{
+    width: 331px;
+    height: 20px;
+    color: #222222;
+    display: flex;
+    line-height: 20px;
+    font-size: 17px;
+    margin: 0px 0px 15px;
+ }
+
+#gas{
+    width: 331px;
+    height: 20px;
+    align-items: baseline;
+    color: #222222;
+    display: flex;
+    line-height: 17px;
+    font-size: 17px;
+    margin: 0px 0px 30px;
+}
+
+
+#dis-two{
+    width: 331px;
+    height: 25px;
+    align-items: baseline;
+    color: #222222;
+    display: flex;
+    line-height: 20px;
+    font-size: 17px;
+    margin: 0px 0px 13px;
+}
+
+#sep{
+    height: 100px;
+    width: 100%;
+    margin-top: 50px;
+    align-items: baseline;
+    background-color: #000000;
+}
+
+#free{
+    width: 331px;
+    height: 20px;
+    color: #222222;
+    display: flex;
+    line-height: 20px;
+    font-size: 17px;
+    margin: 0px 0px 15px;
+ }
+
+ #policy{
+    width: 331px;
+    height: 20px;
+    color: #222222;
+    display: flex;
+    line-height: 20px;
+    font-size: 17px;
+    margin: 0px 0px 70px;
+ }
