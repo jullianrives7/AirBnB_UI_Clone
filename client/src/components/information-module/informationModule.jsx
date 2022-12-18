@@ -1,24 +1,24 @@
 import Modal from "react-bootstrap/Modal";
 import InformationDesc from "./informationDescription/informationDesc";
 import InformationSummary from "./informationSummary/informationSummary";
-import InformationAmen from "./informationAmmen/informationAmmen";
 import InformationAbout from "./informationAbout/informationAbout";
 import InformationAirCover from "./informationAirCover/informationAirCover";
 import InformationConsideration from "./informationConsideration/informationConsideration";
+import Calendar from "./calendar-submodule/Calendar";
 import React, { useContext } from "react";
 import { appContext } from "../../App";
 
 const InformationModule = () => {
-  const { setAirCoverModal, ApiUrl,setRentalData,rentalData } = useContext(appContext);
-  
-  console.log(rentalData)
+  const { setAirCoverModal, ApiUrl, setRentalData, rentalData } =
+    useContext(appContext);
+
+  console.log(rentalData);
   return (
-    <div>
-      
+    <div id="information-module-container">
       <Modal.Dialog>
         <Modal.Body>
           <div className="informationContainerSummary">
-              <InformationSummary />
+            <InformationSummary />
           </div>
         </Modal.Body>
         <Modal.Body>

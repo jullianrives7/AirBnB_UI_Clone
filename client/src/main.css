@@ -14,9 +14,11 @@
     width: 1100px;
 }
 
-#flex-row{
+#flex-row-1{
     display: inherit;
     flex-direction: row;
+    border-bottom: 1px solid #dddddd;
+    height:1075px;
 }
 
 /* ---------------- NAVBAR MODULE ---------------- */
@@ -226,6 +228,11 @@
 #photo-modal-buttons {
     display: flex;
 }
+#photo-modal-header{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
 #all-photos{
     margin-top: 80px;
     display: grid;
@@ -261,50 +268,55 @@
 #information-module-container {
     display: flex;
     flex-direction: row;
-    width: 65%;
+    width: 58%;
     height: 2000px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 .informationSummary{
-    gap: 5px;
+    gap: 2px;
     display: flex;
     flex-direction: row;
+    width: 150%;
+    height: 50px;
+    font-size: 15px;
 }
 
 .informationContainerSummary{
-    border-bottom: 1px solid slategray;
+    border-bottom: 1px solid #dddddd;
 }
 
 .informationContainerDesc{
     padding-top: 32px;
     padding-bottom: 32px;
-    border-bottom: 1px solid slategray;
+    border-bottom: 1px solid #dddddd;
 }
 
 .informationContainerAmen{
     padding-top: 32px;
     padding-bottom: 32px;
-    border-bottom: 1px solid slategray;
+    /* border-bottom: 1px solid #dddddd; */
 }
 
 .informationContainerAbout{
     padding-top: 32px;
     padding-bottom: 32px;
-    border-bottom: 1px solid slategray;
+    border-bottom: 1px solid #dddddd;
 }
 
 .airCoverImg{
-    height: 1.7em;
+    height: 2em;
     width: 10em;
 }
 
 .airCoverDescription {
     padding-top: 1.8em;
+    font-size: 16px;
 }
 
 .airCoverButton{
     padding-top: 1em;
     cursor: pointer;
+    font-size: 16px;
 }
 
 .helpCenter{
@@ -326,7 +338,7 @@
 .airbnb-pfp{
     height: 5em;
     margin-left: 50%;
-    transform: translate(0%, -65%);
+    transform: translate(-240%, -65%);
 }
 
 .informationShowMoreButton{
@@ -358,6 +370,10 @@
     align-items: center; 
 }
 
+.superHostDesc{
+    color:#717171
+}
+
 .greatHost{
     display: flex; 
     align-items: center;
@@ -372,7 +388,6 @@
 
 .sleepTitle{
     padding-bottom: 1em;
-    font-size: 5rem;
 }
 
 .descModalAbout{
@@ -405,9 +420,144 @@
 
 #reservation-module-container{
     display: flex;
-    flex-direction: row;
-    width: 35%;
-    height: 2000px;
-    border: 1px solid black;
+    flex-direction: column;
+    width: 33%;
+    height: 100%;
 }
-
+#reservation-card{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 45%;
+    border-radius: 15px;
+    border: 1px solid #dddddd;
+    line-height: 20px;
+    border-radius: 12px;
+    box-shadow:#dddddd 0px 6px 16px 0px;
+    padding: 24px;
+    margin-bottom: 200px;
+}
+#top-half{
+    height: 50%;
+}
+#res-top-text{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 15%;
+}
+#left-top-text{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 50%;
+    gap: 5px;
+}
+#top-dollar{
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 26px;
+}
+#night-text{
+    font-size: 16px;
+    line-height: 20px;
+}
+#right-top-text{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 50%;
+}
+#rating{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    padding: 0px 0px 0px 4px;
+}
+#review-count{
+    color: #717171;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: center;
+}
+#check-in-out-guest-container{
+    border-radius: 8px;
+    cursor: pointer;
+    border-top: none;
+    height: 45%;
+}
+#check-in-out-row{
+    display: flex;
+    flex-direction: row;
+    height:50%;
+}
+#check-in, #check-out{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+#guest-count-row{
+    display: flex;
+    height: 50%;
+    border: 1px solid #dddddd;
+    border-top:none;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+#guests{
+    font-size: 12px;
+    color:#515050;
+    letter-spacing: 0.15008px;
+    line-height: 23px;
+    transform: translate(25%,7%);
+}
+#guest-count{
+    transform: translate(-80%,50%);
+}
+#no-charge{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+#format-space-between{
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+}
+#price-x-nights{
+    width: 50%;
+    text-align: left;
+    line-height: 20px;
+}
+#price{
+    width: 50%;
+    text-align: right;
+    line-height: 20px;
+}
+#lower-price-box{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    height: 110px;
+    width: 358px;
+    transform: translate(-6%,0%);
+    border-radius: 15px;
+    border: 1px solid #dddddd;
+}
+#lpb-inner{
+    font-size: 16px;
+    width: 67%;
+    margin-left: 30px;
+}
+#report-listing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: #b7b2b2;
+    font-size: 14px;
+    margin-top: 20px;
+}

@@ -9,9 +9,9 @@ const InformationConsideration = () => {
       <Modal.Dialog>
         <Modal.Body>
           <div className="superHost">
-            <CiMedal size={35} />
+            <CiMedal size={35} style={{ transform: "translate(0%, -12%)" }} />
             <span className="isSuperHost" style={{ paddingLeft: "20px" }}>
-              <b>Mike is a superhost</b>
+              <b style={{ fontSize: "16px" }}>Alina is a superhost</b>
               <div className="superHostDesc">
                 Superhosts are experienced, highly rated hosts who are committed
                 to providing great stays for guests.
@@ -19,10 +19,13 @@ const InformationConsideration = () => {
             </span>
           </div>
           <div className="greatHost">
-            <IoLocationOutline size={35} />
+            <IoLocationOutline
+              size={35}
+              style={{ transform: "translate(0%, -8%)" }}
+            />
             <span style={{ paddingLeft: "20px" }}>
-              <b>Great location</b>
-              <div>
+              <b style={{ fontSize: "16px" }}>Great location</b>
+              <div style={{ color: "#717171" }}>
                 100% of recent guests gave the location a 5-star rating.
               </div>
             </span>
@@ -30,7 +33,9 @@ const InformationConsideration = () => {
           <div className="Cancellation">
             <AiOutlineCalendar size={35} />
             <span style={{ paddingLeft: "20px" }}>
-              <b>Free cancellation for 48 hours.</b>
+              <b style={{ fontSize: "16px", fontWeight: "600" }}>
+                Free cancellation for 48 hours.
+              </b>
             </span>
           </div>
         </Modal.Body>

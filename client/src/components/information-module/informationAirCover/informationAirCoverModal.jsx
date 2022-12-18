@@ -26,7 +26,7 @@ const AirCoverModal = () => {
         </div>
       </Modal.Header>
       <Modal.Body>
-        <div >
+        <div>
           <div>
             <b>Booking Protection Guarantee</b>
           </div>
@@ -67,10 +67,14 @@ const AirCoverModal = () => {
             specially-trained safety agents, day or night.
           </div>
         </div>
-        <div className="helpCenter" >
+        <div className="helpCenter">
           Find complete details on how AirCover protects your booking in our{" "}
           <div>
-            <span onClick={handleClick}><b><u>Help Center</u></b></span>
+            <span onClick={handleClick}>
+              <b>
+                <u>Help Center</u>
+              </b>
+            </span>
           </div>
         </div>
       </Modal.Body>

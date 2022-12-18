@@ -1,5 +1,5 @@
 const InformationGuest = () => {
-  return <div className="InformationGuest">4 Guest</div>;
+  return <div className="InformationGuest">2 guests</div>;
 };
 
 export default InformationGuest;

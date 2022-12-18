@@ -8,12 +8,20 @@ const InformationAbout = () => {
       <Modal.Dialog>
         <Modal.Body>
           <div>
-            <div classname="sleepTitle"><b>Where you'll sleep</b></div>
-            <div style={{height: '20px'}}></div>
-            <Card style={{ width: '12rem', borderRadius: '14px'}}>
+            <div classname="sleepTitle">
+              <b style={{ fontSize: "22px" }}>Where you'll sleep</b>
+            </div>
+            <div style={{ height: "20px" }}></div>
+            <Card
+              style={{ width: "14rem", height: "9rem", borderRadius: "14px" }}
+            >
               <Card.Body>
-                <BiBed size={26}/>
-                <div className="bedroom"><b>Bedroom</b></div>
+                <div style={{ height: "5px" }}></div>
+                <BiBed size={29} />
+                <div style={{ height: "5px" }}></div>
+                <div className="bedroom">
+                  <b>Bedroom</b>
+                </div>
                 <div className="queenBed">1 queen bed</div>
               </Card.Body>
             </Card>
