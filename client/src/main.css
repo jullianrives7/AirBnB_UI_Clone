@@ -296,3 +296,82 @@
     border: 1px solid black;
 }
 
+/* ---------------- HOST MODULE ---------------- */
+#profile{
+    border-radius: 50%;
+    display: inline;
+    line-height: 20px;
+}
+#host{
+    display: flex;
+    
+}
+#host-information{
+    align-items:center;
+    display:flex;
+    line-height:20px;
+    margin:0px 0px 26px;
+    margin-left:600px ;
+}
+#host-icon{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+#detail{
+    margin-left: 600px;
+    width: 975px;
+    height: 397px;
+    gap: 100px;
+    display: flex;
+    line-height: 20px;
+}
+#contact-btn1{
+    margin-top: 40px;
+    border-color: #222222;
+    margin-bottom: 40px;
+}
+#column-1{
+    line-height: 24px;
+}
+#column-2{
+    line-height:20px;
+    margin:0px 0px 0px 81.2344px;
+    padding:0px 8px;
+}
+#login-title{
+    
+    font-size: 15px;
+}
+#cross-left-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    float: left;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px transparent ;
+}
+#login-btn{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#login-footer{
+    justify-content: center;
+}
+#login-btn1{
+    border-color: #222222;
+    margin-bottom: 10px;
+    width: 466px;
+    display: flex;
+}
+#login-logo{
+   margin-right: 120px;
+}
+#login-dropdown{
+    display: contents;
+    width: 466px;
+}

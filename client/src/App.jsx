@@ -8,15 +8,20 @@ import PhotosModal from "./components/photos-module/PhotoModal";
 import axios from "axios";
 import Reservation from "./components/reservation-module/Reservation";
 import PhotoSlide from "./components/photos-module/PhotoSlide";
+import Host from "./components/host-module/Host";
+import LoginModal from "./components/host-module/LoginModal";
 
 function App() {
   const [showPhotoModal, setShowPhotoModal] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
+  const [showLogInModal,setShowLogInModal] = useState(false)
   const [photoSlide,setPhotoSlide]=useState(false)
   const [rentalData, setRentalData] = useState({});
   const ApiUrl = "https://fec-api-server-lpsg.onrender.com";
 
   const contextData = {
+    showLogInModal,
+    setShowLogInModal,
     photoSlide,
     setPhotoSlide,
     showPhotoModal,
@@ -52,6 +57,8 @@ function App() {
         </div>
         <PhotoSlide />
         <PhotosModal />
+        <LoginModal/>
+        <Host />
       </div>
     </appContext.Provider>
   );
