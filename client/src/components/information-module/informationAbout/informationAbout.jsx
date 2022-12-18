@@ -9,11 +9,12 @@ const InformationAbout = () => {
         <Modal.Body>
           <div>
             <div classname="sleepTitle"><b>Where you'll sleep</b></div>
-            <Card style={{ width: '18rem' }}>
+            <div style={{height: '20px'}}></div>
+            <Card style={{ width: '12rem', borderRadius: '14px'}}>
               <Card.Body>
-                <BiBed size={32}/>
+                <BiBed size={26}/>
                 <div className="bedroom"><b>Bedroom</b></div>
-                <div>1 queen bed</div>
+                <div className="queenBed">1 queen bed</div>
               </Card.Body>
             </Card>
           </div>

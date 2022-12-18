@@ -337,6 +337,16 @@
 .bedroom{
     padding-bottom: 0.5em;
     padding-top: 1em;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.queenBed{
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
 }
 
 .bedIcon{
@@ -358,6 +368,37 @@
     display: flex; 
     align-items: center; 
     padding-top: 1em;
+}
+
+.sleepTitle{
+    padding-bottom: 1em;
+    font-size: 5rem;
+}
+
+.descModalAbout{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 25px;
+}
+
+.descModalSpace{
+    padding-top: 1.2em;;
+    padding-bottom: 1em;
+    font-size: 20px;
+}
+.descModalAccess{
+    padding-top: 1.2em;;
+    padding-bottom: 1em;
+    font-size: 20px;
+}
+
+.descModalNote{
+    padding-top: 1.2em;;
+    padding-bottom: 1em;
+    font-size: 20px;
+}
+#infoDescModalAria{
+    width: 100em;
 }
 
 /* ---------------- RESERVATION MODULE ---------------- */

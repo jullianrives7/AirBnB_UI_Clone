@@ -41,11 +41,6 @@ const InformationModule = () => {
             <InformationAbout />
           </div>
         </Modal.Body>
-        <Modal.Body>
-          <div className="informationContainerAbout">
-            {/* <InformationAmen /> */}
-          </div>
-        </Modal.Body>
       </Modal.Dialog>
     </div>
   );
