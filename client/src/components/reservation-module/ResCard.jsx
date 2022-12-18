@@ -1,6 +1,8 @@
-import MiniCalendar from "./MiniCalendar";
+import CheckInCalendar from "./CheckInCalendar";
+import CheckOutCalendar from "./CheckOutCalendar";
 import Button from "react-bootstrap/esm/Button";
 import { BsFillStarFill, BsDot } from "react-icons/all";
+import { HiChevronDown } from "react-icons/hi2";
 
 const ResCard = () => {
   return (
@@ -20,14 +22,27 @@ const ResCard = () => {
             </span>
           </div>
         </div>
-        <div style={{ height: "16px" }}></div>
+        <div style={{ height: "30px" }}></div>
         <div id="check-in-out-guest-container">
           <div id="check-in-out-row">
-            <div id="mini-calendar">
-              <MiniCalendar />
+            <div id="check-in">
+              <CheckInCalendar />
+            </div>
+            <div id="check-out">
+              <CheckOutCalendar />
             </div>
           </div>
-          <div id="guest-count-row"></div>
+          <div id="guest-count-row">
+            <span id="guests">GUESTS</span>
+            <span id="guest-count">1 guest</span>
+            <HiChevronDown
+              style={{
+                width: "20px",
+                height: "20px",
+                transform: "translate(900%,80%)",
+              }}
+            />
+          </div>
         </div>
         <div style={{ height: "16px" }}></div>
         <Button variant="danger" style={{ width: "100%", height: "24%" }}>

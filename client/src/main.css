@@ -275,9 +275,21 @@
     height: 2000px;
     border: 1px solid black;
 }
+.box{
+    border:1px solid red;
+    position: fixed;
+    width:85px;
+    bottom:0px;
+    top:0px;
+    overflow-x: hidden;
+    overflow-y: auto
+    }
 #reservation-card{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     width: 100%;
-    height: 23%;
+    height: 24%;
     border-radius: 15px;
     border: 1px solid #dddddd;
     line-height: 20px;
@@ -330,30 +342,39 @@
     text-align: center;
 }
 #check-in-out-guest-container{
-    border-radius: 12px;
-    border: 1px solid #dddddd;
+    border-radius: 8px;
+    cursor: pointer;
+    border-top: none;
     height: 45%;
 }
 #check-in-out-row{
-    height:50%;
-    border-bottom: 1px solid #dddddd;
-}
-#check-in-out-text-row{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    height:50%;
 }
 #check-in, #check-out{
-    width: 50%;
-    font-size: 10px;
-    line-height: 18px;
-    text-align: left;
-    padding-left: 12px;
-    padding-top: 8px;
-}
-#mini-calendar{
     display: flex;
     justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+#guest-count-row{
+    display: flex;
+    height: 50%;
+    border: 1px solid #dddddd;
+    border-top:none;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+#guests{
+    font-size: 12px;
+    color:#515050;
+    letter-spacing: 0.15008px;
+    line-height: 23px;
+    transform: translate(25%,2%);
+}
+#guest-count{
+    transform: translate(-80%,45%);
 }
 #no-charge{
     display: flex;
