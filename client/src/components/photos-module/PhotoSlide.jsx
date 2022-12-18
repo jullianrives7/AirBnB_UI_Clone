@@ -2,6 +2,7 @@ import Modal from "react-bootstrap/Modal";
 import ShareButton from "../title-module/ShareButton";
 import SaveButton from "../title-module/SaveButton";
 import { FaChevronLeft } from "react-icons/all";
+import { RxCross1 } from "react-icons/all";
 import { useContext } from "react";
 import { appContext } from "../../App";
 import Carousel from 'react-bootstrap/Carousel'
@@ -14,6 +15,7 @@ function PhotoSlide() {
   
   return (
     <Modal
+      id='slide-bg'
       show={photoSlide}
       fullscreen={true}
       onHide={handleHide}
@@ -23,11 +25,11 @@ function PhotoSlide() {
       <Modal.Body>
         <div id="photo-slide">
           <div id="arrow-left-wrapper">
-            <FaChevronLeft
+            <RxCross1 
               id="arrow-left"
               style={{ marginTop: "10px" }}
               onClick={handleHide}
-            />
+            /> 
           </div>
           <div id="photo-modal-buttons" style={{ float: "right" }}>
             <ShareButton />

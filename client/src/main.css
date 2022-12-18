@@ -259,6 +259,9 @@
     margin-top: 50px;
     
 }
+.modal-content#slide-bg{
+    background-color: #222222;
+}
 #slide{
     margin-top: 100px;
     display: contents;
