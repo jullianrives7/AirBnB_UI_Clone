@@ -15,6 +15,10 @@ function LoginModal() {
     const handleClose = () => {
         setShowLogInModal(false);
       };
+      const handleClick = () => {  
+      window.location.assign("https://www.airbnb.com/help/article/2855");
+    };
+    
   return (
     <>
       <Modal show={showLogInModal} 
@@ -35,7 +39,7 @@ function LoginModal() {
           <Form>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <h3>Welcome to Airbnb</h3>
-              <Dropdown id='login-dropdown'>
+              <Dropdown id='login-dropdown1'>
                 <Dropdown.Toggle variant="light" id="dropdown-basic">
                 
                 United State (+1)
@@ -52,7 +56,9 @@ function LoginModal() {
               placeholder='Phone number' />
             </Form.Group>
             <p> We'll call or text you to confirm your number. Standard message and data rates apply.
-                <u> Privacy Policy</u>
+                <b>
+                  <u id='privacy' onClick={handleClick}> Privacy Policy</u>
+                </b> 
             </p>
             <div id='login-btn' className="d-grid gap-2">
             <Button variant="danger" size="lg">

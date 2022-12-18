@@ -259,6 +259,7 @@
     margin-top: 50px;
     
 }
+
 #slide{
     margin-top: 100px;
     display: contents;
@@ -304,7 +305,6 @@
 }
 #host{
     display: flex;
-    
 }
 #host-information{
     align-items:center;
@@ -341,7 +341,7 @@
     padding:0px 8px;
 }
 #login-title{
-    
+
     font-size: 15px;
 }
 #cross-left-wrapper{
@@ -371,7 +371,10 @@
 #login-logo{
    margin-right: 120px;
 }
-#login-dropdown{
+#login-dropdown1{
     display: contents;
     width: 466px;
+}
+#privacy{
+    cursor: pointer;
 }
