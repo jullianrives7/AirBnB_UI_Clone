@@ -226,6 +226,11 @@
 #photo-modal-buttons {
     display: flex;
 }
+#photo-modal-header{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
 #all-photos{
     margin-top: 80px;
     display: grid;
@@ -275,15 +280,6 @@
     height: 2000px;
     border: 1px solid black;
 }
-.box{
-    border:1px solid red;
-    position: fixed;
-    width:85px;
-    bottom:0px;
-    top:0px;
-    overflow-x: hidden;
-    overflow-y: auto
-    }
 #reservation-card{
     position: -webkit-sticky;
     position: sticky;
