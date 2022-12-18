@@ -1,5 +1,11 @@
+import ResCard from "./ResCard";
+
 const Reservation = () => {
-  return <div id="reservation-module-container">Reservation Module</div>;
+  return (
+    <div id="reservation-module-container">
+      <ResCard />
+    </div>
+  );
 };
 
 export default Reservation;

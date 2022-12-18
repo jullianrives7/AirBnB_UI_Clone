@@ -2,16 +2,22 @@ import React, { useState, useEffect } from "react";
 import NavBar from "./components/navbar-module/NavBar";
 import Title from "./components/title-module/Title";
 import Photos from "./components/photos-module/Photos";
-import Calendar from "./components/calendar-module/Calendar";
+import Calendar from "./components/reservation-module/MiniCalendar";
 import Information from "./components/information-module/Information";
 import PhotosModal from "./components/photos-module/PhotoModal";
 import axios from "axios";
 import Reservation from "./components/reservation-module/Reservation";
 import Things from "./components/things-to-know-module/Things";
+import InformationModule from "./components/information-module/informationModule";
+import AirCoverModal from "./components/information-module/informationAirCover/informationAirCoverModal";
+import InformationDescModal from "./components/information-module/informationDescription/informationDescModal";
 
 function App() {
-  const [showPhotoModal, setShowPhotoModal] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
+  const [showPhotoModal, setShowPhotoModal] = useState(false);
+  const [showAirCoverModal, setShowAirCoverModal] = useState(false);
+  const [showInformationDescModal, setShowInformationDescModal] =
+    useState(false);
   const [rentalData, setRentalData] = useState({});
   const ApiUrl = "https://fec-api-server-lpsg.onrender.com";
 
@@ -23,6 +29,10 @@ function App() {
     rentalData,
     setRentalData,
     ApiUrl,
+    showAirCoverModal,
+    setShowAirCoverModal,
+    showInformationDescModal,
+    setShowInformationDescModal,
   };
 
   let getRentalDataFromApi = async () => {
@@ -33,6 +43,7 @@ function App() {
   useEffect(() => {
     getRentalDataFromApi();
   }, []);
+  console.log(rentalData);
 
   return (
     <appContext.Provider value={{ ...contextData }}>
@@ -41,13 +52,15 @@ function App() {
         <div id="main">
           <Title />
           <Photos />
-          <div id="flex-row">
-            <Information />
+          <div id="flex-row-1">
+            <InformationModule />
+            <div style={{ width: "9%" }}></div>
             <Reservation />
           </div>
-          <Calendar />
         </div>
         <PhotosModal />
+        <AirCoverModal />
+        <InformationDescModal />
       </div>
       <div id="bottom">
         <Things />
