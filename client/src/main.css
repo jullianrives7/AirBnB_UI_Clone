@@ -18,7 +18,7 @@
     display: inherit;
     flex-direction: row;
     border-bottom: 1px solid #dddddd;
-    height:1075px;
+    height:2000px;
 }
 
 /* ---------------- NAVBAR MODULE ---------------- */
@@ -280,72 +280,61 @@
     height: 50px;
     font-size: 15px;
 }
-
 .informationContainerSummary{
     border-bottom: 1px solid #dddddd;
 }
-
 .informationContainerDesc{
     padding-top: 32px;
     padding-bottom: 32px;
     border-bottom: 1px solid #dddddd;
 }
-
-.informationContainerAmen{
-    padding-top: 32px;
-    padding-bottom: 32px;
-    /* border-bottom: 1px solid #dddddd; */
-}
-
 .informationContainerAbout{
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 42px;
+    padding-bottom: 50px;
     border-bottom: 1px solid #dddddd;
 }
-
+.informationContainerAmen{
+    height: 410px;
+    border-bottom: 1px solid #dddddd;
+}
+.informationContainerCalendar{
+    height: 520px;
+    /* border-bottom: 1px solid #dddddd; */
+}
 .airCoverImg{
     height: 2em;
     width: 10em;
 }
-
 .airCoverDescription {
     padding-top: 1.8em;
     font-size: 16px;
 }
-
 .airCoverButton{
     padding-top: 1em;
     cursor: pointer;
     font-size: 16px;
 }
-
 .helpCenter{
     padding-top: 1em;
 }
-
 .safetyLine{
     padding-top: 1em;
 }
-
 .getGuarantee{
     padding-top: 1em;
 }
-
 .checkInGuarantee{
     padding-top: 1em;
 }
-
 .airbnb-pfp{
     height: 5em;
     margin-left: 50%;
     transform: translate(-240%, -65%);
 }
-
 .informationShowMoreButton{
     padding-top: 1em;
     cursor: pointer;
 }
-
 .bedroom{
     padding-bottom: 0.5em;
     padding-top: 1em;
@@ -354,48 +343,39 @@
     font-size: 16px;
     line-height: 20px;
 }
-
 .queenBed{
     font-size: 14px;
     line-height: 20px;
     font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
 }
-
 .bedIcon{
     height: 1em;
 }
-
 .superHost{
     display: flex; 
     align-items: center; 
 }
-
 .superHostDesc{
     color:#717171
 }
-
 .greatHost{
     display: flex; 
     align-items: center;
     padding-top: 1em;
 }
-
 .Cancellation{
     display: flex; 
     align-items: center; 
     padding-top: 1em;
 }
-
 .sleepTitle{
     padding-bottom: 1em;
 }
-
 .descModalAbout{
     padding-top: 1em;
     padding-bottom: 1em;
     font-size: 25px;
 }
-
 .descModalSpace{
     padding-top: 1.2em;;
     padding-bottom: 1em;
@@ -406,7 +386,6 @@
     padding-bottom: 1em;
     font-size: 20px;
 }
-
 .descModalNote{
     padding-top: 1.2em;;
     padding-bottom: 1em;
@@ -428,14 +407,14 @@
     position: sticky;
     top: 0;
     width: 100%;
-    height: 45%;
+    height: 25%;
     border-radius: 15px;
     border: 1px solid #dddddd;
     line-height: 20px;
     border-radius: 12px;
     box-shadow:#dddddd 0px 6px 16px 0px;
     padding: 24px;
-    margin-bottom: 200px;
+    margin-bottom: 220px;
 }
 #top-half{
     height: 50%;
@@ -526,6 +505,7 @@
     display: flex;
     flex-direction: row;
     font-size: 16px;
+    transform: translate(0%, 15%);
 }
 #price-x-nights{
     width: 50%;
@@ -561,3 +541,23 @@
     font-size: 14px;
     margin-top: 20px;
 }
+
+/* ---------------- REVIEWS MODULE ---------------- */
+
+#reviews-module{
+    display: flex;
+    height: 700px;
+    border-bottom: 1px solid #dddddd;
+}
+
+/* ---------------- LOCATION MODULE ---------------- */
+
+/* ---------------- HOST MODULE ---------------- */
+
+/* ---------------- THINGS-TO-KNOW MODULE ---------------- */
+
+/* ---------------- EXPLORE MODULE ---------------- */
+
+/* ---------------- SITE-DIRECTORY MODULE ---------------- */
+
+/* ---------------- FOOTER MODULE ---------------- */
