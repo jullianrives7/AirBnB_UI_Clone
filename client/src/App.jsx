@@ -5,7 +5,7 @@ import Photos from "./components/photos-module/Photos";
 import InformationModule from "./components/information-module/InformationModule";
 import Reservation from "./components/reservation-module/Reservation";
 import Things from "./components/things-to-know-module/Things";
-import InformationDescModal from "./components/information-module/informationDescription/informationDescModal";
+import InformationDescModal from "./components/information-module/information-description/InformationDescModal";
 import Reviews from "./components/reviews-module/Reviews";
 import PhotosModal from "./components/photos-module/PhotoModal";
 import AirCoverModal from "./components/information-module/information-aircover/InformationAirCoverModal";

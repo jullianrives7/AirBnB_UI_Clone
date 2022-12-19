@@ -697,9 +697,10 @@
     display: flex;
     line-height: 20px;
     font-size: 17px;
-    font-size: 17px;
     margin: 0px 0px 15px;
     font-family: Cirular;
+    padding-right: 140px;
+    
  }
 
  #check-out{
@@ -712,6 +713,9 @@
     font-size: 17px;
     margin: 0px 0px 13px;
     font-family: Cirular;
+    padding-right: 140px;
+    
+
  }
 
  #guest{
@@ -773,6 +777,7 @@
     line-height: 20px;
     font-size: 17px;
     margin: 0px 0px 15px;
+    font-family: Cirular;
  }
 
 #gas{
