@@ -10,7 +10,7 @@ const CheckInCalendar = ({ classes }) => {
   return (
     <LocalizationProvider dateAdapter={AdapterDayjs}>
       <DesktopDatePicker
-        label="CHECKOUT"
+        label="CHECK-IN"
         inputFormat="MM/DD/YYYY"
         value={value}
         onChange={(newValue) => {

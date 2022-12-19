@@ -18,7 +18,7 @@ const InformationSummary = () => {
               <InformationBedrooms />
               <InformationBeds />
               <InformationBath />
-              <Image className="airbnb-pfp" src="./airbnb.png"></Image>
+              <Image className="airbnb-pfp" src="./airbnb_host.png"></Image>
             </div>
           </div>
           <div className="informationSummaryContainerRows">

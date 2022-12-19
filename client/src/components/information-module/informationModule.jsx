@@ -8,6 +8,7 @@ import InformationAmenities from "./information-ammenities/InformationAmenities"
 import InformationCalendar from "./information-calendar/InformationCalendar";
 import React, { useContext } from "react";
 import { appContext } from "../../App";
+import InfoCalendarSubModule from "./information-calendar/InfoCalendarSubModule";
 
 const InformationModule = () => {
   const { setAirCoverModal, ApiUrl, setRentalData, rentalData } =
@@ -49,7 +50,7 @@ const InformationModule = () => {
         </Modal.Body>
         <Modal.Body>
           <div className="informationContainerCalendar">
-            <InformationCalendar />
+            <InfoCalendarSubModule />
           </div>
         </Modal.Body>
       </Modal.Dialog>
