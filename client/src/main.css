@@ -561,3 +561,24 @@
     font-size: 14px;
     margin-top: 20px;
 }
+
+/* ---------------- Site Directory MODULE ---------------- */
+
+.SiteDirectory{
+    display: flex;
+    justify-content: center;
+    padding-top: 3em;
+}
+
+.linkStyling{
+    padding-top: 1em;
+}
+
+.hoverEffectStyling:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+
+
