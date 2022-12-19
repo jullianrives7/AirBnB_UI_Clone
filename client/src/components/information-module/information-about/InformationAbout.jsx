@@ -9,7 +9,9 @@ const InformationAbout = () => {
         <Modal.Body>
           <div>
             <div classname="sleepTitle">
-              <b style={{ fontSize: "22px" }}>Where you'll sleep</b>
+              <span style={{ fontSize: "22px", fontFamily: "Circular-Md" }}>
+                Where you'll sleep
+              </span>
             </div>
             <div style={{ height: "20px" }}></div>
             <Card

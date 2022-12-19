@@ -7,7 +7,10 @@ const TitleStars = () => {
 
   return (
     <div className="TitleStars">
-      <AiFillStar /> <b>{"4.90"}</b>
+      <AiFillStar />{" "}
+      <span style={{ fontFamily: "Circular-Md", fontSize: "15px" }}>
+        {"4.90"}
+      </span>
     </div>
   );
 };

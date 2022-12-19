@@ -52,7 +52,7 @@ function App() {
           <Photos />
           <div id="flex-row-1">
             <InformationModule />
-            <div style={{ width: "9%" }}></div>
+            <div style={{ width: "8%" }}></div>
             <Reservation />
           </div>
           <Reviews />
