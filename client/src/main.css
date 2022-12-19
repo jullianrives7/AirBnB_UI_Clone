@@ -606,7 +606,8 @@
 
 #reviews-module{
     display: flex;
-    height: 700px;
+    /* height: 700px; */
+    height: 100px;
     border-bottom: 1px solid #dddddd;
 }
 
