@@ -645,12 +645,64 @@
 /* ---------------- REVIEWS MODULE ---------------- */
 
 #reviews-module{
-    display: flex;
-    /* height: 700px; */
-    height: 100px;
+    display: flexbox;
+    margin-top: 50px;
+    height: 1000px;
     border-bottom: 1px solid #dddddd;
 }
-
+#total-reviews{
+    display: flex;
+    align-items: center;
+    gap:6px;
+}
+#reviews-bar{
+    display:flex;
+    font-size: 15px;
+    align-items:baseline;
+    margin-right: 130px;
+    gap:10px;
+    margin-top: 30px;
+}
+#reviews-bars{
+    width: 1250px;
+    height: 110px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    line-height:20px;
+    margin:0px -8px;
+}
+#reviews-box{
+    align-items:stretch;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:flex-start;
+}
+#reviews-comment{
+    height: 200px;
+    width: 430px;
+    font-size: 15px;
+}
+#reviews-comment1{
+    height: 200px;
+    width: 430px;
+    font-size: 15px;
+    margin-left: 130px;
+}
+#reviews-profile{
+    width: 250px;
+    height: 100px;
+    align-items:center;
+    display:flex;
+    margin-top:80px;
+    gap: 20px;
+}
+#show-all-reviews{
+    height: 50px;
+    width: 200px;
+    border-color: #222222;
+    margin-top: 100px;
+}
 /* ---------------- LOCATION MODULE ---------------- */
 
 /* ---------------- HOST MODULE ---------------- */
