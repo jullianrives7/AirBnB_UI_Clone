@@ -6,6 +6,9 @@ import InformationModule from "./components/information-module/InformationModule
 import Reservation from "./components/reservation-module/Reservation";
 import Things from "./components/things-to-know-module/Things";
 import InformationDescModal from "./components/information-module/information-description/InformationDescModal";
+import PhotoSlide from "./components/photos-module/PhotoSlide";
+import Host from "./components/host-module/Host";
+import LoginModal from "./components/host-module/LoginModal";
 import Reviews from "./components/reviews-module/Reviews";
 import PhotosModal from "./components/photos-module/PhotoModal";
 import AirCoverModal from "./components/information-module/information-aircover/InformationAirCoverModal";
@@ -13,6 +16,8 @@ import axios from "axios";
 
 function App() {
   const [showDropdown, setShowDropdown] = useState(false);
+  const [showLogInModal, setShowLogInModal] = useState(false);
+  const [photoSlide, setPhotoSlide] = useState(false);
   const [showPhotoModal, setShowPhotoModal] = useState(false);
   const [showAirCoverModal, setShowAirCoverModal] = useState(false);
   const [showInformationDescModal, setShowInformationDescModal] =
@@ -21,6 +26,10 @@ function App() {
   const ApiUrl = "https://fec-api-server-lpsg.onrender.com";
 
   const contextData = {
+    showLogInModal,
+    setShowLogInModal,
+    photoSlide,
+    setPhotoSlide,
     showPhotoModal,
     setShowPhotoModal,
     showDropdown,
@@ -53,12 +62,15 @@ function App() {
           <Photos />
           <div id="flex-row-1">
             <InformationModule />
-            <div style={{ width: "9%" }}></div>
+            <div style={{ width: "8%" }}></div>
             <Reservation />
           </div>
           <Reviews />
+          <Host />
         </div>
+        <PhotoSlide />
         <PhotosModal />
+        <LoginModal />
         <AirCoverModal />
         <InformationDescModal />
       </div>
