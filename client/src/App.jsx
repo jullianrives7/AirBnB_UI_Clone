@@ -10,6 +10,7 @@ import Reservation from "./components/reservation-module/Reservation";
 import InformationModule from "./components/information-module/informationModule";
 import AirCoverModal from "./components/information-module/informationAirCover/informationAirCoverModal";
 import InformationDescModal from "./components/information-module/informationDescription/informationDescModal";
+import SiteDirectory from "./components/siteDirectory/siteDirectory";
 
 function App() {
   const [showDropdown, setShowDropdown] = useState(false);
@@ -56,6 +57,9 @@ function App() {
             <div style={{ width: "9%" }}></div>
             <Reservation />
           </div>
+        </div>
+        <div id="directory">
+          <SiteDirectory />
         </div>
         <PhotosModal />
         <AirCoverModal />
