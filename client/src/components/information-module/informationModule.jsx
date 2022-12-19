@@ -1,12 +1,14 @@
 import Modal from "react-bootstrap/Modal";
-import InformationDesc from "./informationDescription/informationDesc";
-import InformationSummary from "./informationSummary/informationSummary";
-import InformationAbout from "./informationAbout/informationAbout";
-import InformationAirCover from "./informationAirCover/informationAirCover";
-import InformationConsideration from "./informationConsideration/informationConsideration";
-import Calendar from "./calendar-submodule/Calendar";
+import InformationSummary from "./information-summary/InformationSummary";
+import InformationConsideration from "./information-consideration/InformationConsideration";
+import InformationAirCover from "./information-aircover/InformationAirCover";
+import InformationDesc from "./information-description/InformationDesc";
+import InformationAbout from "./information-about/InformationAbout";
+import InformationAmenities from "./information-ammenities/InformationAmenities";
+import InformationCalendar from "./information-calendar/InformationCalendar";
 import React, { useContext } from "react";
 import { appContext } from "../../App";
+import InfoCalendarSubModule from "./information-calendar/InfoCalendarSubModule";
 
 const InformationModule = () => {
   const { setAirCoverModal, ApiUrl, setRentalData, rentalData } =
@@ -37,8 +39,18 @@ const InformationModule = () => {
           </div>
         </Modal.Body>
         <Modal.Body>
-          <div className="informationContainerAmen">
+          <div className="informationContainerAbout">
             <InformationAbout />
+          </div>
+        </Modal.Body>
+        <Modal.Body>
+          <div className="informationContainerAmen">
+            <InformationAmenities />
+          </div>
+        </Modal.Body>
+        <Modal.Body>
+          <div className="informationContainerCalendar">
+            <InfoCalendarSubModule />
           </div>
         </Modal.Body>
       </Modal.Dialog>
