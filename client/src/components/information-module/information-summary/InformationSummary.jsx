@@ -1,8 +1,8 @@
 import Modal from "react-bootstrap/Modal";
-import InformationGuest from "./informationGuest";
-import InformationBedrooms from "./informationBedrooms";
-import InformationBeds from "./informationBeds";
-import InformationBath from "./informationBath";
+import InformationGuest from "./InformationGuest";
+import InformationBedrooms from "./InformationBedrooms";
+import InformationBeds from "./InformationBeds";
+import InformationBath from "./InformationBath";
 import Image from "react-bootstrap/esm/Image";
 
 const InformationSummary = () => {
@@ -18,7 +18,7 @@ const InformationSummary = () => {
               <InformationBedrooms />
               <InformationBeds />
               <InformationBath />
-              <Image className="airbnb-pfp" src="./airbnb.png"></Image>
+              <Image className="airbnb-pfp" src="./airbnb_host.png"></Image>
             </div>
           </div>
           <div className="informationSummaryContainerRows">

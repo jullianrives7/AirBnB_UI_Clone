@@ -81,7 +81,7 @@ const ResCard = () => {
             $2,167
           </span>
         </div>
-        <div style={{ height: "40px" }}></div>
+        <div style={{ height: "50px" }}></div>
         <div id="lower-price-box">
           <div id="lpb-inner">
             <p>

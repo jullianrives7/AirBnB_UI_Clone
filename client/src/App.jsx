@@ -2,15 +2,20 @@ import React, { useState, useEffect } from "react";
 import NavBar from "./components/navbar-module/NavBar";
 import Title from "./components/title-module/Title";
 import Photos from "./components/photos-module/Photos";
-import Calendar from "./components/reservation-module/MiniCalendar";
-import Information from "./components/information-module/Information";
-import PhotosModal from "./components/photos-module/PhotoModal";
-import axios from "axios";
+import InformationModule from "./components/information-module/InformationModule";
 import Reservation from "./components/reservation-module/Reservation";
+<<<<<<< HEAD
 import Things from "./components/things-to-know-module/Things";
 import InformationModule from "./components/information-module/informationModule";
 import AirCoverModal from "./components/information-module/informationAirCover/informationAirCoverModal";
 import InformationDescModal from "./components/information-module/informationDescription/informationDescModal";
+=======
+import Reviews from "./components/reviews-module/Reviews";
+import PhotosModal from "./components/photos-module/PhotoModal";
+import AirCoverModal from "./components/information-module/information-aircover/InformationAirCoverModal";
+import InformationDescModal from "./components/information-module/information-description/InformationDescModal";
+import axios from "axios";
+>>>>>>> dev
 
 function App() {
   const [showDropdown, setShowDropdown] = useState(false);
@@ -57,6 +62,7 @@ function App() {
             <div style={{ width: "9%" }}></div>
             <Reservation />
           </div>
+          <Reviews />
         </div>
         <PhotosModal />
         <AirCoverModal />
