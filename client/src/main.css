@@ -1,8 +1,21 @@
 /* ---------------- FONT COLOR, ALL ---------------- */
-
+@font-face {
+    font-family: Circular;
+    src: url("../CircularStd-Book.otf");
+}
+@font-face {
+    font-family: Circular-Md;
+    src: url("../CircularStd-Medium.otf");
+}
+@font-face {
+    font-family: Circular-Bold;
+    src: url("../CircularStd-Bold.otf");
+}
 * {
     color:#222222;
+    font-family: Circular;
 }
+
 
 /* ---------------- MAIN CONTENT WRAPPER ---------------- */
 
@@ -14,9 +27,11 @@
     width: 1100px;
 }
 
-#flex-row{
+#flex-row-1{
     display: inherit;
     flex-direction: row;
+    border-bottom: 1px solid #dddddd;
+    height:2070px;
 }
 
 /* ---------------- NAVBAR MODULE ---------------- */
@@ -38,6 +53,8 @@
 }
 #search{
     display: inherit;
+    font-family: Circular-Md;
+    font-size: 15px;
     padding-left: 25px;
     align-items: center;
     border: 1px solid #dddddd;
@@ -69,6 +86,8 @@
     width: 140px;
     height: 40px;
     border-radius: 30px;
+    font-family: Circular-Md; 
+    font-size: 14px;
 }
 #globe-icon{
     display: flex;
@@ -121,6 +140,7 @@
 #title-title{
     font-size: 26px;
     line-height: 40px;
+    font-family: Circular-Md;
 }
 #row-formatter {
     display: flex;
@@ -198,7 +218,7 @@
     position:relative;
     transform: translate(57%, -190%);
     font-size: 14px;
-    width: 155px !important;
+    width: 156px !important;
     cursor: pointer;
     border-radius: 8px; 
     border: 1px solid #000000;
@@ -225,6 +245,11 @@
 }
 #photo-modal-buttons {
     display: flex;
+}
+#photo-modal-header{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 #all-photos{
     margin-top: 80px;
@@ -259,9 +284,12 @@
     margin-top: 50px;
     
 }
-.modal-content#slide-bg{
-    background-color: #222222;
-}
+/* #photo-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+} */
 #slide{
     margin-top: 100px;
     display: contents;
@@ -284,18 +312,353 @@
 #information-module-container {
     display: flex;
     flex-direction: row;
-    width: 65%;
+    width: 59%;
     height: 2000px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
+.informationSummary{
+    gap: 2px;
+    display: flex;
+    flex-direction: row;
+    width: 150%;
+    height: 48px;
+    font-size: 15px;
+}
+.informationContainerSummary{
+    border-bottom: 1px solid #dddddd;
+}
+.informationContainerDesc{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #dddddd;
+}
+.informationContainerAbout{
+    padding-top: 42px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #dddddd;
+}
+.informationContainerAmen{
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    height: 410px;
+    /* border-bottom: 1px solid #dddddd; */
+    gap: 30px
+}
+.informationContainerCalendar{
+    height: 520px;
+    border-top: 1px solid #dddddd ;
+}
+.airCoverImg{
+    height: 2em;
+    width: 10em;
+}
+.airCoverDescription {
+    padding-top: 1.8em;
+    font-size: 16px;
+}
+.airCoverButton{
+    padding-top: 1em;
+    cursor: pointer;
+    font-size: 16px;
+}
+.helpCenter{
+    padding-top: 1em;
+}
+.safetyLine{
+    padding-top: 1em;
+}
+.getGuarantee{
+    padding-top: 1em;
+}
+.checkInGuarantee{
+    padding-top: 1em;
+}
+.airbnb-pfp{
+    height: 5em;
+    margin-left: 50%;
+    transform: translate(-210%, -56%);
+}
+.informationShowMoreButton{
+    padding-top: 1em;
+    cursor: pointer;
+}
+.bedroom{
+    padding-bottom: 0.5em;
+    padding-top: 1em;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+.queenBed{
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+}
+.bedIcon{
+    height: 1em;
+}
+.superHost{
+    display: flex; 
+    align-items: center; 
+}
+.superHostDesc{
+    color:#717171
+}
+.greatHost{
+    display: flex; 
+    align-items: center;
+    padding-top: 1em;
+}
+.Cancellation{
+    display: flex; 
+    align-items: center; 
+    padding-top: 1em;
+}
+.sleepTitle{
+    padding-bottom: 1em;
+}
+.descModalAbout{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 25px;
+}
+.descModalSpace{
+    padding-top: 1.2em;;
+    padding-bottom: 1em;
+    font-size: 20px;
+}
+.descModalAccess{
+    padding-top: 1.2em;;
+    padding-bottom: 1em;
+    font-size: 20px;
+}
+.descModalNote{
+    padding-top: 1.2em;;
+    padding-bottom: 1em;
+    font-size: 20px;
+}
+#infoDescModalAria{
+    width: 100em;
+}
+#amenities-inner{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    height: 70%;
+}
+#amen-row{
+    display: flex;
+    flex-direction: row;
+    gap: 110px;
+    font-size: 16px;
+}
+#amen-column{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#show-all-amen-btn{
+    border: 1px solid black;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+}
+#show-all-amen-btn:hover{
+    background-color: #f7f7f7;
+}
+#amenity{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+#info-calendar-submodule{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+#calendar-title-text{
+    font-size: 24px;
+    font-family: Circular-Md;
+}
+#calendar-date-text{
+    color: #717171;
+    font-size: 14px;
+}
+
 
 /* ---------------- RESERVATION MODULE ---------------- */
 
 #reservation-module-container{
     display: flex;
+    flex-direction: column;
+    width: 33%;
+    height: 100%;
+}
+#reservation-card{
+    position: sticky;
+    top: 100px;
+    width: 100%;
+    height: 24%;
+    border-radius: 15px;
+    border: 1px solid #dddddd;
+    line-height: 20px;
+    border-radius: 12px;
+    box-shadow:#dddddd 0px 6px 16px 0px;
+    padding: 24px;
+    margin-bottom: 220px;
+}
+#top-half{
+    height: 50%;
+}
+#res-top-text{
+    display: flex;
+    align-items: center;
     flex-direction: row;
-    width: 35%;
-    height: 2000px;
-    border: 1px solid black;
+    height: 15%;
+}
+#left-top-text{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 50%;
+    gap: 5px;
+}
+#top-dollar{
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 26px;
+}
+#night-text{
+    font-size: 16px;
+    line-height: 20px;
+}
+#right-top-text{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 50%;
+}
+#rating{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    padding: 0px 0px 0px 4px;
+}
+#review-count{
+    color: #717171;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: center;
+}
+#check-in-out-guest-container{
+    border-radius: 8px;
+    cursor: pointer;
+    border-top: none;
+    height: 45%;
+}
+#check-in-out-row{
+    display: flex;
+    flex-direction: row;
+    height:50%;
+}
+#check-in, #check-out{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+#guest-count-row{
+    display: flex;
+    height: 50%;
+    border: 1px solid #dddddd;
+    border-top:none;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+#guests{
+    font-size: 12px;
+    color:#515050;
+    letter-spacing: 0.15008px;
+    line-height: 23px;
+    transform: translate(25%,7%);
+}
+#guest-count{
+    transform: translate(-80%,50%);
+}
+#no-charge{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+#format-space-between{
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    transform: translate(0%, 15%);
+}
+#price-x-nights{
+    width: 50%;
+    text-align: left;
+    line-height: 20px;
+}
+#price{
+    width: 50%;
+    text-align: right;
+    line-height: 20px;
+}
+#lower-price-box{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    height: 110px;
+    width: 358px;
+    transform: translate(-6%,0%);
+    border-radius: 15px;
+    border: 1px solid #dddddd;
+}
+#lpb-inner{
+    font-size: 16px;
+    width: 67%;
+    margin-left: 30px;
+}
+#report-listing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: #b7b2b2;
+    font-size: 14px;
+    margin-top: 20px;
 }
 
+/* ---------------- REVIEWS MODULE ---------------- */
+
+#reviews-module{
+    display: flex;
+    /* height: 700px; */
+    height: 100px;
+    border-bottom: 1px solid #dddddd;
+}
+
+/* ---------------- LOCATION MODULE ---------------- */
+
+/* ---------------- HOST MODULE ---------------- */
+
+/* ---------------- THINGS-TO-KNOW MODULE ---------------- */
+
+/* ---------------- EXPLORE MODULE ---------------- */
+
+/* ---------------- SITE-DIRECTORY MODULE ---------------- */
+
+/* ---------------- FOOTER MODULE ---------------- */
