@@ -8,9 +8,9 @@ const TitleReviews = () => {
   return (
     <div className="title_module_TitleReviews">
       <BsDot />{" "}
-      <b>
-        <u>425 Reviews</u>
-      </b>
+      <span style={{ fontFamily: "Circular-Md", fontSize: "15px" }}>
+        <u>425 reviews</u>
+      </span>
     </div>
   );
 };

@@ -11,7 +11,9 @@ const InformationSummary = () => {
       <Modal.Dialog>
         <Modal.Body>
           <div>
-            <h2 style={{ fontSize: "22px" }}>Entire cabin hosted by Alina</h2>
+            <span style={{ fontSize: "22px", fontFamily: "Circular-Md" }}>
+              Entire cabin hosted by Alina
+            </span>
 
             <div className="informationSummary">
               <InformationGuest />

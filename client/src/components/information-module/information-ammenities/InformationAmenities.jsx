@@ -7,7 +7,7 @@ const InformationAmenities = () => {
     <div className="informationContainerAmen">
       <div id="amenities-inner">
         <div style={{ height: "50px" }}></div>
-        <span style={{ fontSize: "22px", fontWeight: "600" }}>
+        <span style={{ fontSize: "22px", fontFamily: "Circular-Md" }}>
           What this place offers
         </span>
         <div id="amen-row">
