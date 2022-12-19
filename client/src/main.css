@@ -325,6 +325,7 @@
     margin-left: 100px;
     float: left;
     padding-left: 85px;
+    font-family: Cirular;
 }
 
 #two-card{
@@ -335,6 +336,7 @@
     margin-top: 0px;
     float: left;
     padding-left: 95px;
+    font-family: Cirular;
 }
 
 #three-card{
@@ -345,6 +347,7 @@
     margin-top: 0px;
     float: left;
     padding-left: 130px;
+    font-family: Cirular;
 }
 
 .things-title{
@@ -357,6 +360,7 @@
    margin-right: 10px;
    font-size: 18px;
    margin: 0px 0px 15px;
+   font-family: Cirular;
 }
 
 #check-in{
@@ -368,6 +372,7 @@
     font-size: 17px;
     font-size: 17px;
     margin: 0px 0px 15px;
+    font-family: Cirular;
  }
 
  #check-out{
@@ -379,6 +384,7 @@
     line-height: 20px;
     font-size: 17px;
     margin: 0px 0px 13px;
+    font-family: Cirular;
  }
 
  #guest{
@@ -388,8 +394,9 @@
     color: #222222;
     display: flex;
     line-height: 20px;
-    font-size: 17px;
+    font-size: 19px;
     margin: 0px 0px 30px;
+    font-family: Cirular;
  }
 
 
@@ -400,6 +407,7 @@
     line-height: 20px;
     margin-top: 20px;
     font-size: 16px;
+    font-family: Cirular;
  }
 
  .guest-text{
@@ -407,6 +415,7 @@
     height: 20px;
     color: #222222;
     line-height: 20px;
+    font-family: Cirular;
  }
 
  .show-text{
@@ -415,6 +424,8 @@
     font-weight: 600;
     text-align: center;
     color: #222222;
+    font-family: Cirular;
+    
  }
 
 
@@ -424,6 +435,7 @@
     font-weight: 600;
     text-align: center;
     color: #222222;
+    font-family: Cirular;
  }
 
  #dis{
@@ -445,6 +457,7 @@
     line-height: 17px;
     font-size: 17px;
     margin: 0px 0px 30px;
+    font-family: Cirular;
 }
 
 
@@ -457,6 +470,7 @@
     line-height: 20px;
     font-size: 17px;
     margin: 0px 0px 13px;
+    font-family: Cirular;
 }
 
 #sep{
@@ -465,6 +479,7 @@
     margin-top: 50px;
     align-items: baseline;
     background-color: #000000;
+    font-family: Cirular;
 }
 
 #free{
@@ -475,6 +490,7 @@
     line-height: 20px;
     font-size: 17px;
     margin: 0px 0px 15px;
+    font-family: Cirular;
  }
 
  #policy{
@@ -485,6 +501,7 @@
     line-height: 20px;
     font-size: 17px;
     margin: 0px 0px 70px;
+    font-family: Cirular;
  }
 
  /* ---------------- FOOTER MODULE ---------------- */

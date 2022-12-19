@@ -18,7 +18,7 @@ export default function Things() {
               <Card.Text id="guest">2 guest maximum</Card.Text>
               <div className="show">
                 <Card.Link className="show-text" href="#">
-                  Show more
+                  <u>Show more</u>
                   <FaGreaterThan className="arrow-icon" fill="dark" />
                 </Card.Link>
               </div>
@@ -40,7 +40,7 @@ export default function Things() {
               <Card.Text id="gas">Carbon monoxide alarm</Card.Text>
               <div className="show">
                 <Card.Link className="show-text" href="#">
-                  Show more
+                  <u>Show more</u>
                   <FaGreaterThan className="arrow-icon" fill="dark" />
                 </Card.Link>
               </div>
@@ -55,12 +55,12 @@ export default function Things() {
               </Card.Title>
               <Card.Text id="free">Free cancellation</Card.Text>
               <Card.Text id="policy">
-                Review the Host full cancellation policy which applies even if
+                Review the host full cancellation policy which applies even if
                 you cancel for illness or disruptions caused by COVID-19.
               </Card.Text>
               <div className="show">
                 <Card.Link className="show-text" href="#">
-                  Show more
+                  <u>Show more</u>
                   <FaGreaterThan className="arrow-icon" fill="dark" />
                 </Card.Link>
               </div>
