@@ -7,7 +7,7 @@ const Brand = () => {
   };
   return (
     <Navbar.Brand onClick={handleClick}>
-      <Image id="airbnb-logo" src="./airbnb.svg"></Image>
+      <Image id="airbnb-logo" src="./airbnb_logo.svg"></Image>
     </Navbar.Brand>
   );
 };

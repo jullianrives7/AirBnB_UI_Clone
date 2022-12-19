@@ -5,9 +5,9 @@ const ShareButton = () => {
   return (
     <div id="share-button">
       <FiShare style={{ width: "17px", height: "17px" }} />
-      <b>
-        <u>Share</u>
-      </b>
+      <span style={{ fontFamily: "Circular-Bold" }}>
+        <u>{"Share"}</u>
+      </span>
     </div>
   );
 };

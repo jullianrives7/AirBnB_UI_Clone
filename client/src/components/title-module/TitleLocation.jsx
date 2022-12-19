@@ -8,9 +8,9 @@ const TitleLocation = () => {
   return (
     <div className="title_module_TitleLocation">
       <BsDot />{" "}
-      <b>
+      <span style={{ fontFamily: "Circular-Md", fontSize: "15px" }}>
         <u>Lumberton, Texas, United States</u>
-      </b>
+      </span>
     </div>
   );
 };
