@@ -4,18 +4,12 @@ import Title from "./components/title-module/Title";
 import Photos from "./components/photos-module/Photos";
 import InformationModule from "./components/information-module/InformationModule";
 import Reservation from "./components/reservation-module/Reservation";
-<<<<<<< HEAD
 import Things from "./components/things-to-know-module/Things";
-import InformationModule from "./components/information-module/informationModule";
-import AirCoverModal from "./components/information-module/informationAirCover/informationAirCoverModal";
 import InformationDescModal from "./components/information-module/informationDescription/informationDescModal";
-=======
 import Reviews from "./components/reviews-module/Reviews";
 import PhotosModal from "./components/photos-module/PhotoModal";
 import AirCoverModal from "./components/information-module/information-aircover/InformationAirCoverModal";
-import InformationDescModal from "./components/information-module/information-description/InformationDescModal";
 import axios from "axios";
->>>>>>> dev
 
 function App() {
   const [showDropdown, setShowDropdown] = useState(false);
