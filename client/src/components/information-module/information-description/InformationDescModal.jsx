@@ -61,6 +61,7 @@ const InformationDescModal = () => {
             As you are actually in nature, you may encounter God's creatures of
             the woods.
           </div>
+          <div style={{ height: "1em" }}></div>
         </div>
       </Modal.Body>
     </Modal>

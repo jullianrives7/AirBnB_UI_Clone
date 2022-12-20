@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
+import { Link } from "react-scroll";
 //------------------------------ MODULES ----------------------------------//
 import NavBar from "./components/navbar-module/NavBar";
 import Title from "./components/title-module/Title";
@@ -29,6 +30,7 @@ function App() {
     useState(false);
   const [rentalData, setRentalData] = useState({});
   const ApiUrl = "https://fec-api-server-lpsg.onrender.com";
+  const ref = useRef(null);
 
   const contextData = {
     showLogInModal,
@@ -46,6 +48,7 @@ function App() {
     setShowAirCoverModal,
     showInformationDescModal,
     setShowInformationDescModal,
+    ref,
   };
 
   let getRentalDataFromApi = async () => {

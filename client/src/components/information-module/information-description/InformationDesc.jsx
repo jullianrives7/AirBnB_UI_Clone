@@ -26,9 +26,11 @@ const InformationDesc = () => {
         </p>
       </div>
       <div className="informationShowMoreButton" onClick={handleClick}>
-        <b>
-          <u>Show more</u>
-        </b>
+        <span className="showMoreSpan">
+          <b>
+            <u>Show more</u>
+          </b>
+        </span>
       </div>
     </div>
   );

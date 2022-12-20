@@ -365,10 +365,17 @@
 }
 .airCoverDescription {
   padding-top: 1.8em;
-  font-size: 16px;
 }
 .airCoverButton {
   padding-top: 1em;
+  font-size: 16px;
+}
+.airCoverSpan {
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.showMoreSpan {
   cursor: pointer;
   font-size: 16px;
 }
@@ -386,12 +393,11 @@
 }
 .airbnb-pfp {
   height: 5em;
-  margin-left: 50%;
+  margin-left: 580%;
   transform: translate(-210%, -56%);
 }
 .informationShowMoreButton {
   padding-top: 1em;
-  cursor: pointer;
 }
 .bedroom {
   padding-bottom: 0.5em;
