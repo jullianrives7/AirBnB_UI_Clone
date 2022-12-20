@@ -10,7 +10,9 @@ const TitleSuperhost = () => {
     <div id="superhost">
       <BsDot />
       <GiMedal />
-      <b>{"Superhost"}</b>
+      <span style={{ fontFamily: "Circular", fontSize: "14px" }}>
+        {"Superhost"}
+      </span>
     </div>
   );
 };

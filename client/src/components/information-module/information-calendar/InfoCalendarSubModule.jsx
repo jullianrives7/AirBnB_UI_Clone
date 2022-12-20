@@ -1,5 +1,4 @@
 import LargeOpenCalendar from "./LargeOpenCalendar";
-import MuiCalendar from "./MuiCalendar";
 
 const InfoCalendarSubModule = () => {
   return (

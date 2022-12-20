@@ -11,7 +11,9 @@ const InformationConsideration = () => {
           <div className="superHost">
             <CiMedal size={35} style={{ transform: "translate(0%, -12%)" }} />
             <span className="isSuperHost" style={{ paddingLeft: "20px" }}>
-              <b style={{ fontSize: "16px" }}>Alina is a superhost</b>
+              <b style={{ fontSize: "16px", fontFamily: "Circular" }}>
+                Alina is a Superhost
+              </b>
               <div className="superHostDesc">
                 Superhosts are experienced, highly rated hosts who are committed
                 to providing great stays for guests.

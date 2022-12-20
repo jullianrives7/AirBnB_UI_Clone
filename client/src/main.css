@@ -3,10 +3,19 @@
     font-family: Circular;
     src: url("../CircularStd-Book.otf");
 }
+@font-face {
+    font-family: Circular-Md;
+    src: url("../CircularStd-Medium.otf");
+}
+@font-face {
+    font-family: Circular-Bold;
+    src: url("../CircularStd-Bold.otf");
+}
 * {
     color:#222222;
     font-family: Circular;
 }
+
 
 /* ---------------- MAIN CONTENT WRAPPER ---------------- */
 
@@ -44,6 +53,8 @@
 }
 #search{
     display: inherit;
+    font-family: Circular-Md;
+    font-size: 15px;
     padding-left: 25px;
     align-items: center;
     border: 1px solid #dddddd;
@@ -75,6 +86,8 @@
     width: 140px;
     height: 40px;
     border-radius: 30px;
+    font-family: Circular-Md; 
+    font-size: 14px;
 }
 #globe-icon{
     display: flex;
@@ -127,6 +140,7 @@
 #title-title{
     font-size: 26px;
     line-height: 40px;
+    font-family: Circular-Md;
 }
 #row-formatter {
     display: flex;
@@ -266,13 +280,40 @@
     grid-template-rows:245px;
     line-height:20px;
 }
+#main-slide{
+    margin-top: 50px;
+    
+}
+
+/* #photo-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+} */
+#slide{
+    margin-top: 100px;
+    display: contents;
+    background-position:50% 50%;
+    color:#222222;
+    font-size:14px;
+    line-height:20.02px;
+}
+
+.carousel-control-prev{
+    margin-top: 100px;
+}
+.carousel-control-next{
+    margin-top: 100px;
+}
+
 
 /* ---------------- INFORMATION MODULE ---------------- */
 
 #information-module-container {
     display: flex;
     flex-direction: row;
-    width: 58%;
+    width: 59%;
     height: 2000px;
     /* border: 1px solid black; */
 }
@@ -281,7 +322,7 @@
     display: flex;
     flex-direction: row;
     width: 150%;
-    height: 50px;
+    height: 48px;
     font-size: 15px;
 }
 .informationContainerSummary{
@@ -302,11 +343,12 @@
     align-items: left;
     flex-direction: column;
     height: 410px;
-    border-bottom: 1px solid #dddddd;
+    /* border-bottom: 1px solid #dddddd; */
     gap: 30px
 }
 .informationContainerCalendar{
     height: 520px;
+    border-top: 1px solid #dddddd ;
 }
 .airCoverImg{
     height: 2em;
@@ -336,7 +378,7 @@
 .airbnb-pfp{
     height: 5em;
     margin-left: 50%;
-    transform: translate(-240%, -65%);
+    transform: translate(-210%, -56%);
 }
 .informationShowMoreButton{
     padding-top: 1em;
@@ -407,7 +449,6 @@
     gap: 20px;
     width: 100%;
     height: 70%;
-    /* border: 1px solid black; */
 }
 #amen-row{
     display: flex;
@@ -446,8 +487,8 @@
     margin-top: 40px;
 }
 #calendar-title-text{
-    font-size: 22px;
-    font-weight: 600;
+    font-size: 24px;
+    font-family: Circular-Md;
 }
 #calendar-date-text{
     color: #717171;
@@ -605,20 +646,242 @@
 /* ---------------- REVIEWS MODULE ---------------- */
 
 #reviews-module{
+    display: flexbox;
+    margin-top: 50px;
+    height: 1000px;
+    border-bottom: 1px solid #dddddd;
+}
+#total-reviews{
     display: flex;
-    /* height: 700px; */
+    align-items: center;
+    gap:6px;
+}
+#reviews-bar{
+    display:flex;
+    font-size: 15px;
+    align-items:baseline;
+    margin-right: 130px;
+    gap:10px;
+    margin-top: 30px;
+}
+#reviews-bars{
+    width: 1250px;
+    height: 110px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    line-height:20px;
+    margin:0px -8px;
+}
+#reviews-box{
+    align-items:stretch;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:flex-start;
+}
+#reviews-comment{
+    height: 200px;
+    width: 430px;
+    font-size: 15px;
+}
+#reviews-comment1{
+    height: 200px;
+    width: 430px;
+    font-size: 15px;
+    margin-left: 130px;
+}
+#reviews-profile{
+    width: 250px;
     height: 100px;
+    align-items:center;
+    display:flex;
+    margin-top:80px;
+    gap: 20px;
+}
+#show-all-reviews{
+    height: 50px;
+    width: 200px;
+    border-color: #222222;
+    margin-top: 100px;
+}
+/* ---------------- LOCATION MODULE ---------------- */
+
+#location-module-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    height: 775px;
     border-bottom: 1px solid #dddddd;
 }
 
-/* ---------------- LOCATION MODULE ---------------- */
-
 /* ---------------- HOST MODULE ---------------- */
+
+#host-module{
+    margin-top: 48px;
+    height: 500px;
+    border-bottom: 1px solid #dddddd;
+}
+#profile{
+    border-radius: 50%;
+    display: inline;
+    line-height: 20px;
+}
+#host{
+    display: flex;
+}
+#host-information{
+    align-items:center;
+    display:flex;
+    line-height:20px;
+    margin-bottom: 20px;
+}
+#host-icon{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    align-items: center;
+    margin-bottom: 25px;
+}
+#detail{
+    width: 975px;
+    height: 397px;
+    gap: 100px;
+    display: flex;
+    line-height: 20px;
+}
+#contact-btn1{
+    margin-top: 35px;
+    border-color: #222222;
+    margin-bottom: 25px;
+    background-color: white;
+    width: 150px;
+    height: 45px;
+    font-size: 17px;
+}
+#contact-btn1:hover{
+    background-color: #f7f7f7;
+}
+#column-1{
+    display: flex;
+    flex-direction: column;
+    width: 51%;
+    line-height: 24px;
+}
+#column-2{
+    line-height:20px;
+    width:49%;
+    margin-left: 10px;
+    padding:0px 8px;
+}
+#login-title{
+
+    font-size: 15px;
+}
+#cross-left-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    float: left;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px transparent ;
+}
+#login-btn{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#login-footer{
+    justify-content: center;
+}
+#login-btn1{
+    border-color: #222222;
+    margin-bottom: 10px;
+    width: 466px;
+    display: flex;
+}
+#login-logo{
+    margin-top: 3px;
+    margin-left: 10px;
+   margin-right: 120px;
+}
+#login-dropdown1{
+    display: contents;
+    width: 466px;
+}
+#privacy{
+    cursor: pointer;
+}
+#protect{
+    display: flex;
+    gap: 20px;
+}
 
 /* ---------------- THINGS-TO-KNOW MODULE ---------------- */
 
-/* ---------------- EXPLORE MODULE ---------------- */
+#things-to-know-container{
+    height: 340px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+}
+#things-flex-row{
+    display: flex;
+    flex-direction: row;
+}
+#things-flex-column{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 16px;
+    width: 33%;
+}
 
 /* ---------------- SITE-DIRECTORY MODULE ---------------- */
 
+.SiteDirectory{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 3em;
+    background-color: #f7f7f7;
+    border-top: 1px solid #dddddd;
+    height: 315px;
+}
+.linkStyling{
+    padding-top: 1em;
+}
+.hoverEffectStyling:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 /* ---------------- FOOTER MODULE ---------------- */
+
+#footer-module-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+}
+#footer-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #dddddd;
+    width: 1100px;
+    height: 70px;
+}
+#footer-left, #footer-right{
+    display: flex;
+    align-items: center;
+}
+#hover-font:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
