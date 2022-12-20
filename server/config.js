@@ -1,6 +1,6 @@
 module.exports = {
   dev: {
-    connectionString: "postgresql://postgres:docker@127.0.0.1:5432/airbnb",
+    connectionString: "postgresql://postgres:docker@127.0.0.1:5432/fec_db",
     port: "3000",
   },
   production: {
