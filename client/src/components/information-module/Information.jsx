@@ -5,12 +5,11 @@ import InformationAirCover from "./information-aircover/InformationAirCover";
 import InformationDesc from "./information-description/InformationDesc";
 import InformationAbout from "./information-about/InformationAbout";
 import InformationAmenities from "./information-ammenities/InformationAmenities";
-import InformationCalendar from "./information-calendar/InformationCalendar";
 import React, { useContext } from "react";
 import { appContext } from "../../App";
 import InfoCalendarSubModule from "./information-calendar/InfoCalendarSubModule";
 
-const InformationModule = () => {
+const Information = () => {
   const { setAirCoverModal, ApiUrl, setRentalData, rentalData } =
     useContext(appContext);
 
@@ -58,4 +57,4 @@ const InformationModule = () => {
   );
 };
 
-export default InformationModule;
+export default Information;
