@@ -28,6 +28,7 @@
     "react-bootstrap": "^2.7.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
+    "react-scroll": "^1.8.9",
     "rsuite": "^5.23.2"
   },
   "devDependencies": {
