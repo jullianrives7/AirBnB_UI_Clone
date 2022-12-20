@@ -644,6 +644,12 @@
 }
 
 /* ---------------- HOST MODULE ---------------- */
+#host-module{
+    display: flexbox;
+    margin-top: 50px;
+    height: 700px;
+    border-bottom: 1px solid #dddddd;
+}
 #profile{
     border-radius: 50%;
     display: inline;
@@ -657,7 +663,7 @@
     display:flex;
     line-height:20px;
     margin:0px 0px 26px;
-    margin-left:600px ;
+    
 }
 #host-icon{
     display: flex;
@@ -666,7 +672,6 @@
     align-items: center;
 }
 #detail{
-    margin-left: 600px;
     width: 975px;
     height: 397px;
     gap: 100px;
@@ -715,6 +720,8 @@
     display: flex;
 }
 #login-logo{
+    margin-top: 3px;
+    margin-left: 10px;
    margin-right: 120px;
 }
 #login-dropdown1{
@@ -723,6 +730,10 @@
 }
 #privacy{
     cursor: pointer;
+}
+#protect{
+    display: flex;
+    gap: 20px;
 }
 /* ---------------- REVIEWS MODULE ---------------- */
 
