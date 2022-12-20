@@ -14,6 +14,8 @@ import PhotosModal from "./components/photos-module/PhotoModal";
 import AirCoverModal from "./components/information-module/information-aircover/InformationAirCoverModal";
 import axios from "axios";
 
+import SiteDirectory from "./components/site-directory-module/SiteDirectory";
+
 function App() {
   const [showDropdown, setShowDropdown] = useState(false);
   const [showLogInModal, setShowLogInModal] = useState(false);
@@ -67,15 +69,16 @@ function App() {
           </div>
           <Reviews />
           <Host />
+          <Things />
         </div>
         <PhotoSlide />
+        <div id="directory">
+          <SiteDirectory />
+        </div>
         <PhotosModal />
         <LoginModal />
         <AirCoverModal />
         <InformationDescModal />
-      </div>
-      <div id="bottom">
-        <Things />
       </div>
     </appContext.Provider>
   );

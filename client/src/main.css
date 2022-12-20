@@ -643,10 +643,197 @@
     margin-top: 20px;
 }
 
+/* ---------------- REVIEWS MODULE ---------------- */
 
-/* ---------------- THINGS TO KNOW MODULE ---------------- */
+#reviews-module{
+    display: flexbox;
+    margin-top: 50px;
+    height: 1000px;
+    border-bottom: 1px solid #dddddd;
+}
+#total-reviews{
+    display: flex;
+    align-items: center;
+    gap:6px;
+}
+#reviews-bar{
+    display:flex;
+    font-size: 15px;
+    align-items:baseline;
+    margin-right: 130px;
+    gap:10px;
+    margin-top: 30px;
+}
+#reviews-bars{
+    width: 1250px;
+    height: 110px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    line-height:20px;
+    margin:0px -8px;
+}
+#reviews-box{
+    align-items:stretch;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:flex-start;
+}
+#reviews-comment{
+    height: 200px;
+    width: 430px;
+    font-size: 15px;
+}
+#reviews-comment1{
+    height: 200px;
+    width: 430px;
+    font-size: 15px;
+    margin-left: 130px;
+}
+#reviews-profile{
+    width: 250px;
+    height: 100px;
+    align-items:center;
+    display:flex;
+    margin-top:80px;
+    gap: 20px;
+}
+#show-all-reviews{
+    height: 50px;
+    width: 200px;
+    border-color: #222222;
+    margin-top: 100px;
+}
+/* ---------------- LOCATION MODULE ---------------- */
 
-#things-to-know{
+/* ---------------- HOST MODULE ---------------- */
+
+#host-module{
+    margin-top: 48px;
+    height: 500px;
+    border-bottom: 1px solid #dddddd;
+}
+#profile{
+    border-radius: 50%;
+    display: inline;
+    line-height: 20px;
+}
+#host{
+    display: flex;
+}
+#host-information{
+    align-items:center;
+    display:flex;
+    line-height:20px;
+    margin-bottom: 20px;
+}
+#host-icon{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    align-items: center;
+    margin-bottom: 25px;
+}
+#detail{
+    width: 975px;
+    height: 397px;
+    gap: 100px;
+    display: flex;
+    line-height: 20px;
+}
+#contact-btn1{
+    margin-top: 35px;
+    border-color: #222222;
+    margin-bottom: 25px;
+    background-color: white;
+    width: 150px;
+    height: 45px;
+    font-size: 17px;
+}
+#contact-btn1:hover{
+    background-color: #f7f7f7;
+}
+#column-1{
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    width: 51%;
+    line-height: 24px;
+}
+#column-2{
+    line-height:20px;
+    width:49%;
+    margin-left: 10px;
+    padding:0px 8px;
+}
+#login-title{
+
+    font-size: 15px;
+}
+#cross-left-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    float: left;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px transparent ;
+}
+#login-btn{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#login-footer{
+    justify-content: center;
+}
+#login-btn1{
+    border-color: #222222;
+    margin-bottom: 10px;
+    width: 466px;
+    display: flex;
+}
+#login-logo{
+    margin-top: 3px;
+    margin-left: 10px;
+   margin-right: 120px;
+}
+#login-dropdown1{
+    display: contents;
+    width: 466px;
+}
+#privacy{
+    cursor: pointer;
+}
+#protect{
+    display: flex;
+    gap: 20px;
+}
+
+/* ---------------- THINGS-TO-KNOW MODULE ---------------- */
+
+#things-to-know-container{
+    border-bottom: 1px solid #dddddd;
+    height: 340px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+}
+#things-flex-row{
+    display: flex;
+    flex-direction: row;
+}
+#things-flex-column{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 16px;
+    width: 33%;
+}
+
+/* #things-to-know{
     width: 1440px;
     height: 320px;
     align-items:stretch;
@@ -656,7 +843,6 @@
     justify-content: center;
     line-height: 20px;  
     padding-left: 200px;
-
 }
 
 
@@ -731,7 +917,7 @@
    font-family: Cirular;
 }
 
-#check-in{
+#check-in-1{
     width: 331px;
     height: 20px;
     color: #222222;
@@ -744,7 +930,7 @@
     
  }
 
- #check-out{
+ #check-out-1{
     width: 331px;
     height: 25px;
     align-items: baseline;
@@ -875,110 +1061,30 @@
     font-size: 17px;
     margin: 0px 0px 70px;
     font-family: Cirular;
- }
-
- /* ---------------- FOOTER MODULE ---------------- */
-
-
-/* ---------------- HOST MODULE ---------------- */
-#profile{
-    border-radius: 50%;
-    display: inline;
-    line-height: 20px;
-}
-#host{
-    display: flex;
-}
-#host-information{
-    align-items:center;
-    display:flex;
-    line-height:20px;
-    margin:0px 0px 26px;
-    margin-left:600px ;
-}
-#host-icon{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    align-items: center;
-}
-#detail{
-    margin-left: 600px;
-    width: 975px;
-    height: 397px;
-    gap: 100px;
-    display: flex;
-    line-height: 20px;
-}
-#contact-btn1{
-    margin-top: 40px;
-    border-color: #222222;
-    margin-bottom: 40px;
-}
-#column-1{
-    line-height: 24px;
-}
-#column-2{
-    line-height:20px;
-    margin:0px 0px 0px 81.2344px;
-    padding:0px 8px;
-}
-#login-title{
-
-    font-size: 15px;
-}
-#cross-left-wrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    float: left;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: 1px transparent ;
-}
-#login-btn{
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-#login-footer{
-    justify-content: center;
-}
-#login-btn1{
-    border-color: #222222;
-    margin-bottom: 10px;
-    width: 466px;
-    display: flex;
-}
-#login-logo{
-   margin-right: 120px;
-}
-#login-dropdown1{
-    display: contents;
-    width: 466px;
-}
-#privacy{
-    cursor: pointer;
-}
-/* ---------------- REVIEWS MODULE ---------------- */
-
-#reviews-module{
-    display: flex;
-    /* height: 700px; */
-    height: 100px;
-    border-bottom: 1px solid #dddddd;
-}
-
-/* ---------------- LOCATION MODULE ---------------- */
-
-/* ---------------- HOST MODULE ---------------- */
-
-/* ---------------- THINGS-TO-KNOW MODULE ---------------- */
-
+ } */
 /* ---------------- EXPLORE MODULE ---------------- */
 
 /* ---------------- SITE-DIRECTORY MODULE ---------------- */
 
 /* ---------------- FOOTER MODULE ---------------- */
+/* ---------------- Site Directory MODULE ---------------- */
+
+.SiteDirectory{
+    display: flex;
+    justify-content: center;
+    padding-top: 3em;
+    background-color: #f7f7f7;
+}
+
+.linkStyling{
+    padding-top: 1em;
+}
+
+.hoverEffectStyling:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+
 
