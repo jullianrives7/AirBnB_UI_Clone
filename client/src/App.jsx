@@ -13,6 +13,8 @@ import AirCoverModal from "./components/information-module/information-aircover/
 import InformationDescModal from "./components/information-module/information-description/InformationDescModal";
 import axios from "axios";
 
+import SiteDirectory from "./components/siteDirectory/siteDirectory";
+
 function App() {
   const [showDropdown, setShowDropdown] = useState(false);
   const [showLogInModal, setShowLogInModal] = useState(false);
@@ -68,6 +70,9 @@ function App() {
           <Host />
         </div>
         <PhotoSlide />
+        <div id="directory">
+          <SiteDirectory />
+        </div>
         <PhotosModal />
         <LoginModal />
         <AirCoverModal />

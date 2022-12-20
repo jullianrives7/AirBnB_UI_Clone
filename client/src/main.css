@@ -807,3 +807,24 @@
 /* ---------------- SITE-DIRECTORY MODULE ---------------- */
 
 /* ---------------- FOOTER MODULE ---------------- */
+/* ---------------- Site Directory MODULE ---------------- */
+
+.SiteDirectory{
+    display: flex;
+    justify-content: center;
+    padding-top: 3em;
+    background-color: #f7f7f7;
+}
+
+.linkStyling{
+    padding-top: 1em;
+}
+
+.hoverEffectStyling:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+
+
