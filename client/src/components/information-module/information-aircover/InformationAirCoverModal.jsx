@@ -13,7 +13,7 @@ const AirCoverModal = () => {
 
   return (
     <Modal show={showAirCoverModal} onHide={handleHide}>
-      <Modal.Header closeButton>
+      <Modal.Header>
         <div>
           <img
             className="airCoverImg"
