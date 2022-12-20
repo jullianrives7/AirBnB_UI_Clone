@@ -85,6 +85,28 @@ app.get("/api/review/:id", (req, res) => {
     .catch((e) => console.error(e.stack));
 });
 
+app.get("/api/all_photos", (req, res) => {
+  client
+    .query("SELECT * FROM photo")
+    .then((result) => {
+      res.send(result.rows);
+    })
+    .catch((e) => console.error(e.stack));
+});
+
+app.get("/api/photo/:id", (req, res) => {
+  client
+    .query(`SELECT * FROM photo WHERE photo_id = ${req.params.id}`)
+    .then((result) => {
+      if (result.rows.length == 0) {
+        res.sendStatus(404);
+      } else {
+        res.status(200).send(result.rows[0]);
+      }
+    })
+    .catch((e) => console.error(e.stack));
+});
+
 app.listen(PORT, () => {
   console.log(`Our app is running on port: ${PORT}`);
 });

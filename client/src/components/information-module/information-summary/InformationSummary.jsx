@@ -4,6 +4,7 @@ import InformationBedrooms from "./InformationBedrooms";
 import InformationBeds from "./InformationBeds";
 import InformationBath from "./InformationBath";
 import Image from "react-bootstrap/esm/Image";
+import { Link } from "react-scroll";
 
 const InformationSummary = () => {
   return (
@@ -20,7 +21,18 @@ const InformationSummary = () => {
               <InformationBedrooms />
               <InformationBeds />
               <InformationBath />
-              <Image className="airbnb-pfp" src="./airbnb_host.png"></Image>
+              <Link to="host-module" spy={true} smooth={true}>
+                <img
+                  className="airbnb-pfp"
+                  style={{ cursor: "pointer" }}
+                  src="./airbnb_host.png"
+                ></img>
+              </Link>
+              {/* <Image
+                style={{ cursor: "pointer" }}
+                className="airbnb-pfp"
+                src="./airbnb_host.png"
+              ></Image> */}
             </div>
           </div>
           <div className="informationSummaryContainerRows">

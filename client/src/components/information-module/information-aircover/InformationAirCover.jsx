@@ -21,10 +21,12 @@ const InformationAirCover = () => {
           Every booking includes free protection from Host cancellations,
           listing inaccuracies, and other issues like trouble checking in.
         </p>
-        <div className="airCoverButton" onClick={handleClick}>
-          <b>
-            <u>Learn more</u>
-          </b>
+        <div className="airCoverButton">
+          <span className="airCoverSpan" onClick={handleClick}>
+            <b>
+              <u>Learn more</u>
+            </b>
+          </span>
         </div>
       </div>
     </div>
