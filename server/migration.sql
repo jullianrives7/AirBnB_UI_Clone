@@ -1,5 +1,6 @@
 DROP TABLE IF EXISTS host CASCADE;
 DROP TABLE IF EXISTS rental CASCADE;
+DROP TABLE IF EXISTS photo;
 DROP TABLE IF EXISTS review;
 
 
@@ -22,7 +23,6 @@ CREATE TABLE rental(
     title varchar,
     location varchar,
     address varchar,
-    photo text [],
     rating_avg integer,
     review_count integer,
     bed_count integer,
@@ -37,6 +37,15 @@ CREATE TABLE rental(
     host_id integer,
     FOREIGN KEY(host_id)
     REFERENCES host(host_id) ON DELETE CASCADE
+);
+
+CREATE TABLE photo(
+    photo_id serial,
+    PRIMARY KEY(photo_id),
+    photo_url text ,
+    rental_id integer,
+    FOREIGN KEY(rental_id)
+    REFERENCES rental(rental_id) ON DELETE CASCADE
 );
 
 CREATE TABLE review(
