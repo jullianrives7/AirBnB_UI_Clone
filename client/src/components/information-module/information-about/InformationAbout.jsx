@@ -8,7 +8,7 @@ const InformationAbout = () => {
       <Modal.Dialog>
         <Modal.Body>
           <div>
-            <div classname="sleepTitle">
+            <div classname="sleepTitle" id="sleepTitle">
               <span style={{ fontSize: "22px", fontFamily: "Circular-Md" }}>
                 Where you'll sleep
               </span>

@@ -30,7 +30,7 @@
 - type "git clone "https link from the gitub repo"
   ex. "git clone https://github.com/jullianrives7/Galvanize_FEC_Team5.git"
 
-= cd into the file from your terminal, then open the folder in vs code
+- cd into the file from your terminal, then open the folder in vs code
 
 - once inside the forked repo, make sure to cd into the client folder and type "npm install --force"
 
