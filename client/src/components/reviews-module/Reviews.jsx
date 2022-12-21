@@ -52,7 +52,7 @@ const Reviews = () => {
             <p>5.0</p>
           </div>
           <div id="reviews-bar">
-            <div style={{ marginLeft: "10px", marginRight: "200px" }}>
+            <div style={{ marginLeft: "10px", marginRight: "202px" }}>
               <p> Accuracy</p>
             </div>
             <ProgressBar
@@ -63,7 +63,7 @@ const Reviews = () => {
             <p>4.9</p>
           </div>
           <div id="reviews-bar">
-            <div style={{ marginLeft: "10px", marginRight: "210px" }}>
+            <div style={{ marginLeft: "10px", marginRight: "209px" }}>
               <p> Location</p>
             </div>
             <ProgressBar
@@ -74,7 +74,7 @@ const Reviews = () => {
             <p>4.9</p>
           </div>
           <div id="reviews-bar">
-            <div style={{ marginLeft: "10px", marginRight: "226px" }}>
+            <div style={{ marginLeft: "10px", marginRight: "230px" }}>
               <p> Value</p>
             </div>
             <ProgressBar
