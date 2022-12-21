@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-scroll";
 //------------------------------ MODULES ----------------------------------//
+import LoadingScreen from "./components/loading-screen-module/LoadingScreen";
 import NavBar from "./components/navbar-module/NavBar";
 import Title from "./components/title-module/Title";
 import Photos from "./components/photos-module/Photos";
@@ -13,22 +14,23 @@ import Things from "./components/things-to-know-module/Things";
 import SiteDirectory from "./components/site-directory-module/SiteDirectory";
 import Footer from "./components/footer-module/footer";
 //------------------------------ MODALS -----------------------------------//
-import InformationDescModal from "./components/information-module/information-description/InformationDescModal";
-import PhotoSlide from "./components/photos-module/PhotoSlide";
-import LoginModal from "./components/host-module/LoginModal";
 import PhotosModal from "./components/photos-module/PhotoModal";
+import PhotoSlideModal from "./components/photos-module/PhotoSlideModal";
+import InformationDescModal from "./components/information-module/information-description/InformationDescModal";
+import LoginModal from "./components/host-module/LoginModal";
 import AirCoverModal from "./components/information-module/information-aircover/InformationAirCoverModal";
 import axios from "axios";
 
 function App() {
+  const [loading, setLoading] = useState(true);
   const [hostData, setHostData] = useState({});
   const [rentalData, setRentalData] = useState({});
   const [photosData, setPhotosData] = useState({});
   const [reviewsData, setReviewsData] = useState({});
   const [showDropdown, setShowDropdown] = useState(false);
   const [showLogInModal, setShowLogInModal] = useState(false);
-  const [photoSlide, setPhotoSlide] = useState(false);
   const [showPhotoModal, setShowPhotoModal] = useState(false);
+  const [showPhotoSlideModal, setShowPhotoSlideModal] = useState(false);
   const [showAirCoverModal, setShowAirCoverModal] = useState(false);
   const [showInformationDescModal, setShowInformationDescModal] =
     useState(false);
@@ -36,6 +38,8 @@ function App() {
   const ref = useRef(null);
 
   const contextData = {
+    loading,
+    setLoading,
     hostData,
     setHostData,
     rentalData,
@@ -46,10 +50,10 @@ function App() {
     setReviewsData,
     showLogInModal,
     setShowLogInModal,
-    photoSlide,
-    setPhotoSlide,
     showPhotoModal,
     setShowPhotoModal,
+    showPhotoSlideModal,
+    setShowPhotoSlideModal,
     showDropdown,
     setShowDropdown,
     ApiUrl,
@@ -69,42 +73,49 @@ function App() {
     setPhotosData(axiosPhotosData.data);
     let axiosReviewsData = await axios.get(`${ApiUrl}/api/all_reviews`);
     setReviewsData(axiosReviewsData.data);
+    setLoading(false);
   };
 
   useEffect(() => {
     getAllDataFromApi();
   }, []);
+
   console.log("hostData: ", hostData);
   console.log("rentalData: ", rentalData);
   console.log("photosData: ", photosData);
   console.log("reviewsData: ", reviewsData);
+  console.log("loading: ", loading);
 
   return (
     <appContext.Provider value={{ ...contextData }}>
-      <div className="App">
-        <NavBar />
-        <div id="main">
-          <Title />
-          <Photos />
-          <div id="flex-row-1">
-            <Information />
-            <div style={{ width: "8%" }}></div>
-            <Reservation />
+      {loading ? (
+        <LoadingScreen />
+      ) : (
+        <div className="App">
+          <NavBar />
+          <div id="main">
+            <Title />
+            <Photos />
+            <div id="flex-row-1">
+              <Information />
+              <div style={{ width: "8%" }}></div>
+              <Reservation />
+            </div>
+            <Reviews />
+            <Location />
+            <Host />
+            <Things />
           </div>
-          <Reviews />
-          <Location />
-          <Host />
-          <Things />
+          <SiteDirectory />
+          <Footer />
+          {/* MODALS */}
+          <PhotosModal />
+          {/* <PhotoSlideModal /> */}
+          <LoginModal />
+          <AirCoverModal />
+          <InformationDescModal />
         </div>
-        <SiteDirectory />
-        <Footer />
-        {/* MODALS */}
-        <PhotosModal />
-        {/* <PhotoSlide /> */}
-        <LoginModal />
-        <AirCoverModal />
-        <InformationDescModal />
-      </div>
+      )}
     </appContext.Provider>
   );
 }
