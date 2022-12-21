@@ -4,7 +4,7 @@ import InformationConsideration from "./information-consideration/InformationCon
 import InformationAirCover from "./information-aircover/InformationAirCover";
 import InformationDesc from "./information-description/InformationDesc";
 import InformationAbout from "./information-about/InformationAbout";
-import InformationAmenities from "./information-ammenities/InformationAmenities";
+import InformationAmenities from "./information-amenities/InformationAmenities";
 import React, { useContext } from "react";
 import { appContext } from "../../App";
 import InfoCalendarSubModule from "./information-calendar/InfoCalendarSubModule";

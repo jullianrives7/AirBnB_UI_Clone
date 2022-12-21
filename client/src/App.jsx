@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Link } from "react-scroll";
 //------------------------------ MODULES ----------------------------------//
 import LoadingScreen from "./components/loading-screen-module/LoadingScreen";
 import NavBar from "./components/navbar-module/NavBar";
+import NavBarSecondary from "./components/navbar-module/NavBarSecondary";
 import Title from "./components/title-module/Title";
 import Photos from "./components/photos-module/Photos";
 import Information from "./components/information-module/Information";
@@ -23,6 +23,7 @@ import axios from "axios";
 
 function App() {
   const [loading, setLoading] = useState(true);
+  const [toggleNav, setToggleNav] = useState(false);
   const [hostData, setHostData] = useState({});
   const [rentalData, setRentalData] = useState({});
   const [photosData, setPhotosData] = useState({});
@@ -40,6 +41,8 @@ function App() {
   const contextData = {
     loading,
     setLoading,
+    toggleNav,
+    setToggleNav,
     hostData,
     setHostData,
     rentalData,
@@ -80,11 +83,20 @@ function App() {
     getAllDataFromApi();
   }, []);
 
+  document.addEventListener("scroll", () => {
+    if (window.pageYOffset < 680) {
+      setToggleNav(false);
+    } else if (window.pageYOffset >= 680) {
+      setToggleNav(true);
+    }
+  });
+
   console.log("hostData: ", hostData);
   console.log("rentalData: ", rentalData);
   console.log("photosData: ", photosData);
   console.log("reviewsData: ", reviewsData);
   console.log("loading: ", loading);
+  console.log("toggleNav: ", toggleNav);
 
   return (
     <appContext.Provider value={{ ...contextData }}>
@@ -93,6 +105,7 @@ function App() {
       ) : (
         <div className="App">
           <NavBar />
+          {toggleNav && <NavBarSecondary />}
           <div id="main">
             <Title />
             <Photos />
