@@ -99,8 +99,8 @@ function App() {
         <SiteDirectory />
         <Footer />
         {/* MODALS */}
-        <PhotoSlide />
         <PhotosModal />
+        {/* <PhotoSlide /> */}
         <LoginModal />
         <AirCoverModal />
         <InformationDescModal />
