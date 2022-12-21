@@ -1,22 +1,22 @@
 import Modal from "react-bootstrap/Modal";
 import ShareButton from "../title-module/ShareButton";
 import SaveButton from "../title-module/SaveButton";
-import { FaChevronLeft } from "react-icons/all";
 import { RxCross1 } from "react-icons/all";
 import { useContext } from "react";
 import { appContext } from "../../App";
 import Carousel from "react-bootstrap/Carousel";
 
-function PhotoSlide() {
-  const { photoSlide, setPhotoSlide } = useContext(appContext);
+function PhotoSlideModal() {
+  const { showPhotoSlideModal, setShowPhotoSlideModal } =
+    useContext(appContext);
   const handleHide = () => {
-    setPhotoSlide(false);
+    setShowPhotoSlideModal(false);
   };
 
   return (
     <Modal
       id="slide-bg"
-      show={photoSlide}
+      show={showPhotoSlideModal}
       fullscreen={true}
       onHide={handleHide}
       style={{ backgroundColor: "black" }}
@@ -309,4 +309,4 @@ function PhotoSlide() {
   );
 }
 
-export default PhotoSlide;
+export default PhotoSlideModal;
