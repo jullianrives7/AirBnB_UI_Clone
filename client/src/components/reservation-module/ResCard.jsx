@@ -3,22 +3,25 @@ import CheckOutCalendar from "./CheckOutCalendar";
 import Button from "react-bootstrap/esm/Button";
 import { BsFillStarFill, BsDot } from "react-icons/all";
 import { HiChevronDown } from "react-icons/hi2";
+import { useContext } from "react";
+import { appContext } from "../../App";
 
 const ResCard = () => {
+  const { rentalData } = useContext(appContext);
   return (
     <div id="reservation-card">
       <div id="top-half">
         <div id="res-top-text">
           <div id="left-top-text">
-            <span id="top-dollar">$363</span>
+            <span id="top-dollar">${rentalData.cost_per_night}</span>
             <span id="night-text">night</span>
           </div>
           <div id="right-top-text">
             <BsFillStarFill />
-            <span id="rating">{"4.90"}</span>
+            <span id="rating">{rentalData.rating_avg}</span>
             <BsDot />
             <span id="review-count">
-              <u>{"425 reviews"}</u>
+              <u>{rentalData.review_count}</u>
             </span>
           </div>
         </div>

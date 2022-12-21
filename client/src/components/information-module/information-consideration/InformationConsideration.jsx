@@ -2,8 +2,11 @@ import Modal from "react-bootstrap/Modal";
 import { CiMedal } from "react-icons/all";
 import { IoLocationOutline } from "react-icons/all";
 import { AiOutlineCalendar } from "react-icons/all";
+import { useContext } from "react";
+import { appContext } from "../../../App";
 
 const InformationConsideration = () => {
+  const { hostData } = useContext(appContext);
   return (
     <div>
       <Modal.Dialog>
@@ -12,7 +15,7 @@ const InformationConsideration = () => {
             <CiMedal size={35} style={{ transform: "translate(0%, -12%)" }} />
             <span className="isSuperHost" style={{ paddingLeft: "20px" }}>
               <b style={{ fontSize: "16px", fontFamily: "Circular" }}>
-                Alina is a Superhost
+                {hostData.name} is a Superhost
               </b>
               <div className="superHostDesc">
                 Superhosts are experienced, highly rated hosts who are committed

@@ -1,5 +1,9 @@
+import { useContext } from "react";
+import { appContext } from "../../../App";
+
 const InformationGuest = () => {
-  return <div className="InformationGuest">2 guests</div>;
+  const { rentalData } = useContext(appContext);
+  return <div className="InformationGuest">{rentalData.max_guests}</div>;
 };
 
 export default InformationGuest;

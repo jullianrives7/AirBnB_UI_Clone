@@ -1,7 +1,10 @@
 import React from "react";
 import { MdChevronRight } from "react-icons/all";
+import { useContext } from "react";
+import { appContext } from "../../App";
 
 export default function Things() {
+  const { rentalData } = useContext(appContext);
   return (
     <div id="things-to-know-container">
       <span
@@ -15,9 +18,9 @@ export default function Things() {
       <div id="things-flex-row">
         <div id="things-flex-column">
           <h6>House Rules</h6>
-          <span>Check-in: 4:00 PM - 7:00 PM</span>
-          <span>Checkout before 11:00 AM</span>
-          <span>2 guests maximum</span>
+          <span>Check-in: {rentalData.check_in_time}</span>
+          <span>Checkout before {rentalData.check_out_time}</span>
+          <span>{rentalData.max_guests} maximum</span>
           <h6 style={{ marginTop: "5px" }}>
             <u>Show more</u>
             <MdChevronRight style={{ width: "21px", height: "21px" }} />
