@@ -7,9 +7,9 @@ const TitleStars = () => {
 
   return (
     <div className="TitleStars">
-      <AiFillStar />{" "}
+      <AiFillStar />
       <span style={{ fontFamily: "Circular-Md", fontSize: "15px" }}>
-        {"4.90"}
+        {rentalData.rating_avg}
       </span>
     </div>
   );

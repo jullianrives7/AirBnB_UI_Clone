@@ -5,7 +5,7 @@ import { useContext } from "react";
 import { appContext } from "../../../App";
 
 const InformationDescModal = () => {
-  const { showInformationDescModal, setShowInformationDescModal } =
+  const { rentalData, showInformationDescModal, setShowInformationDescModal } =
     useContext(appContext);
   const handleHide = () => {
     setShowInformationDescModal(false);
@@ -24,16 +24,7 @@ const InformationDescModal = () => {
           <div className="descModalAbout">
             <b>About this space</b>
           </div>
-          <div className="descModalParagraph">
-            Nestled in the heart of the Big Thicket, our Naturalist Boudoir B&B
-            has everything you need to revitalize your senses. Extremely private
-            area for the naturalist with outdoor hot tub and shower. We welcome
-            all guests to experience our lovely Naturalist Boudoir & reconnect
-            with your special someone. Should your dates not be available for
-            this cabin, please check out our additional cabins...Naturalist
-            Boudoir TOO, Naturalist Boudoir on Point & Naturalist Boudoir RITZ.
-            Check my profile for all.
-          </div>
+          <div className="descModalParagraph">{rentalData.rental_desc}</div>
         </div>
         <div>
           <div className="descModalSpace">

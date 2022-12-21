@@ -3,17 +3,19 @@ import InformationGuest from "./InformationGuest";
 import InformationBedrooms from "./InformationBedrooms";
 import InformationBeds from "./InformationBeds";
 import InformationBath from "./InformationBath";
-import Image from "react-bootstrap/esm/Image";
+import { useContext } from "react";
+import { appContext } from "../../../App";
 import { Link } from "react-scroll";
 
 const InformationSummary = () => {
+  const { hostData } = useContext(appContext);
   return (
     <div>
       <Modal.Dialog>
         <Modal.Body>
           <div>
             <span style={{ fontSize: "22px", fontFamily: "Circular-Md" }}>
-              Entire cabin hosted by Alina
+              Entire cabin hosted by {hostData.name}
             </span>
 
             <div className="informationSummary">
@@ -28,11 +30,6 @@ const InformationSummary = () => {
                   src="./airbnb_host.png"
                 ></img>
               </Link>
-              {/* <Image
-                style={{ cursor: "pointer" }}
-                className="airbnb-pfp"
-                src="./airbnb_host.png"
-              ></Image> */}
             </div>
           </div>
           <div className="informationSummaryContainerRows">

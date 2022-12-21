@@ -3,11 +3,11 @@ import { AiFillStar } from "react-icons/all";
 import { HiShieldCheck } from "react-icons/hi";
 import { GiMedal } from "react-icons/all";
 import Button from "react-bootstrap/Button";
-import { TbBrandAirbnb } from "react-icons/all";
 import { useContext } from "react";
 import { appContext } from "../../App";
+
 function Host() {
-  const { showLogInModal, setShowLogInModal } = useContext(appContext);
+  const { hostData, setShowLogInModal } = useContext(appContext);
 
   const handleShow = () => {
     setShowLogInModal(true);
@@ -27,7 +27,7 @@ function Host() {
               }}
             >
               <span style={{ fontFamily: "Circular-Md", fontSize: "22px" }}>
-                {"Hosted by Alina"}
+                Hosted by {hostData.name}
               </span>
               <span
                 style={{
@@ -91,9 +91,7 @@ function Host() {
                 marginBottom: "25px",
               }}
             >
-              Nature loving, outdoorsy, happy, outgoing, fun-loving lady. Love
-              to travel and meet new people. Feel so blessed to live where I do,
-              just want to share with others. Hope to meet you soon.
+              {hostData.about}
             </p>
             <h6
               style={{
@@ -108,8 +106,7 @@ function Host() {
                 marginBottom: "25px",
               }}
             >
-              We are about 1/8th mile from the residence (you can barely see us
-              through the trees) if you need any assistance.
+              {hostData.during_your_stay}
             </p>
             <h6
               style={{
