@@ -27,7 +27,7 @@ const InformationSummary = () => {
                 <img
                   className="airbnb-pfp"
                   style={{ cursor: "pointer" }}
-                  src="./airbnb_host.png"
+                  src="./host-images/airbnb_host.png"
                 ></img>
               </Link>
             </div>
