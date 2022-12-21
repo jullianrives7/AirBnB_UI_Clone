@@ -17,7 +17,7 @@ function Host() {
       <div id="host-module">
         <div id="host">
           <div id="host-information">
-            <img src="./host-1.png"></img>
+            <img src="./host-images/host-1.png"></img>
             <div
               style={{
                 marginLeft: "20px",

@@ -1,15 +1,15 @@
 /* ---------------- FONT COLOR, ALL ---------------- */
 @font-face {
   font-family: Circular;
-  src: url("../CircularStd-Book.otf");
+  src: url("../fonts/CircularStd-Book.otf");
 }
 @font-face {
   font-family: Circular-Md;
-  src: url("../CircularStd-Medium.otf");
+  src: url("../fonts/CircularStd-Medium.otf");
 }
 @font-face {
   font-family: Circular-Bold;
-  src: url("../CircularStd-Bold.otf");
+  src: url("../fonts/CircularStd-Bold.otf");
 }
 * {
   color: #222222;

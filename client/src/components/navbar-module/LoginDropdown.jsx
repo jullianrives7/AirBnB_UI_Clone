@@ -29,7 +29,7 @@ const LoginDropdown = () => {
       <div id="person-svg-wrapper">
         <Image
           id="person-svg"
-          src="./person.svg"
+          src="./navbar-images/person.svg"
           style={{ height: "27px", width: "27px" }}
         ></Image>
       </div>
