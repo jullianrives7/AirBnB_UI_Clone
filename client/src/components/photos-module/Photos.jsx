@@ -5,7 +5,7 @@ import { useContext } from "react";
 import { appContext } from "../../App";
 
 const Photos = () => {
-  const { setShowPhotoModal, rentalData } = useContext(appContext);
+  const { setShowPhotoModal, photosData } = useContext(appContext);
 
   return (
     <div id="photos-wrapper">

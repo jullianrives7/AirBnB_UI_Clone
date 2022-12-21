@@ -21,6 +21,10 @@ import AirCoverModal from "./components/information-module/information-aircover/
 import axios from "axios";
 
 function App() {
+  const [hostData, setHostData] = useState({});
+  const [rentalData, setRentalData] = useState({});
+  const [photosData, setPhotosData] = useState({});
+  const [reviewsData, setReviewsData] = useState({});
   const [showDropdown, setShowDropdown] = useState(false);
   const [showLogInModal, setShowLogInModal] = useState(false);
   const [photoSlide, setPhotoSlide] = useState(false);
@@ -28,11 +32,18 @@ function App() {
   const [showAirCoverModal, setShowAirCoverModal] = useState(false);
   const [showInformationDescModal, setShowInformationDescModal] =
     useState(false);
-  const [rentalData, setRentalData] = useState({});
   const ApiUrl = "https://fec-api-server-lpsg.onrender.com";
   const ref = useRef(null);
 
   const contextData = {
+    hostData,
+    setHostData,
+    rentalData,
+    setRentalData,
+    photosData,
+    setPhotosData,
+    reviewsData,
+    setReviewsData,
     showLogInModal,
     setShowLogInModal,
     photoSlide,
@@ -41,8 +52,6 @@ function App() {
     setShowPhotoModal,
     showDropdown,
     setShowDropdown,
-    rentalData,
-    setRentalData,
     ApiUrl,
     showAirCoverModal,
     setShowAirCoverModal,
@@ -51,15 +60,24 @@ function App() {
     ref,
   };
 
-  let getRentalDataFromApi = async () => {
-    let axiosData = await axios.get(`${ApiUrl}/api/rental/2`);
-    setRentalData(axiosData.data);
+  let getAllDataFromApi = async () => {
+    let axiosHostData = await axios.get(`${ApiUrl}/api/host/1`);
+    setHostData(axiosHostData.data);
+    let axiosRentalData = await axios.get(`${ApiUrl}/api/rental/1`);
+    setRentalData(axiosRentalData.data);
+    let axiosPhotosData = await axios.get(`${ApiUrl}/api/all_photos`);
+    setPhotosData(axiosPhotosData.data);
+    let axiosReviewsData = await axios.get(`${ApiUrl}/api/all_reviews`);
+    setReviewsData(axiosReviewsData.data);
   };
 
   useEffect(() => {
-    getRentalDataFromApi();
+    getAllDataFromApi();
   }, []);
-  console.log(rentalData);
+  console.log("hostData: ", hostData);
+  console.log("rentalData: ", rentalData);
+  console.log("photosData: ", photosData);
+  console.log("reviewsData: ", reviewsData);
 
   return (
     <appContext.Provider value={{ ...contextData }}>

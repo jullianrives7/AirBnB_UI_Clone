@@ -16,10 +16,12 @@ CREATE TABLE rental(
     PRIMARY KEY(rental_id),
     title varchar,
     location varchar,
-    rating_avg integer,
-    review_count integer,
-    room_count integer,
-    bed_count integer,
+    rating_avg varchar,
+    review_count varchar,
+    max_guests varchar,
+    room_count varchar,
+    bed_count varchar,
+    bathroom_count varchar,
     cost_per_night integer,
     rental_desc text,
     location_mini_desc text,
@@ -33,7 +35,7 @@ CREATE TABLE rental(
 CREATE TABLE photo(
     photo_id serial,
     PRIMARY KEY(photo_id),
-    photo_url text ,
+    photo_url text,
     rental_id integer,
     FOREIGN KEY(rental_id)
     REFERENCES rental(rental_id) ON DELETE CASCADE
