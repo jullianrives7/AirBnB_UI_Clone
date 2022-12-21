@@ -6,8 +6,7 @@ import { appContext } from "../../App";
 import axios from "axios";
 
 const Reviews = () => {
-  const { rentalData, reviewsData, setReviewsData, ApiUrl } =
-    useContext(appContext);
+  const { rentalData, reviewsData } = useContext(appContext);
 
   return (
     <div id="reviews-module">
@@ -90,38 +89,30 @@ const Reviews = () => {
           <div id="reviews-profile">
             <img
               style={{ borderRadius: "50%", height: "40px", width: "40px" }}
-              src="https://a0.muscache.com/im/pictures/user/95930d49-e295-4718-9374-49803fb6b99e.jpg?im_w=240"
+              src={reviewsData[0].reviewer_img}
             ></img>
             <div>
-              <h5>Justin</h5>
-              <p> December 2022</p>
+              <h5>{reviewsData[0].reviewer_name}</h5>
+              <p> {reviewsData[0].review_date}</p>
             </div>
           </div>
           <div>
-            <a>
-              This was our second trip here and it didn't disappoint. If you're
-              looking to relax and unwind this is the place. I'm already
-              thinking about the next time we can come back.
-            </a>
+            <a>{reviewsData[0].review_text}</a>
           </div>
         </div>
         <div id="reviews-comment1">
           <div id="reviews-profile">
             <img
               style={{ borderRadius: "50%", height: "40px", width: "40px" }}
-              src="https://a0.muscache.com/im/pictures/user/251ff1cd-7d2e-4bf8-ae21-3ab287ef5ca9.jpg?im_w=240"
+              src={reviewsData[1].reviewer_img}
             ></img>
             <div>
-              <h5>Jasmine</h5>
-              <p> December 2022</p>
+              <h5>{reviewsData[1].reviewer_name}</h5>
+              <p>{reviewsData[1].review_date}</p>
             </div>
           </div>
           <div>
-            <a>
-              It's a beautiful stay. The grounds are lush and green. Our cabin
-              was in between swamp and river, giving us privacy and immersion
-              into nature. In the morning, the cows mooing was...
-            </a>
+            <a>{reviewsData[1].review_text}</a>
             <div>
               <b>
                 <u>Show More </u>
@@ -133,72 +124,60 @@ const Reviews = () => {
           <div id="reviews-profile">
             <img
               style={{ borderRadius: "50%", height: "40px", width: "40px" }}
-              src="https://a0.muscache.com/defaults/user_pic-225x225.png?im_w=240"
+              src={reviewsData[2].reviewer_img}
             ></img>
             <div>
-              <h4>Ernest</h4>
-              <p> December 2022</p>
+              <h4>{reviewsData[2].reviewer_name}</h4>
+              <p>{reviewsData[2].review_date}</p>
             </div>
           </div>
           <div>
-            <a>
-              Beautiful and very romantic! Everything is set away from other
-              people. Perfect place to spend time and focus on your group and
-              enjoy nature!
-            </a>
+            <a>{reviewsData[2].review_text}</a>
           </div>
         </div>
         <div id="reviews-comment1">
           <div id="reviews-profile">
             <img
               style={{ borderRadius: "50%", height: "40px", width: "40px" }}
-              src="https://a0.muscache.com/im/pictures/user/34f63e31-5843-4e13-9366-0dec89c9d515.jpg?im_w=240"
+              src={reviewsData[3].reviewer_img}
             ></img>
             <div>
-              <h4>Kelli</h4>
-              <p> December 2022</p>
+              <h4>{reviewsData[3].reviewer_name}</h4>
+              <p>{reviewsData[3].review_date}</p>
             </div>
           </div>
           <div>
-            <a>
-              This place was absolutely perfect! Exactly has described and
-              couldn’t not have chosen a better spot for our anniversary
-              weekend.
-            </a>
+            <a>{reviewsData[3].review_text}</a>
           </div>
         </div>
         <div id="reviews-comment">
           <div id="reviews-profile">
             <img
               style={{ borderRadius: "50%", height: "40px", width: "40px" }}
-              src="https://a0.muscache.com/im/pictures/user/f1ab1d52-5790-43a6-be94-7be0dd366821.jpg?im_w=240"
+              src={reviewsData[4].reviewer_img}
             ></img>
             <div>
-              <h4>Brad</h4>
-              <p> December 2022</p>
+              <h4>{reviewsData[4].reviewer_name}</h4>
+              <p>{reviewsData[4].review_date}</p>
             </div>
           </div>
           <div>
-            <a>
-              Amazing place, extremely beautiful, and very peaceful!! Extremely
-              nice people would recommend for anyone wanting to recharge and
-              love nature!
-            </a>
+            <a>{reviewsData[4].review_text}</a>
           </div>
         </div>
         <div id="reviews-comment1">
           <div id="reviews-profile">
             <img
               style={{ borderRadius: "50%", height: "40px", width: "40px" }}
-              src="https://a0.muscache.com/im/pictures/user/44780bdf-b378-4092-a9f8-800b7927329f.jpg?im_w=240"
+              src={reviewsData[5].reviewer_img}
             ></img>
             <div>
-              <h4>Kacie</h4>
-              <p> December 2022</p>
+              <h4>{reviewsData[5].reviewer_name}</h4>
+              <p>{reviewsData[5].review_date}</p>
             </div>
           </div>
           <div>
-            <a>So beautiful and romantic ❤️😊 perfect for our anniversary</a>
+            <a>{reviewsData[5].review_text}</a>
           </div>
         </div>
       </div>
