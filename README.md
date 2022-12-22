@@ -1,51 +1,163 @@
-# Galvanize_FEC_Team5
+## --------------- _Galvanize MCSP-16 Team 5_ ---------------
 
-# Airbnb Clone
+# Front End Capstone Project : AirBnB UI Clone
 
-## Objectives
+## Objectives & Minimum Requirements
 
-- build an "item detail page" with at least four significant and functionally unique modules
-- Build an app that simulates a single page experience in a service oriented style
+- Build a Full Stack UI Clone of a popular existing app’s “item detail page”
+- Page must contain many distinct modules of related functionality (min. 4)
+- Selected App UI should have sufficient complexity
+- Each team member must build at least one module
+- Implement React & use React life-cycle methods
 - Perform external API requests
-- Use react life-cycle method
 
 ## Table of Contents
 
-- Link to WireFrame: https://excalidraw.com/#room=25525c9d9a85c7b900a2,k3A_etviJ_GZQk5dSDoJbw
+- FEC Team 5 WireFrame : [FEC Team 5 WireFrame on Excalidraw](https://excalidraw.com/#room=25525c9d9a85c7b900a2,k3A_etviJ_GZQk5dSDoJbw)
+- AirBnB Page to Clone : [AirBnB - Naturalist Boudoir Cabin](https://www.airbnb.com/rooms/28833661?adults=1&category_tag=Tag%3A8225&children=0&infants=0&search_mode=flex_destinations_search&check_in=2023-01-29&check_out=2023-02-03&federated_search_id=5a99f34d-c87c-478d-a5c9-ceeb3d3681f4&source_impression_id=p3_1671120364_omr8ogC2GMaKPUi3)
+- Completed project here : [FEC Team 5 Project on Render ](https://fec-frontend.onrender.com/)
+- **Note:** _Refresh the project page repeatedly to wake the Render server if page does not display immediately_
 
-- Link to Deployed Website: https://fec-frontend.onrender.com/
+## Installation & Setup
 
-- The "client" folder hosts the front-end code of our work
+- Fork / clone down this repo : [Galvanize MCSP-16 : FEC Team 5 Github Repo](https://github.com/jullianrives7/Galvanize_FEC_Team5)
+- cd into 'server' directory and install backend dependencies
 
-- The "server" folder hosts the back-end code of our work
+```bash
+(from 'Galvanize_FEC_Team5' directory)
 
-## How to Install and Run the Project
+  cd server/
+  npm install
+```
 
-- Fork the repository from this Link: https://github.com/jullianrives7/Galvanize_FEC_Team5
+- cd into 'client' directory and install frontend dependencies
+- **Note:** '_--force' tag is needed to install all frontend dependencies for this project_
 
-- Copy HTTPS link (save this for later! we will use git clone command with that link)
+```bash
+(from 'server' directory)
 
-- Open your terminal and go to the folder you want to clone the Repo into
+  cd ../client/
+  npm install --force
+```
 
-- type "git clone "https link from the gitub repo"
-  ex. "git clone https://github.com/jullianrives7/Galvanize_FEC_Team5.git"
+- Run a local instance React/Vite to view project in browser
 
-- cd into the file from your terminal, then open the folder in vs code
+```bash
+(from 'client' directory)
 
-- once inside the forked repo, make sure to cd into the client folder and type "npm install --force"
+  npm run dev
 
-- After the dependencies are installed, type "npm run dev" in the terminal to display the website in your browser
+  ([CMD] + [Click] the "Local" url in your terminal to open in browser)
+  (Link should look like this: ➜  Local:   http://localhost:5173/)
+```
 
-## How to Use the Project
+## Libraries & Utilities
 
-The airbnb clone works similar to the items detail page of the orginal website. The components offer user interactions and the page renders them individually. Code for how each component works can be found in the client folder under src, then components.
+- [React](https://reactjs.org/) x [Vite](https://vitejs.dev/)
+- [React Bootstrap](https://react-bootstrap.github.io/)
+- [React Icons](https://react-icons.github.io/react-icons/search)
+- [React Scroll](https://www.npmjs.com/package/react-scroll)
+- [React Suite](https://rsuitejs.com/)
+- [Material UI](https://mui.com/core/)
+- [Loading.io](https://loading.io/)
+- [Readme.so](https://readme.so)
+- [Axios](https://axios-http.com/docs/intro)
 
-## Collaborators
+## API Reference
 
-- Jullian Rives
+| Parameter | Type  | Description                               |
+| :-------- | :---- | :---------------------------------------- |
+| `ApiUrl`  | `url` | https://fec-api-server-lpsg.onrender.com/ |
 
-- Simon Solomon
+#### PLEASE NOTE:
 
-- Huy Nguyen
+If you receive an "EOF" message, repeatedly refresh page to wake Render server
 
-- Fernando Castro
+### GET API Root
+
+```http
+  GET ApiUrl/
+
+  (Returns 'Hello World!')
+```
+
+#### Get all hosts data
+
+```http
+  GET ApiUrl/api/all_hosts
+
+```
+
+#### Get specified host data at index
+
+```http
+  GET ApiUrl/api/host/${id}
+
+  (Note: only one host is currently present in data table)
+```
+
+| Parameter | Type      | Description                                                  |
+| :-------- | :-------- | :----------------------------------------------------------- |
+| `id`      | `integer` | **Required**. Index of item to fetch. Valid Input Range: (1) |
+
+#### Get all rentals data
+
+```http
+  GET ApiUrl/api/all_rentals
+
+```
+
+#### Get specified rental data at index
+
+```http
+  GET ApiUrl/api/rental/${id}
+
+  (Note: only one rental is currently present in data table)
+```
+
+| Parameter | Type      | Description                                                  |
+| :-------- | :-------- | :----------------------------------------------------------- |
+| `id`      | `integer` | **Required**. Index of item to fetch. Valid Input Range: (1) |
+
+#### Get all reviews data
+
+```http
+  GET ApiUrl/api/all_reviews
+
+```
+
+#### Get specified review data at index
+
+```http
+  GET ApiUrl/api/review/${id}
+
+```
+
+| Parameter | Type      | Description                                                      |
+| :-------- | :-------- | :--------------------------------------------------------------- |
+| `id`      | `integer` | **Required**. Index of item to fetch. Valid Input Range: (1 - 6) |
+
+#### Get all photos data
+
+```http
+  GET ApiUrl/api/all_photos
+
+```
+
+#### Get specified photo data at index
+
+```http
+  GET ApiUrl/api/photo/${id}
+
+```
+
+| Parameter | Type      | Description                                                       |
+| :-------- | :-------- | :---------------------------------------------------------------- |
+| `id`      | `integer` | **Required**. Index of item to fetch. Valid Input Range: (1 - 23) |
+
+## _Collaborators_
+
+- Jullian Rives - [@jullianrives7](https://github.com/jullianrives7)
+- Simon Solomon - [@snsolomar](https://github.com/snsolomar)
+- Huy Nguyen - [@HuyNguyen09196](https://github.com/HuyNguyen09196)
+- Fernando Castro - [@Fcastro958](https://github.com/Fcastro958)
