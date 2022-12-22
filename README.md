@@ -63,7 +63,7 @@ If you receive an "EOF" message, repeatedly refresh page to wake Render server
 
 ### GET API Root
 
-```
+```http
   GET ApiUrl/
 
   (Returns 'Hello World!')
@@ -71,14 +71,13 @@ If you receive an "EOF" message, repeatedly refresh page to wake Render server
 
 #### Get all hosts data
 
-```
+```http
   GET ApiUrl/api/all_hosts
-
 ```
 
 #### Get specified host data at index
 
-```
+```http
   GET ApiUrl/api/host/${id}
 
   (Note: only one host is currently present in data table)
@@ -90,14 +89,13 @@ If you receive an "EOF" message, repeatedly refresh page to wake Render server
 
 #### Get all rentals data
 
-```
+```http
   GET ApiUrl/api/all_rentals
-
 ```
 
 #### Get specified rental data at index
 
-```
+```http
   GET ApiUrl/api/rental/${id}
 
   (Note: only one rental is currently present in data table)
@@ -109,16 +107,15 @@ If you receive an "EOF" message, repeatedly refresh page to wake Render server
 
 #### Get all reviews data
 
-```
+```http
   GET ApiUrl/api/all_reviews
 
 ```
 
 #### Get specified review data at index
 
-```
+```http
   GET ApiUrl/api/review/${id}
-
 ```
 
 | Parameter | Type      | Description                                                      |
@@ -127,16 +124,14 @@ If you receive an "EOF" message, repeatedly refresh page to wake Render server
 
 #### Get all photos data
 
-```
+```http
   GET ApiUrl/api/all_photos
-
 ```
 
 #### Get specified photo data at index
 
-```
+```http
   GET ApiUrl/api/photo/${id}
-
 ```
 
 | Parameter | Type      | Description                                                       |
