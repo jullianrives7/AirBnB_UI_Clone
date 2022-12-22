@@ -2,15 +2,6 @@
 
 # Front End Capstone Project : AirBnB UI Clone
 
-## Objectives & Minimum Requirements
-
-- Build a Full Stack UI Clone of a popular existing app’s “item detail page”
-- Page must contain many distinct modules of related functionality (min. 4)
-- Selected App UI should have sufficient complexity
-- Each team member must build at least one module
-- Implement React & use React life-cycle methods
-- Perform external API requests
-
 ## Tech Stack
 
 ![Vite](https://camo.githubusercontent.com/c1ee3046774b3a0f6165dbe7f4e8a323f583f21e48d60a4dba8edb49fc2463bc/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f566974652d4237334246453f7374796c653d666f722d7468652d6261646765266c6f676f3d76697465266c6f676f436f6c6f723d464644363245)
@@ -27,6 +18,15 @@
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
 ![Visual Studio Code](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
+
+## Objectives & Minimum Requirements
+
+- Build a Full Stack UI Clone of a popular existing app’s “item detail page”
+- Page must contain many distinct modules of related functionality (min. 4)
+- Selected App UI should have sufficient complexity
+- Each team member must build at least one module
+- Implement React & use React life-cycle methods
+- Perform external API requests
 
 ## Table of Contents
 
