@@ -1,5 +1,4 @@
 import Navbar from "react-bootstrap/Navbar";
-import BorderBottom from "./BorderBottom";
 import { Link } from "react-scroll";
 
 function NavBarSecondary() {
