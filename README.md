@@ -44,7 +44,8 @@
 ## Installation & Setup
 
 - Fork / clone down this repo : [Galvanize MCSP-16 : FEC Team 5 Github Repo](https://github.com/jullianrives7/Galvanize_FEC_Team5)
-- Optional: To set the backend of this project to run locally, go to the 'server.js' file within the 'server' directory and change "production" to "dev" on line 5. Then go to the 'config.js' file in the 'server' directory and alter the connection string to point at your localized db (docker container was used in this example)
+- Optional (1): To set up the backend of this project to run locally, go to the 'server.js' file within the 'server' directory and change "production" to "dev" on line 5.
+- Optional (2): Next, go to the 'config.js' file in the 'server' directory and alter the connection string to point at your localized db (docker container was used in this example)
 - cd into 'server' directory and install backend dependencies
 
 ```bash
