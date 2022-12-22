@@ -51,18 +51,6 @@
   (Link should look like this: ➜  Local:   http://localhost:5173/)
 ```
 
-## Libraries & Utilities
-
-- [React](https://reactjs.org/) x [Vite](https://vitejs.dev/)
-- [React Bootstrap](https://react-bootstrap.github.io/)
-- [React Icons](https://react-icons.github.io/react-icons/search)
-- [React Scroll](https://www.npmjs.com/package/react-scroll)
-- [React Suite](https://rsuitejs.com/)
-- [Material UI](https://mui.com/core/)
-- [Loading.io](https://loading.io/)
-- [Readme.so](https://readme.so)
-- [Axios](https://axios-http.com/docs/intro)
-
 ## API Reference
 
 | Parameter | Type  | Description                               |
@@ -75,7 +63,7 @@ If you receive an "EOF" message, repeatedly refresh page to wake Render server
 
 ### GET API Root
 
-```http
+```
   GET ApiUrl/
 
   (Returns 'Hello World!')
@@ -83,14 +71,14 @@ If you receive an "EOF" message, repeatedly refresh page to wake Render server
 
 #### Get all hosts data
 
-```http
+```
   GET ApiUrl/api/all_hosts
 
 ```
 
 #### Get specified host data at index
 
-```http
+```
   GET ApiUrl/api/host/${id}
 
   (Note: only one host is currently present in data table)
@@ -102,14 +90,14 @@ If you receive an "EOF" message, repeatedly refresh page to wake Render server
 
 #### Get all rentals data
 
-```http
+```
   GET ApiUrl/api/all_rentals
 
 ```
 
 #### Get specified rental data at index
 
-```http
+```
   GET ApiUrl/api/rental/${id}
 
   (Note: only one rental is currently present in data table)
@@ -121,14 +109,14 @@ If you receive an "EOF" message, repeatedly refresh page to wake Render server
 
 #### Get all reviews data
 
-```http
+```
   GET ApiUrl/api/all_reviews
 
 ```
 
 #### Get specified review data at index
 
-```http
+```
   GET ApiUrl/api/review/${id}
 
 ```
@@ -139,14 +127,14 @@ If you receive an "EOF" message, repeatedly refresh page to wake Render server
 
 #### Get all photos data
 
-```http
+```
   GET ApiUrl/api/all_photos
 
 ```
 
 #### Get specified photo data at index
 
-```http
+```
   GET ApiUrl/api/photo/${id}
 
 ```
@@ -154,6 +142,18 @@ If you receive an "EOF" message, repeatedly refresh page to wake Render server
 | Parameter | Type      | Description                                                       |
 | :-------- | :-------- | :---------------------------------------------------------------- |
 | `id`      | `integer` | **Required**. Index of item to fetch. Valid Input Range: (1 - 23) |
+
+## Libraries & Utilities
+
+- [React](https://reactjs.org/) x [Vite](https://vitejs.dev/)
+- [React Bootstrap](https://react-bootstrap.github.io/)
+- [React Icons](https://react-icons.github.io/react-icons/search)
+- [React Scroll](https://www.npmjs.com/package/react-scroll)
+- [React Suite](https://rsuitejs.com/)
+- [Material UI](https://mui.com/core/)
+- [Loading.io](https://loading.io/)
+- [Readme.so](https://readme.so)
+- [Axios](https://axios-http.com/docs/intro)
 
 ## _Collaborators_
 
