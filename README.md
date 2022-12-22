@@ -156,7 +156,7 @@ If you receive an "EOF" message, repeatedly refresh page to wake Render server
 | :-------- | :-------- | :---------------------------------------------------------------- |
 | `id`      | `integer` | **Required**. Index of item to fetch. Valid Input Range: (1 - 23) |
 
-## Libraries & Utilities
+## Libraries & Utilities Documentation
 
 - [React](https://reactjs.org/) x [Vite](https://vitejs.dev/)
 - [React Bootstrap](https://react-bootstrap.github.io/)
