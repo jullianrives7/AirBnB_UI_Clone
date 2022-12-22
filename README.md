@@ -109,7 +109,6 @@ If you receive an "EOF" message, repeatedly refresh page to wake Render server
 
 ```
   GET ApiUrl/api/all_reviews
-
 ```
 
 #### Get specified review data at index
