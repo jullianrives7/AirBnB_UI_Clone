@@ -35,8 +35,7 @@ function App() {
   const [showAirCoverModal, setShowAirCoverModal] = useState(false);
   const [showInformationDescModal, setShowInformationDescModal] =
     useState(false);
-//   const ApiUrl = "https://fec-api-server-lpsg.onrender.com";
-  const ApiUrl = "https://airbnb-ui-clone-api-server.onrender.com"
+  const ApiUrl = "https://fec-api-server-lpsg.onrender.com";
   const ref = useRef(null);
 
   const contextData = {
