@@ -144,7 +144,7 @@ app.get("/api/all_hosts", (req, res) => {
         res.send(result.rows);
       })
       .catch((e) => console.error(e.stack));
-  }, 30000);
+  }, 2000);
 });
 
 app.get("/api/host/:id", (req, res) => {
@@ -159,7 +159,7 @@ app.get("/api/host/:id", (req, res) => {
         }
       })
       .catch((e) => console.error(e.stack));
-  }, 30000);
+  }, 2000);
 });
 
 app.get("/api/all_rentals", (req, res) => {
@@ -170,7 +170,7 @@ app.get("/api/all_rentals", (req, res) => {
         res.send(result.rows);
       })
       .catch((e) => console.error(e.stack));
-  }, 30000);
+  }, 2000);
 });
 
 app.get("/api/rental/:id", (req, res) => {
@@ -185,7 +185,7 @@ app.get("/api/rental/:id", (req, res) => {
         }
       })
       .catch((e) => console.error(e.stack));
-  }, 30000);
+  }, 2000);
 });
 
 app.get("/api/all_reviews", (req, res) => {
@@ -196,7 +196,7 @@ app.get("/api/all_reviews", (req, res) => {
         res.status(200).send(result.rows);
       })
       .catch((e) => console.error(e.stack));
-  }, 30000);
+  }, 2000);
 });
 
 app.get("/api/review/:id", (req, res) => {
@@ -211,7 +211,7 @@ app.get("/api/review/:id", (req, res) => {
         }
       })
       .catch((e) => console.error(e.stack));
-  }, 30000);
+  }, 2000);
 });
 
 app.get("/api/all_photos", (req, res) => {
@@ -222,7 +222,7 @@ app.get("/api/all_photos", (req, res) => {
         res.send(result.rows);
       })
       .catch((e) => console.error(e.stack));
-  }, 30000);
+  }, 2000);
 });
 
 app.get("/api/photo/:id", (req, res) => {
@@ -237,7 +237,7 @@ app.get("/api/photo/:id", (req, res) => {
         }
       })
       .catch((e) => console.error(e.stack));
-  }, 30000);
+  }, 2000);
 });
 
 app.listen(PORT, () => {
