@@ -107,6 +107,8 @@ app.get("/api/photo/:id", (req, res) => {
     .catch((e) => console.error(e.stack));
 });
 
+app.setTimeout(300000); // 5 minutes
+
 app.listen(PORT, () => {
   console.log(`Our app is running on port: ${PORT}`);
 });
