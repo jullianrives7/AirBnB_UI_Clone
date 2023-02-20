@@ -18,7 +18,10 @@ client.on('error', (err) => {
 });
 
 client.connect(
- if(err){
+  .then(() => {
+  console.log("client connected successfully!")
+  })
+  .catch((err) => {
     console.error('Unable to connect to the database', err);
     // Handle the error appropriately
   });
