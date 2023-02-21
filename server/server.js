@@ -107,8 +107,16 @@ app.get("/api/photo/:id", (req, res) => {
     .catch((e) => console.error(e.stack));
 });
 
+const keepAlive = () => {
+  setTimeout(() => {
+    console.log('Pinging server to keep alive...');
+    https.get('https://your-app-name-here.herokuapp.com');
+    keepAlive();
+  }, 5 * 60 * 1000); // 5 minutes
+};
+
 app.listen(PORT, () => {
   console.log(`Our app is running on port: ${PORT}`);
-  setTimeout(()=>{console.log("keep alive")}, 30000);
+  keepAlive();
 });
 
