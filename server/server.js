@@ -37,7 +37,9 @@ client.on('error', (err) => {
   }
 });
 
-connectClient();
+if (!connected) { 
+      connectClient();
+    }
 
 ////////////////////////////////////////////////
 
