@@ -1,4 +1,4 @@
-const https = require('https');
+const https = require("https");
 const express = require("express");
 const cors = require("cors");
 const { Client } = require("pg");
@@ -108,10 +108,11 @@ app.get("/api/photo/:id", (req, res) => {
     .catch((e) => console.error(e.stack));
 });
 
+// Pings server every 5 mins to keep alive
 const keepAlive = () => {
   setTimeout(() => {
-    console.log('Pinging server to keep alive...');
-    https.get('https://fec-api-server-lpsg.onrender.com/');
+    console.log("Pinging server to keep alive...");
+    https.get("https://fec-api-server-lpsg.onrender.com/");
     keepAlive();
   }, 5 * 60 * 1000); // 5 minutes
 };
@@ -120,4 +121,3 @@ app.listen(PORT, () => {
   console.log(`Our app is running on port: ${PORT}`);
   keepAlive();
 });
-
