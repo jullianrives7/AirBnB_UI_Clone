@@ -110,7 +110,7 @@ app.get("/api/photo/:id", (req, res) => {
 const keepAlive = () => {
   setTimeout(() => {
     console.log('Pinging server to keep alive...');
-    https.get('https://your-app-name-here.herokuapp.com');
+    https.get('https://fec-api-server-lpsg.onrender.com/');
     keepAlive();
   }, 5 * 60 * 1000); // 5 minutes
 };
