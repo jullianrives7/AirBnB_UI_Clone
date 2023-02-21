@@ -13,7 +13,14 @@ const client = new Client({
 
 ///////// Connect & Error Handling ///////////////
 client.on('error', (err) => {
-  console.error('Unexpected error on the client', err);
+  if (err.code === 'ECONNRESET') {
+    console.log('Connection reset by peer');
+    // handle the error appropriately
+    client.connect()
+  } else {
+    console.log('Unexpected error: ', err);
+  }
+});
   // Handle the error appropriately
 });
 
