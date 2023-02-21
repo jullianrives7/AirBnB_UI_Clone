@@ -108,13 +108,13 @@ app.get("/api/photo/:id", (req, res) => {
     .catch((e) => console.error(e.stack));
 });
 
-// Pings server every 5 mins to keep alive
+// Pings server every 30 secs to keep alive
 const keepAlive = () => {
   setTimeout(() => {
     console.log("Pinging server to keep alive...");
     https.get("https://fec-api-server-lpsg.onrender.com/");
     keepAlive();
-  }, 5 * 60 * 1000); // 5 minutes
+  }, 30 * 1000); // 30 secs
 };
 
 app.listen(PORT, () => {
