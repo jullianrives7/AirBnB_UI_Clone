@@ -15,8 +15,10 @@ const client = new Client({
 client.on('error', (err) => {
   if (err.code === 'ECONNRESET') {
     console.log('Connection reset by peer: ', err);
-    client.connect();
-    console.log("client reconnected successfully!");
+    client.connect()
+      .then(() => {
+        console.log("client reconnected successfully!");
+      });
   } else {
     console.log('Unexpected error: ', err);
   }
