@@ -112,7 +112,7 @@ app.get("/api/photo/:id", (req, res) => {
 const keepAlive = () => {
   setTimeout(() => {
     console.log("Pinging server to keep alive...");
-    https.get("https://fec-api-server-lpsg.onrender.com/");
+    https.get("https://fec-api-server-lpsg.onrender.com");
     keepAlive();
   }, 30 * 1000); // 30 secs
 };
