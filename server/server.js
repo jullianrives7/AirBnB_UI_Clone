@@ -9,40 +9,7 @@ const client = new Client({
   connectionString: config.connectionString,
 });
 
-// client.connect();
-
-///////// Connect & Error Handling ///////////////
-let connected = false; // keep track of whether client is already connected
-
-function connectClient() {
-  client.connect()
-    .then(() => {
-      console.log("client connected successfully!")
-      connected = true;
-    })
-    .catch((err) => {
-      console.error('Unable to connect to the database', err);
-      connected = false;
-    });
-}
-
-client.on('error', (err) => {
-  if (err.code === 'ECONNRESET') {
-    console.log('Connection reset by peer: ', err);
-    if (!connected) { // only attempt to reconnect if client is not already connected
-      connectClient();
-    }
-  } else {
-    console.log('Unexpected error: ', err);
-  }
-});
-
-if (!connected) { 
-      connectClient();
-    }
-
-////////////////////////////////////////////////
-
+client.connect();
 
 const app = express();
 app.use(cors());
@@ -142,5 +109,6 @@ app.get("/api/photo/:id", (req, res) => {
 
 app.listen(PORT, () => {
   console.log(`Our app is running on port: ${PORT}`);
+  setTimeout(()=>{console.log("keep alive")}, 30000);
 });
 
