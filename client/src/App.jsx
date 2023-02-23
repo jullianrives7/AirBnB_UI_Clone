@@ -67,16 +67,39 @@ function App() {
     ref,
   };
 
+  // let getAllDataFromApi = async () => {
+  //   let axiosHostData = await axios.get(`${ApiUrl}/api/host/1`);
+  //   setHostData(axiosHostData.data);
+  //   let axiosRentalData = await axios.get(`${ApiUrl}/api/rental/1`);
+  //   setRentalData(axiosRentalData.data);
+  //   let axiosPhotosData = await axios.get(`${ApiUrl}/api/all_photos`);
+  //   setPhotosData(axiosPhotosData.data);
+  //   let axiosReviewsData = await axios.get(`${ApiUrl}/api/all_reviews`);
+  //   setReviewsData(axiosReviewsData.data);
+  //   setLoading(false);
+  // };
+
   let getAllDataFromApi = async () => {
-    let axiosHostData = await axios.get(`${ApiUrl}/api/host/1`);
-    setHostData(axiosHostData.data);
-    let axiosRentalData = await axios.get(`${ApiUrl}/api/rental/1`);
-    setRentalData(axiosRentalData.data);
-    let axiosPhotosData = await axios.get(`${ApiUrl}/api/all_photos`);
-    setPhotosData(axiosPhotosData.data);
-    let axiosReviewsData = await axios.get(`${ApiUrl}/api/all_reviews`);
-    setReviewsData(axiosReviewsData.data);
-    setLoading(false);
+    //added setTimeouts to avoid overwhelming server
+    setTimeout(async () => {
+      let axiosHostData = await axios.get(`${ApiUrl}/api/host/1`);
+      setHostData(axiosHostData.data);
+    }, 250);
+    setTimeout(async () => {
+      let axiosRentalData = await axios.get(`${ApiUrl}/api/rental/1`);
+      setRentalData(axiosRentalData.data);
+    }, 250);
+    setTimeout(async () => {
+      let axiosPhotosData = await axios.get(`${ApiUrl}/api/all_photos`);
+      setPhotosData(axiosPhotosData.data);
+    }, 250);
+    setTimeout(async () => {
+      let axiosReviewsData = await axios.get(`${ApiUrl}/api/all_reviews`);
+      setReviewsData(axiosReviewsData.data);
+    }, 250);
+    setTimeout(async () => {
+      setLoading(false);
+    }, 250);
   };
 
   useEffect(() => {
